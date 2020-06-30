@@ -23,6 +23,10 @@ Para instalar *i3wm*, ingresar lo siguiente por terminal:
 	`sudo apt-get install i3wm`
 Para instalar *i3blocks*, ingresar por terminal lo siguiente:
 	`sudo apt-get install i3wm`
+__ATENCIÓN__: la configuración de i3 la vamos a crear en el /home del usuario.
+		La carpeta debe crearse como .i3, y debemos importar las configuraciones
+		en dicha carpeta.
+
 Instalación opcional básica para desarrolladores de C "Fiubenses":
 	`sudo apt install build-essential valgrind manpages-dev gdb`
 Algunos enlaces útiles
