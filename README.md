@@ -26,9 +26,11 @@ Para instalar *i3blocks*, ingresar por terminal lo siguiente:
 **ATENCIÓN**: la configuración de i3 la vamos a crear en el /home del usuario.
 		La carpeta debe crearse como .i3, y debemos importar las configuraciones
 		en dicha carpeta.
-
-Instalación opcional básica para desarrolladores de C "Fiubenses":
+Instalación opcional
+====================
+Básico para desarrolladores de C "Fiubenses":
 	`sudo apt install build-essential valgrind manpages-dev gdb`
+
 Algunos enlaces útiles
 ======================
 1. [Repositorio de Rofi](https://github.com/davatorium/rofi)
