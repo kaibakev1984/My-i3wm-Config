@@ -17,6 +17,14 @@ no necesariamente esenciales. Las primeras 5 son
 las que considero esenciales para disfrutar de una 
 mejor experiencia con **i3wm**.
 
+INSTALACIÓN
+===========
+Para instalar *i3wm*, ingresar lo siguiente por terminal:
+	`sudo apt-get install i3wm`
+Para instalar *i3blocks*, ingresar por terminal lo siguiente:
+	`sudo apt-get install i3wm`
+Instalación opcional básica para desarrolladores de C "Fiubenses":
+	`sudo apt install build-essential valgrind manpages-dev gdb`
 Algunos enlaces útiles
 ======================
 1. [Repositorio de Rofi](https://github.com/davatorium/rofi)
