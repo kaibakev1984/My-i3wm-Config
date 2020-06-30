@@ -23,5 +23,4 @@ Algunos enlaces útiles
 2. [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
 3. [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
 4. [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
-
-
+5. [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
