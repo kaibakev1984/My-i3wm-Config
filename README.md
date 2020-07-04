@@ -38,6 +38,102 @@ Básico para desarrolladores de C "Fiubenses":
 	```
 	sudo apt install build-essential valgrind manpages-dev gdb
 	```
+Instalando i3-gaps
+==================
+Para instalar i3-gaps, se tienen que cumplir las siguientes dependencias:
+
+  ```
+    sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libsnack2-dev libxcb-shape0-dev autoconf libev-dev build-essential git
+  ```
+
+Luego, deberán reiniciar su equipo.
+Después de reiniciar el equipo, tienen que copiar el repositorio de [i3-gaps
+Airblender](git clone https://www.github.com/Airblader/i3 i3-gaps).
+
+Una vez clonado el repositorio, hacemos lo siguiente:
+
+```
+
+  cd i3-gaps
+  autoreconf --force --install
+  rm -rf build/
+  mkdir -p build && cd build/
+  ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+  make && sudo make install
+
+```
+
+Después de concluida la instalación, deberán agregar la configuración, al
+archivo de configuración de *i3*. ¿Cómo lo hacemos?
+
+Nos dirigimos a ```~/.config/i3/config ``` (no al que tienen, si es que lo
+hicieron, a ```~/.i3``` porque no se los va a leer), y al final de todo, copiamos
+y pegamos lo siguiente:
+
+
+```
+
+#############################
+### settings for i3-gaps: ###
+#############################
+
+# Set inner/outer gaps
+#for_window [class="^.*"] border pixel 0
+gaps inner 12
+gaps outer 1
+
+# Additionally, you can issue commands with the following syntax. This is useful to bind keys to changing the gap size.
+# gaps inner|outer current|all set|plus|minus <px>
+# gaps inner all set 10
+# gaps outer all plus 5
+
+# Smart gaps (gaps used if only more than one container on the workspace)
+#smart_gaps on
+
+# Smart borders (draw borders around container only if it is not the only container on this workspace) 
+# on|no_gaps (on=always activate and no_gaps=only activate if the gap size to the edge of the screen is 0)
+smart_borders on
+
+# Press $mod+Shift+g to enter the gap mode. Choose o or i for modifying outer/inner gaps. Press one of + / - (in-/decrement for current workspace) or 0 (remove gaps for current workspace). If you also press Shift with these keys, the change will be global for all workspaces.
+set $mode_gaps Gaps: (o) outer, (i) inner
+set $mode_gaps_outer Outer Gaps: +|-|0 (local), Shift + +|-|0 (global)
+set $mode_gaps_inner Inner Gaps: +|-|0 (local), Shift + +|-|0 (global)
+bindsym $mod+Shift+g mode "$mode_gaps"
+
+mode "$mode_gaps" {
+        bindsym o      mode "$mode_gaps_outer"
+        bindsym i      mode "$mode_gaps_inner"
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_inner" {
+        bindsym plus  gaps inner current plus 5
+        bindsym minus gaps inner current minus 5
+        bindsym 0     gaps inner current set 0
+
+        bindsym Shift+plus  gaps inner all plus 5
+        bindsym Shift+minus gaps inner all minus 5
+        bindsym Shift+0     gaps inner all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+mode "$mode_gaps_outer" {
+        bindsym plus  gaps outer current plus 5
+        bindsym minus gaps outer current minus 5
+        bindsym 0     gaps outer current set 0
+
+        bindsym Shift+plus  gaps outer all plus 5
+        bindsym Shift+minus gaps outer all minus 5
+        bindsym Shift+0     gaps outer all set 0
+
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+}
+
+```
+
+Una vez terminado, guardamos y reiniciamos *i3*. (con mod+shit+r)
 
 Algunos enlaces útiles
 ======================
@@ -47,15 +143,18 @@ Algunos enlaces útiles
 			```
 			sudo apt-get install rofi
 			```
-			El principal problema es que, desde la instlación por línea de comandos,
+		
+  	El principal problema es que, desde la instlación por línea de comandos,
 			se tiene problemas con el layout con algunos temas.
 			Para ello, pueden instarlo a mano, y luego clonan el repositorio,
 			para copiar todos los temas bajados del repositorio, en su carpeta
 			de temas **themes** de rofi, que está en la siguiente ruta:
-			
+	
+		
 			```
 			/usr/share/rofi/themes
-			```
+		
+    	```
 					
 2. [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
 3. [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
