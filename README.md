@@ -37,7 +37,7 @@ Instalación opcional
 Básico para desarrolladores de C "Fiubenses":
 	
 	```
-	sudo apt install build-essential valgrind manpages-dev gdb
+		sudo apt install build-essential valgrind manpages-dev gdb
 
 	```
 
@@ -47,9 +47,7 @@ Para instalar i3-gaps, se tienen que cumplir las siguientes dependencias:
 
 
   ```
-  
     sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libsnack2-dev libxcb-shape0-dev autoconf libev-dev build-essential git
-  
   ```
 
 Luego, deberán reiniciar su equipo.
@@ -143,6 +141,7 @@ Una vez terminado, guardamos y reiniciamos *i3*. (con mod+shit+r)
 
 Algunos enlaces útiles
 ======================
+
 1. [Repositorio de Rofi](https://github.com/davatorium/rofi)
 	* **NOTA**: Se puede instalar mediante:
 		
@@ -160,9 +159,10 @@ Algunos enlaces útiles
 			```
 			/usr/share/rofi/themes
 		
-    	```
+	    	```
 					
 2. [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
 3. [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
 4. [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
 5. [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
+6. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
