@@ -20,12 +20,15 @@ mejor experiencia con **i3wm**.
 INSTALACIÓN
 ===========
 Para instalar *i3wm*, ingresar lo siguiente por terminal:
+	
 	```
-	sudo apt-get install i3
+		sudo apt-get install i3
 	```
+
 Para instalar *i3blocks*, ingresar por terminal lo siguiente:
+
 	```
-	sudo apt-get install i3blocks
+		sudo apt-get install i3blocks
 	```	
 
 **ATENCIÓN**: la configuración de i3 la vamos a crear en el /home del usuario.
@@ -37,7 +40,7 @@ Instalación opcional
 Básico para desarrolladores de C "Fiubenses":
 	
 	```
-		sudo apt install build-essential valgrind manpages-dev gdb
+	sudo apt install build-essential valgrind manpages-dev gdb
 
 	```
 
@@ -57,13 +60,12 @@ Una vez clonado el repositorio, hacemos lo siguiente:
 
 
 ```
-
-  cd i3-gaps
-  autoreconf --force --install
-  rm -rf build/
-  mkdir -p build && cd build/
-  ../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
-  make && sudo make install
+	cd i3-gaps
+	autoreconf --force --install
+	rm -rf build/
+	mkdir -p build && cd build/
+	../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+	make && sudo make install
 
 ```
 
@@ -146,7 +148,7 @@ Algunos enlaces útiles
 	* **NOTA**: Se puede instalar mediante:
 		
 			```
-			sudo apt-get install rofi
+				sudo apt-get install rofi
 			```
 		
   	El principal problema es que, desde la instlación por línea de comandos,
@@ -157,7 +159,7 @@ Algunos enlaces útiles
 	
 		
 			```
-			/usr/share/rofi/themes
+				/usr/share/rofi/themes
 		
 	    	```
 					
