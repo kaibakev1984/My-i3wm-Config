@@ -35,15 +35,21 @@ Para instalar *i3blocks*, ingresar por terminal lo siguiente:
 Instalación opcional
 ====================
 Básico para desarrolladores de C "Fiubenses":
+	
 	```
 	sudo apt install build-essential valgrind manpages-dev gdb
+
 	```
+
 Instalando i3-gaps
 ==================
 Para instalar i3-gaps, se tienen que cumplir las siguientes dependencias:
 
+
   ```
+  
     sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libsnack2-dev libxcb-shape0-dev autoconf libev-dev build-essential git
+  
   ```
 
 Luego, deberán reiniciar su equipo.
