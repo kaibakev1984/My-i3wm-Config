@@ -20,16 +20,15 @@ mejor experiencia con **i3wm**.
 INSTALACIÓN
 ===========
 Para instalar *i3wm*, ingresar lo siguiente por terminal:
-	
-	```
-		sudo apt-get install i3
-	```
+	`
+	  sudo apt-get install i3
+	`
 
 Para instalar *i3blocks*, ingresar por terminal lo siguiente:
 
-	```
-		sudo apt-get install i3blocks
-	```	
+	`
+	  sudo apt-get install i3blocks
+	`	
 
 **ATENCIÓN**: la configuración de i3 la vamos a crear en el /home del usuario.
 		La carpeta debe crearse como .i3, y debemos importar las configuraciones
@@ -39,10 +38,10 @@ Instalación opcional
 ====================
 Básico para desarrolladores de C "Fiubenses":
 	
-	```
-	sudo apt install build-essential valgrind manpages-dev gdb
+	`
+	   sudo apt install build-essential valgrind manpages-dev gdb
 
-	```
+	`
 
 Instalando i3-gaps
 ==================
@@ -147,9 +146,9 @@ Algunos enlaces útiles
 1. [Repositorio de Rofi](https://github.com/davatorium/rofi)
 	* **NOTA**: Se puede instalar mediante:
 		
-			```
+			`
 				sudo apt-get install rofi
-			```
+			`
 		
   	El principal problema es que, desde la instlación por línea de comandos,
 			se tiene problemas con el layout con algunos temas.
@@ -158,10 +157,10 @@ Algunos enlaces útiles
 			de temas **themes** de rofi, que está en la siguiente ruta:
 	
 		
-			```
+			`
 				/usr/share/rofi/themes
 		
-	    	```
+	    	`
 					
 2. [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
 3. [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
