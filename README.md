@@ -51,10 +51,10 @@ Para instalar i3-gaps, se tienen que cumplir las siguientes dependencias:
   ```
 
 Luego, deberán reiniciar su equipo.
-Después de reiniciar el equipo, tienen que copiar el repositorio de [i3-gaps
-Airblender](git clone https://www.github.com/Airblader/i3 i3-gaps).
+Después de reiniciar el equipo, tienen que copiar el repositorio de [i3-gaps Airblender](git clone https://www.github.com/Airblader/i3 i3-gaps)
 
 Una vez clonado el repositorio, hacemos lo siguiente:
+
 
 ```
 
@@ -166,3 +166,30 @@ Algunos enlaces útiles
 4. [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
 5. [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
 6. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
+
+SOLO PARA XFCE4
+===============
+Para los que dispongan de una distro Xubuntu, o con el entorno *xfce4* (en tengan instalado *xfce4-terminal*),
+podrán ver que el tema *Solarized Dark* tiene ciertos problemas. Para poder agregarle distintos temas, es
+necesario hacer los siguientes cambios:
+
+1. Primero clonamos el repositorio con los temas para *xfce4-terminal* con la siguiente línea:
+	
+	```
+		git clone https://github.com/afq984/base16-xfce4-terminal.git
+	```
+2. Una vez clonado, nos dirigimos a la siguiente ruta, y creamos las carpetas *terminal/colorschemes*:
+	
+	```
+		cd ~/.local/share/xfce4
+		mkdir -p terminal/colorschemes
+	```		
+3. Después de creada las carpetas, nos dirigimos a la ubicación del repositorio descargado, y escribimos lo siguiente:
+
+	```
+		cp -r colorschemes ~/.local/share/xfce4/terminal
+	```
+
+Y listo, ya tendremos nuestros temas para esta terminal.
+
+(Aclaración: Puede llegar a ser pesado este cambio, así que cuidado)	
