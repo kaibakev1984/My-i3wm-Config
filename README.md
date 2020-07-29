@@ -160,7 +160,8 @@ Algunos enlaces útiles
 3. [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
 4. [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
 5. [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
-6. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
+6. [Polybar](https://github.com/regolith-linux/regolith-desktop/wiki/HowTo:-Swap-out-i3bar-for-Polybar?fbclid=IwAR3QtWfotVnkvgwtbUYXKAi9mz7sSSTlZRTmkOnqf8-UwXbhp72Dj4Pe4TI)
+7. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
 
 SOLO PARA XFCE4
 ===============
