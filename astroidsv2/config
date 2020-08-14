@@ -151,7 +151,8 @@ bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
 # assign applications to specific workspaces
-assign [class="i3-sensible-terminal"] $workspace1 
+assign [class="i3-sensible-terminal"] $workspace1
+assign [class="Alacritty"] $workspace1
 assign [class="qterminal"] $workspace1
 assign [class="Firefox"] $workspace2
 assign [class="Brave-browser"] $workspace2
