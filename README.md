@@ -162,7 +162,7 @@ Algunos enlaces útiles
 5. [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
 6. [Polybar](https://github.com/regolith-linux/regolith-desktop/wiki/HowTo:-Swap-out-i3bar-for-Polybar?fbclid=IwAR3QtWfotVnkvgwtbUYXKAi9mz7sSSTlZRTmkOnqf8-UwXbhp72Dj4Pe4TI)
 7. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
-
+8. [Font Awesome](https://fontawesome.com/cheatsheet) (Para elegir los íconos de i3blocks)
 SOLO PARA XFCE4
 ===============
 Para los que dispongan de una distro Xubuntu, o con el entorno *xfce4* (en tengan instalado *xfce4-terminal*),
