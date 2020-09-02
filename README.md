@@ -189,3 +189,51 @@ necesario hacer los siguientes cambios:
 Y listo, ya tendremos nuestros temas para esta terminal.
 
 (Aclaración: Puede llegar a ser pesado este cambio, así que cuidado)	
+
+**Resolviendo dependencias para st (Suckless Terminal)**
+En caso de tener:
+
+	```
+		x.c:11:10: fatal error: X11/Xatom.h: No existe el fichero o el directorio
+		#include <X11/Xatom.h>
+				 ^~~~~~~~~~~~~~~
+		compilation terminated.
+		make: *** [Makefile:22: x.o] Error 1
+	```
+	
+ejectuen lo siguiente en la terminal para resolver la dependencia:
+
+	```
+		sudo apt install libx11-dev
+	```
+	
+En caso de tener:
+
+	```
+		c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.8.2\" -D_XOPEN_SOURCE=600  -O -c st.c
+		/bin/sh: 1: pkg-config: not found
+		/bin/sh: 1: pkg-config: not found
+		c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.8.2\" -D_XOPEN_SOURCE=600  -O -c x.c
+		/bin/sh: 1: pkg-config: not found
+		/bin/sh: 1: pkg-config: not found
+		x.c:15:10: fatal error: X11/Xft/Xft.h: No existe el fichero o el directorio
+		#include <X11/Xft/Xft.h>
+				 ^~~~~~~~~~~~~~~
+		compilation terminated.
+		make: *** [Makefile:22: x.o] Error 1
+
+		
+	```
+	
+escriban lo siguiente para resolverlo:
+
+	```
+		sudo apt install libxft-dev
+	```
+	
+		
+	
+	
+	
+	
+	
