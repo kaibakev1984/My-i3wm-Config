@@ -171,9 +171,9 @@ necesario hacer los siguientes cambios:
 
 1. Primero clonamos el repositorio con los temas para *xfce4-terminal* con la siguiente línea:
 	
-	```
+	
 		git clone https://github.com/afq984/base16-xfce4-terminal.git
-	```
+	
 2. Una vez clonado, nos dirigimos a la siguiente ruta, y creamos las carpetas *terminal/colorschemes*:
 	
 	```
@@ -193,23 +193,24 @@ Y listo, ya tendremos nuestros temas para esta terminal.
 **Resolviendo dependencias para st (Suckless Terminal)**
 En caso de tener:
 
-	```
+	
 		x.c:11:10: fatal error: X11/Xatom.h: No existe el fichero o el directorio
 		#include <X11/Xatom.h>
 				 ^~~~~~~~~~~~~~~
 		compilation terminated.
 		make: *** [Makefile:22: x.o] Error 1
-	```
+	
 	
 ejectuen lo siguiente en la terminal para resolver la dependencia:
 
-	```
-		sudo apt install libx11-dev
-	```
 	
+		sudo apt install libx11-dev
+
+
+
 En caso de tener:
 
-	```
+
 		c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.8.2\" -D_XOPEN_SOURCE=600  -O -c st.c
 		/bin/sh: 1: pkg-config: not found
 		/bin/sh: 1: pkg-config: not found
@@ -221,18 +222,20 @@ En caso de tener:
 				 ^~~~~~~~~~~~~~~
 		compilation terminated.
 		make: *** [Makefile:22: x.o] Error 1
-
-		
-	```
 	
 escriban lo siguiente para resolverlo:
-
-	```
+	
 		sudo apt install libxft-dev
-	```
 	
-		
-	
+
+# Screenshots
+
+![cute scheme](/screenshots/cute_scheme.png)
+
+![tell me the truth scheme](/screenshots/tell-me-the-truth_scheme.png
+)
+
+![flamie scheme](/screenshots/flamie_scheme.png)
 	
 	
 	
