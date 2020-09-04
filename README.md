@@ -229,6 +229,7 @@ escriban lo siguiente para resolverlo:
 	
 
 # Screenshots
+![astroids scheme](/screenshots/astroidsV2.jpg)
 
 ![cute scheme](/screenshots/cute_scheme.png)
 
@@ -237,6 +238,6 @@ escriban lo siguiente para resolverlo:
 
 ![flamie scheme](/screenshots/flamie_scheme.png)
 	
-![bigcity scheme](/screenshots/bigcity_scheme.jpg)	
+![bigcity scheme](/screenshots/bigcity_scheme.png)	
 	
 	
