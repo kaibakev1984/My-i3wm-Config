@@ -239,6 +239,8 @@ escriban lo siguiente para resolverlo:
 
 ![flamie scheme](/screenshots/flamie_scheme.png)
 	
+![cyber_anime scheme](/screenshots/cyber_anime_scheme.png)
+
 ![bigcity scheme](/screenshots/bigcity_scheme.png)	
 	
 	
