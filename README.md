@@ -231,6 +231,8 @@ escriban lo siguiente para resolverlo:
 # Screenshots
 ![astroids scheme](/screenshots/astroidsV2.jpg)
 
+![dark_emo scheme](/screenshots/dark_emo_scheme.jpg)
+
 ![cute scheme](/screenshots/cute_scheme.png)
 
 ![tell me the truth scheme](/screenshots/tell-me-the-truth_scheme.png
