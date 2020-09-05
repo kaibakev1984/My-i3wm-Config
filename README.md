@@ -243,4 +243,4 @@ escriban lo siguiente para resolverlo:
 
 ![bigcity scheme](/screenshots/bigcity_scheme.png)	
 	
-	
+![techo_red scheme](/screenshots/techno_red_scheme.png)	
