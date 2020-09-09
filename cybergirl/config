@@ -105,7 +105,7 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 set $workspace1 "1: Terminals "
-set $workspace2 "2: Web Browsers "
+set $workspace2 "2: Web-Browsers "
 set $workspace3 "3: Editors "
 set $workspace4 "4: Telegram "
 
@@ -167,19 +167,18 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color 	         #131013
+set $bg-color 	         #06080b
 set $inactive-bg-color   #000f1d
-set $text-color		 #D521BE
+set $text-color		       #7fa8c1
 set $urgent-text-color	 #eee8d5
-set $inactive-text-color #69264A 
+set $inactive-text-color #4c546a 
 set $urgent-bg-color     #0e7388
-set $border-color	 #D521BE 
-set $stripe-color	 #0e7388
+set $border-color	       #7fa8c1
 set $indicator-color     #0e7388
 
 # window colors
-#			border              background         text                 indicator
-client.focused		$border-color       $border-color        $urgent-text-color   $indicator-color
+#			                  border              background         text                 indicator
+client.focused		      $border-color       $border-color      $urgent-text-color   $indicator-color
 client.unfocused        $border-color       $border-color      $inactive-bg-color   $indicator-color
 client.focused_inactive $border-color 	    $border-color      $inactive-text-color $indicator-color
 client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
@@ -187,29 +186,35 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	#status_command i3status
 	status_command i3blocks -c ~/.i3/i3blocks.conf
-	position top
+  position top
   separator_symbol ""
+  #font pango:Liberation Mono, FontAwesome 11 
+  
+  #output primary
+  font pango:DejaVu Sans Mono 10 
+
   # bar colors	
 	colors {
 		background $bg-color
 		separator  $inactive-text-color 
 		#                  border             background         text
-		focused_workspace  $border-color      $bg-color          $text-color
-		inactive_workspace $bg-color 		  $bg-color 		 $inactive-text-color
+		focused_workspace  $border-color      $border-color      $bg-color
+		inactive_workspace $bg-color 		      $bg-color 		     $inactive-text-color
 		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $urgent-text-color
 	}
 }
 
 #  Autostart
 #  set Transparency
-exec_always compton
+#exec_always compton
+exec compton --opacity-rule '60:window_type = "dock" && class_g = "i3bar"'
 #  set background
 exec_always --no-startup-id exec bash $HOME/.fehbg
-#  Add borders
-for_window [class="^.*"] border pixel 1
+# Add borders
+for_window [class="^.*"] border pixel 2
 
 
+# Personal keybindings
 
 
