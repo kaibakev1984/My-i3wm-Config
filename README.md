@@ -246,3 +246,5 @@ escriban lo siguiente para resolverlo:
 ![techo_red scheme](/screenshots/techno_red_scheme.png)	
 
 ![cybergirl scheme](/screenshots/cybergirl_scheme.png)
+
+![solarized scheme](/screenshots/solarized_scheme.png)
