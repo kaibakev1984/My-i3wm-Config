@@ -104,10 +104,10 @@ set $ws7 "7"
 set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
-set $workspace1 "1: Terminals "
-set $workspace2 "2: Web Browsers "
-set $workspace3 "3: Editors "
-set $workspace4 "4: Telegram "
+set $workspace1 "1 "
+set $workspace2 "2 "
+set $workspace3 "3 "
+set $workspace4 "4 "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -190,8 +190,10 @@ bar {
 	#status_command i3status
 	status_command i3blocks -c ~/.i3/i3blocks.conf
 	position top
-        separator_symbol ""
-	# bar colors	
+  separator_symbol ""
+  font pango:InconsolataLGC Nerd Font Bold 9
+  strip_workspace_numbers yes
+  # bar colors	
 	colors {
 		background $bg-color
 		separator  $inactive-text-color 
