@@ -175,19 +175,59 @@ necesario hacer los siguientes cambios:
 	
 2. Una vez clonado, nos dirigimos a la siguiente ruta, y creamos las carpetas *terminal/colorschemes*:
 	
-	```
+	
 		cd ~/.local/share/xfce4
 		mkdir -p terminal/colorschemes
-	```		
+			
 3. Después de creada las carpetas, nos dirigimos a la ubicación del repositorio descargado, y escribimos lo siguiente:
 
-	```
+	
 		cp -r colorschemes ~/.local/share/xfce4/terminal
-	```
+	
 
 Y listo, ya tendremos nuestros temas para esta terminal.
 
 (Aclaración: Puede llegar a ser pesado este cambio, así que cuidado)	
+
+## Opcional: Instalación de Powerline en i3
+Para instalar Powerline, desde Debian o Ubuntu, escribimos lo siguiente en la terminal:
+	
+		sudo apt-get install powerline fonts-powerline
+	
+
+Si es la primera vez que lo instalás, vas a necesitar agregar los siguiente, para poder correrlo:
+
+	
+		pip3 install i3ipc
+	
+
+##	Fuentes
+Tenemos algunas fuentes básicas para usar los íconos de [Font Awesome 4.7](https://fontawesome.com/cheatsheet). Solamente necesitamos copiar la carpeta *.fonts* para instalarlo haciendo lo siguiente:
+
+	
+		cp -r .fonts ~/
+	
+
+##	Fuentes para Powerline
+En caso de instalar **Powerline**, vamos a tener que instalar el siguiente paquete de fuentes compatibles, haciendo lo siguiente:
+
+	
+		git clone https://github.com/powerline/fonts.git --depth=1
+		cd fonts/
+		./install.sh
+		cd ..
+		rm -rf fonts/
+	
+
+y ya tendrás instaladas las fuentes. Para que aparezcan las fuentes, en el archivo de configuración de *i3* agregan lo siguiente:
+
+	
+		bar {
+ 			status_command python3.7 /usr/share/powerline/bindings/i3/powerline-i3.py  
+  			font pango:Droid Sans Mono Slashed for Powerline 14 
+			}
+	
+Más información: [powerline/fonts](https://github.com/powerline/fonts)
 
 **Resolviendo dependencias para st (Suckless Terminal)**
 En caso de tener:
