@@ -200,6 +200,18 @@ Si es la primera vez que lo instalás, vas a necesitar agregar los siguiente, pa
 	
 		pip3 install i3ipc
 	
+Para agregarlo en lugar de *i3status*, en el archivo de configuración de *i3* escribimos lo siguiente:
+
+
+		bar {
+ 			status_command python3.7 /usr/share/powerline/bindings/i3/powerline-i3.py  
+			}
+
+**NOTA:** No olviden copiar los archivos de configuración, creándose una carpeta con la siguiente ruta: *~/.config/powerline/*, y copiando todo el contenido dentro en */usr/share/powerline/config_files*. Algunos archivos van a necesitar que los cambies para agregar algunos *segmentos* (por ejemplo el de Solarized).
+
+- [Powerline: configurándolo para bash y gnu/linux (of course)](http://www.tomatesasesinos.com/2019/11/15/powerline-configurandolo-para-bash-y-gnu-linux-of-course/)
+- [Powerline: añade poder a la terminal](https://www.ochobitshacenunbyte.com/2019/09/13/powerline-anade-poder-a-la-terminal/)
+- [Algunos segmentos de referencia](https://powerline.readthedocs.io/en/master/configuration/segments/common.html#module-powerline.segments.common.wthr)
 
 ##	Fuentes
 Tenemos algunas fuentes básicas para usar los íconos de [Font Awesome 4.7](https://fontawesome.com/cheatsheet). Solamente necesitamos copiar la carpeta *.fonts* para instalarlo haciendo lo siguiente:
