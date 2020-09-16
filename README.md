@@ -278,6 +278,12 @@ escriban lo siguiente para resolverlo:
 	
 		sudo apt install libxft-dev
 	
+##	Para hacer transparente la barra de estado (i3status) con Compton
+Simplemente añaden lo siguiente en el archivo de configuración de i3:
+
+		exec compton --opacity-rule '60:window_type = "dock" && class_g = "i3bar"'
+
+reinician i3wm, y listo.
 
 # Screenshots
 ![astroids scheme](/screenshots/astroidsV2.jpg)
