@@ -306,3 +306,4 @@ reinician i3wm, y listo.
 ![cybergirl scheme](/screenshots/cybergirl_scheme.png)
 
 ![solarized scheme](/screenshots/solarized_scheme.png)
+![x-wing scheme](/screenshots/x-wing_scheme.png)
