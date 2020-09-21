@@ -174,7 +174,7 @@ set $text-color		       #b2a26d
 set $inactive-text-color #619068
 set $urgent-text-color	 #eee8d5
 set $border-color	       #2b4d26
-set $inactive-border-color #5F877D
+set $inactive-border-color #192C16
 set $indicator-color     #0e7388
 # window colors
 #			                  border              background         text                 indicator
