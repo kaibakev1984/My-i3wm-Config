@@ -170,13 +170,12 @@ bindsym $mod+r mode "resize"
 set $bg-color 	         #050604
 set $inactive-bg-color   #031420
 set $urgent-bg-color     #BB6B72
-set $text-color		       #c2cbbc
-set $inactive-text-color #536a68
+set $text-color		       #b2a26d
+set $inactive-text-color #619068
 set $urgent-text-color	 #eee8d5
 set $border-color	       #2b4d26
 set $inactive-border-color #5F877D
 set $indicator-color     #0e7388
-
 # window colors
 #			                  border              background         text                 indicator
 client.focused		      $border-color       $border-color     $text-color          $urgent-bg-color
