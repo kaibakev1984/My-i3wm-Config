@@ -16,7 +16,7 @@ set number
 set ruler
 "
 " " Color scheme I found that works best with PowerShell
-colorscheme darkblue
+colorscheme default
 
 " helpful if using 'set ruler' and 'colorscheme shine', makes lineNumbers grey
 " Same example from http://vim.wikia.com/wiki/Display_line_numbers
