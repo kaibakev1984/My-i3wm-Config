@@ -72,9 +72,13 @@ font-3 = Font Awesome 5 Free:pixelsize=12;2
 font-4 = Font Awesome 5 Free Solid:pixelsize=12;2
 font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
+;modules-left = bspwm i3
+;modules-center = xwindow 
+;modules-right = filesystem alsa memory cpu wlan eth battery temperature date
+
 modules-left = bspwm i3
 modules-center = xwindow 
-modules-right = filesystem alsa memory cpu wlan eth battery temperature date
+modules-right = alsa wlan eth filesystem memory cpu battery temperature date
 
 tray-position = none
 tray-padding = 2
@@ -244,12 +248,13 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp59s0
+;interface = wlp59s0
+interface = wlp7s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
-label-connected = %essid%
+format-connected-underline = ${colors.underline}
+label-connected =  %essid%
 
 format-disconnected = 
 ;format-disconnected = <label-disconnected>
@@ -266,12 +271,12 @@ ramp-signal-foreground = ${colors.foreground-alt}
 
 [module/eth]
 type = internal/network
-interface = enp0s31f6
+interface = enp5s0
 interval = 3.0
 
 format-connected-underline = ${colors.underline}
 format-connected-prefix = "  "
-format-connected-prefix-foreground = ${colors.foreground-alt}
+format-connected-prefix-foreground = ${root.foreground}
 label-connected = %local_ip%
 
 format-disconnected =
