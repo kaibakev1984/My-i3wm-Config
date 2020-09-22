@@ -309,3 +309,4 @@ reinician i3wm, y listo.
 ![x-wing scheme](/screenshots/x-wing_scheme.png)
 ![joker scheme](/screenshots/joker-scheme.png)
 ![synthwave scheme](/screenshots/synthwave-scheme.png)
+![rain scheme](/screenshots/rain-scheme.png)
