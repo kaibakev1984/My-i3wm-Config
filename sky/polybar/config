@@ -56,7 +56,7 @@ foreground = ${colors.foreground}
 line-size = 3
 line-color = #f00
 
-border-size = 2
+border-size = 0
 border-color = #00000000
 
 padding-left = 0
@@ -97,7 +97,9 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label =   %title:0:30:...%
+format-foreground = ${colors.focused}
+format-padding = 4
 
 [module/xkeyboard]
 type = internal/xkeyboard
@@ -128,7 +130,6 @@ label-mounted-underline = ${colors.underline}
 
 [module/bspwm]
 type = internal/bspwm
-
 label-focused = %index%
 label-focused-background = ${colors.background-alt}
 label-focused-underline= ${colors.primary}
@@ -249,7 +250,7 @@ interface = wlp7s0
 interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
-format-connected-underline = #9f78e1
+format-connected-underline = ${colors.underline}
 label-connected =  %signal%%
 
 format-disconnected = 
@@ -393,13 +394,13 @@ thermal-zone = 0
 warn-temperature = 60
 
 format = <ramp> <label>
-format-underline = #f50a4d
+format-underline = ${colors.underline}
 format-warn = <ramp> <label-warn>
-format-warn-underline = ${self.format-underline}
+format-warn-underline = ${colors.alert} 
 
 label = %temperature-c%
 label-warn = %temperature-c%
-label-warn-foreground = ${colors.secondary}
+label-warn-foreground = ${colors.alert}
 
 ramp-0 = 
 ramp-1 = 
