@@ -310,3 +310,4 @@ reinician i3wm, y listo.
 ![joker scheme](/screenshots/joker-scheme.png)
 ![synthwave scheme](/screenshots/synthwave-scheme.png)
 ![rain scheme](/screenshots/rain-scheme.png)
+![sky scheme](/screenshots/sky-scheme.png)
