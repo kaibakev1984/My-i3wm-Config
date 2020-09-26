@@ -311,3 +311,4 @@ reinician i3wm, y listo.
 ![synthwave scheme](/screenshots/synthwave-scheme.png)
 ![rain scheme](/screenshots/rain-scheme.png)
 ![sky scheme](/screenshots/sky-scheme.png)
+![punk-city scheme](/screenshots/punk-city-scheme.png)
