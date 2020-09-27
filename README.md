@@ -312,3 +312,4 @@ reinician i3wm, y listo.
 ![rain scheme](/screenshots/rain-scheme.png)
 ![sky scheme](/screenshots/sky-scheme.png)
 ![punk-city scheme](/screenshots/punk-city-scheme.png)
+![cyber-city scheme](/screenshots/cyber-city-scheme.png)
