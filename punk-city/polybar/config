@@ -45,7 +45,7 @@ focused = #c3b2c2
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 27
+height = 20
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -75,7 +75,7 @@ font-5 = Font Awesome 5 Brands:pixelsize=12;2
 
 modules-left = bspwm i3
 modules-center = xwindow
-modules-right = alsa wlan eth filesystem memory cpu battery temperature xkeyboard date
+modules-right = alsa wlan eth filesystem memory cpu temperature battery date
 ;modules-right = filesystem alsa xkeyboard memory cpu wlan eth battery temperature date powermenu
 
 tray-position = none
@@ -122,7 +122,7 @@ label-indicator-underline = ${colors.secondary}
 type = internal/fs
 interval = 25
 
-mount-0 = /
+mount-0 = /home
 
 label-mounted =  %free%
 label-unmounted = %mountpoint% not mounted
@@ -240,7 +240,7 @@ label = %percentage:2%%
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
+format-prefix = " "
 format-prefix-foreground = ${root.foreground}
 format-underline = ${colors.underline}
 label = %percentage_used%%
@@ -252,7 +252,9 @@ interval = 3.0
 
 format-connected = <ramp-signal> <label-connected>
 format-connected-underline = ${colors.underline}
-label-connected =  %signal%%
+label-connected =  %essid%
+;%ifname%
+;%signal%%
 
 format-disconnected = 
 ;format-disconnected = <label-disconnected>
@@ -358,35 +360,35 @@ bar-volume-empty-foreground = ${colors.foreground-alt}
 
 [module/battery]
 type = internal/battery
-battery = BAT0
+battery = BAT1
 adapter = AC
 full-at = 98
 
 format-charging = <animation-charging> <label-charging>
 format-charging-underline = ${colors.underline}
 
-format-discharging = <animation-discharging> <label-discharging>
+format-discharging = <ramp-capacity> <label-discharging>
 format-discharging-underline = ${self.format-charging-underline}
 
-format-full-prefix = " "
+format-full-prefix = " "
 format-full-prefix-foreground = ${colors.foreground-alt}
 format-full-underline = ${self.format-charging-underline}
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-foreground = ${colors.foreground-alt}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-foreground = ${colors.foreground}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-foreground = ${colors.foreground-alt}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-foreground = ${colors.focused}
 animation-charging-framerate = 750
 
-animation-discharging-0 = 
-animation-discharging-1 = 
-animation-discharging-2 = 
-animation-discharging-foreground = ${colors.foreground-alt}
+animation-discharging-0 = 
+animation-discharging-1 = 
+animation-discharging-2 = 
+animation-discharging-foreground = ${colors.foreground}
 animation-discharging-framerate = 750
 
 [module/temperature]
@@ -399,8 +401,8 @@ format-underline = ${colors.underline}
 format-warn = <ramp> <label-warn>
 format-warn-underline = ${colors.alert} 
 
-label = %temperature-c%
-label-warn = %temperature-c%
+label =  %temperature-c%
+label-warn =  %temperature-c%
 label-warn-foreground = ${colors.alert}
 
 ramp-0 = 
