@@ -164,6 +164,8 @@ Algunos enlaces útiles
 7. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
 8. [Font Awesome](https://fontawesome.com/cheatsheet) (Para elegir los íconos de i3blocks)
 9. [Ranger - Terminal file explorer](https://github.com/lilydjwg/colorizer)
+10. [Gtop](https://www.bleepingcomputer.com/forums/t/667825/how-to-install-gtop-on-ubuntu/)
+
 
 **SOLO PARA XFCE4**: Para los que dispongan de una distro Xubuntu, o con el entorno *xfce4* (en tengan instalado *xfce4-terminal*),
 podrán ver que el tema *Solarized Dark* tiene ciertos problemas. Para poder agregarle distintos temas, es
