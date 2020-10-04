@@ -329,3 +329,5 @@ reinician i3wm, y listo.
 ![lofi-rain scheme](/screenshots/lofi-rain-scheme.png)
 
 ![robocity scheme](/screenshots/robocity-scheme.png)
+
+![forest scheme](/screenshots/forest-scheme.png)
