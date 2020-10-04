@@ -163,8 +163,9 @@ Algunos enlaces útiles
 6. [Polybar](https://github.com/regolith-linux/regolith-desktop/wiki/HowTo:-Swap-out-i3bar-for-Polybar?fbclid=IwAR3QtWfotVnkvgwtbUYXKAi9mz7sSSTlZRTmkOnqf8-UwXbhp72Dj4Pe4TI)
 7. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
 8. [Font Awesome](https://fontawesome.com/cheatsheet) (Para elegir los íconos de i3blocks)
-9. [Ranger - Terminal file explorer](https://github.com/lilydjwg/colorizer)
+9. [Ranger - Terminal File Manager](https://wikimatze.de/ranger-a-terminal-browser-for-vim/)
 10. [Gtop](https://www.bleepingcomputer.com/forums/t/667825/how-to-install-gtop-on-ubuntu/)
+11. [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
 
 
 **SOLO PARA XFCE4**: Para los que dispongan de una distro Xubuntu, o con el entorno *xfce4* (en tengan instalado *xfce4-terminal*),
