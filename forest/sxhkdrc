@@ -7,10 +7,25 @@ super + Return
   st	
 
 # program launcher
-#super + @space
-#  rofi -show drun -theme night
 super + d 
   rofi -show drun -theme forest
+
+# 
+# Audio Controls
+#
+
+# Increase Volume
+XF86AudioRaiseVolume
+  amixer -q sset Master 5%+ unmute
+
+# Decrease Volume
+XF86AudioLowerVolume
+  amixer -q sset Master 5%- unmute
+
+# Mute Volume
+XF86AudioMute
+  amixer -q sset Master toggle
+
 
 #	Start ranger
 alt + p 

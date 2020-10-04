@@ -12,6 +12,22 @@ super + Return
 super + d 
   rofi -show drun -theme lofi-rain
 
+# 
+# Audio Controls
+#
+
+# Increase Volume
+XF86AudioRaiseVolume
+  amixer -q sset Master 5%+ unmute
+
+# Decrease Volume
+XF86AudioLowerVolume
+  amixer -q sset Master 5%- unmute
+
+# Mute Volume
+XF86AudioMute
+  amixer -q sset Master toggle
+
 #	Start ranger
 alt + p 
 	pcmanfm
