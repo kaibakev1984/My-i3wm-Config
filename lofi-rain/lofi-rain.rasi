@@ -1,100 +1,161 @@
-From 3e8f83d40c6fdd89653ef547aa16cffe1f3c1793 Mon Sep 17 00:00:00 2001
-From: aleks <aleks.stier@icloud.com>
-Date: Sun, 4 Aug 2019 13:23:10 +0200
-Subject: [PATCH] Apply nord-theme
+* {
+    active-background: #9B5C31;
+    active-foreground: @foreground;
+    normal-background: @background;
+    normal-foreground: @foreground;
+    urgent-background: #5E5B4D;
+    urgent-foreground: @foreground;
 
-*"Inspired by the beauty of the arctic, the colors reflect the cold, yet
-harmonious world of ice and the colorfulness of the Aurora Borealis."* - [Nord
-Theme](https://www.nordtheme.com/)
+    alternate-active-background: @background;
+    alternate-active-foreground: @foreground;
+    alternate-normal-background: @background;
+    alternate-normal-foreground: @foreground;
+    alternate-urgent-background: @background;
+    alternate-urgent-foreground: @foreground;
 
-There are also many [ports](https://www.nordtheme.com/ports) for other programs
-like [vim](https://www.nordtheme.com/ports/vim) and
-[tmux](https://www.nordtheme.com/ports/tmux) to make the overall appearance
-coherent. I would recommend to use it in combination with the arc-theme for gtk
-(fits perfectly).
+    selected-active-background: #5E5B4D;
+    selected-active-foreground: @foreground;
+    selected-normal-background: #9B5C31;
+    selected-normal-foreground: @foreground;
+    selected-urgent-background: #9C6A4D;
+    selected-urgent-foreground: @foreground;
 
-The default behaviour of st is to reverse the fore- and background colors of
-each selected cell. If you want that the selection-colors are not reveresed but
-instead have fixed fore- and background colors apply on top of this patch the
-[selectioncolors](../selectioncolors/)-patch. Then set the following settings
-in your config.h:
+    background-color: @background;
+    background: #0C2417;
+    foreground: #e7c7a4;
+    border-color: #C9A85B;
+    spacing: 2;
+}
 
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 257;
-unsigned int selectionfg = 257;
-unsigned int selectionbg = 0;
----
- config.def.h | 44 ++++++++++++++++++++++----------------------
- 1 file changed, 22 insertions(+), 22 deletions(-)
+#window {
+    background-color: @background;
+    border: 1;
+    padding: 2.5ch;
+}
 
-diff --git a/config.def.h b/config.def.h
-index 0e01717..fb504d4 100644
---- a/config.def.h
-+++ b/config.def.h
-@@ -85,30 +85,30 @@ unsigned int tabspaces = 8;
- /* Terminal colors (16 first used in escape sequence) */
- static const char *colorname[] = {
- 	/* 8 normal colors */
--	"black",
--	"red3",
--	"green3",
--	"yellow3",
--	"blue2",
--	"magenta3",
--	"cyan3",
--	"gray90",
-+	"#0C2417", /* black   */
-+	"#5E5B4D", /* red     */
-+	"#9B5C31", /* green   */
-+	"#9C6A4D", /* yellow  */
-+	"#D45146", /* blue    */
-+	"#658479", /* magenta */
-+	"#C9A85B", /* cyan    */
-+	"#e7c7a4", /* white   */
- 
- 	/* 8 bright colors */
--	"gray50",
--	"red",
--	"green",
--	"yellow",
--	"#5c5cff",
--	"magenta",
--	"cyan",
--	"white",
-+	"#0C2417", /* black   */
-+	"#5E5B4D", /* red     */
-+	"#9B5C31", /* green   */
-+	"#9C6A4D", /* yellow  */
-+	"#e7c7a4", /* blue    */
-+	"#658479", /* magenta */
-+	"#C9A85B", /* cyan    */
-+	"#e7c7a4", /* white   */
- 
- 	[255] = 0,
- 
- 	/* more colors can be added after 255 to use with DefaultXX */
--	"#cccccc",
--	"#555555",
-+	"#0C2417", /* background */
-+	"#e7c7a4", /* foreground */
- };
- 
- 
-@@ -116,10 +116,10 @@ static const char *colorname[] = {
-  * Default colors (colorname index)
-  * foreground, background, cursor, reverse cursor
-  */
--unsigned int defaultfg = 7;
--unsigned int defaultbg = 0;
--static unsigned int defaultcs = 256;
--static unsigned int defaultrcs = 257;
-+unsigned int defaultfg = 257;
-+unsigned int defaultbg = 256;
-+static unsigned int defaultcs = 257;
-+static unsigned int defaultrcs = 256;
- 
- /*
-  * Default shape of cursor
--- 
-2.22.0
+#mainbox {
+    border: 0;
+    padding: 0;
+}
 
+#message {
+    border: 2px 0px 0px;
+    border-color: @border-color;
+    padding: 1px;
+}
+
+#textbox {
+    text-color: @foreground;
+}
+
+#inputbar {
+    children:   [ prompt,textbox-prompt-colon,entry,case-indicator ];
+}
+
+#textbox-prompt-colon {
+    expand: false;
+    str: ":";
+    margin: 0px 0.3em 0em 0em;
+    text-color: @normal-foreground;
+}
+
+#listview {
+    fixed-height: 0;
+    border: 2px 0px 0px;
+    border-color: @border-color;
+    spacing: 2px;
+    scrollbar: true;
+    padding: 2px 0px 0px;
+}
+
+#element {
+    border: 0;
+    padding: 1px;
+}
+
+#element.normal.normal {
+    background-color: @normal-background;
+    text-color: @normal-foreground;
+}
+
+#element.normal.urgent {
+    background-color: @urgent-background;
+    text-color: @urgent-foreground;
+}
+
+#element.normal.active {
+    background-color: @active-background;
+    text-color: @active-foreground;
+}
+
+#element.selected.normal {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+}
+
+#element.selected.urgent {
+    background-color: @selected-urgent-background;
+    text-color: @selected-urgent-foreground;
+}
+
+#element.selected.active {
+    background-color: @selected-active-background;
+    text-color: @selected-active-foreground;
+}
+
+#element.alternate.normal {
+    background-color: @alternate-normal-background;
+    text-color: @alternate-normal-foreground;
+}
+
+#element.alternate.urgent {
+    background-color: @alternate-urgent-background;
+    text-color: @alternate-urgent-foreground;
+}
+
+#element.alternate.active {
+    background-color: @alternate-active-background;
+    text-color: @alternate-active-foreground;
+}
+
+#scrollbar {
+    width: 4px;
+    border: 0;
+    handle-width: 8px;
+    padding: 0;
+}
+
+#sidebar {
+    border: 2px 0px 0px;
+    border-color: @border-color;
+}
+
+#button {
+    text-color: @normal-foreground;
+}
+
+#button.selected {
+    background-color: @selected-normal-background;
+    text-color: @selected-normal-foreground;
+}
+
+#inputbar {
+    spacing: 0;
+    text-color: @normal-foreground;
+    padding: 1px;
+}
+
+#case-indicator {
+    spacing: 0;
+    text-color: @normal-foreground;
+}
+
+#entry {
+    spacing: 0;
+    text-color: @normal-foreground;
+}
+
+#prompt {
+    spacing: 0;
+    text-color: @normal-foreground;
+}
