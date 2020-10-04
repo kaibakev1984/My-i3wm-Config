@@ -506,5 +506,5 @@ content =  Zombie
 content-foreground  = ${colors.foreground}
 #click-left = ulauncher
 #click-left = "jgmenu_run >/dev/null 2>&1 &"
-click-left = rofi -show run -theme robocity
-click-right = rofi -show window -theme robocity
+click-left = rofi -show run -theme forest
+click-right = rofi -show window -theme forest

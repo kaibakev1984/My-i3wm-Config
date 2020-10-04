@@ -10,7 +10,7 @@ super + Return
 #super + @space
 #  rofi -show drun -theme night
 super + d 
-  rofi -show drun -theme robocity
+  rofi -show drun -theme forest
 
 #	Start ranger
 alt + p 
