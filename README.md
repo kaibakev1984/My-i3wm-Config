@@ -309,12 +309,23 @@ reinician i3wm, y listo.
 ![cybergirl scheme](/screenshots/cybergirl_scheme.png)
 
 ![solarized scheme](/screenshots/solarized_scheme.png)
+
 ![x-wing scheme](/screenshots/x-wing_scheme.png)
+
 ![joker scheme](/screenshots/joker-scheme.png)
+
 ![synthwave scheme](/screenshots/synthwave-scheme.png)
+
 ![rain scheme](/screenshots/rain-scheme.png)
+
 ![sky scheme](/screenshots/sky-scheme.png)
+
 ![punk-city scheme](/screenshots/punk-city-scheme.png)
+
 ![cyber-city scheme](/screenshots/cyber-city-scheme.png)
+
 ![night scheme](/screenshots/night-scheme.png)
+
 ![lofi-rain scheme](/screenshots/lofi-rain-scheme.png)
+
+![robocity scheme](/screenshots/robocity-scheme.png)
