@@ -167,32 +167,6 @@ Algunos enlaces útiles
 10. [Gtop](https://www.bleepingcomputer.com/forums/t/667825/how-to-install-gtop-on-ubuntu/)
 11. [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
 
-
-**SOLO PARA XFCE4**: Para los que dispongan de una distro Xubuntu, o con el entorno *xfce4* (en tengan instalado *xfce4-terminal*),
-podrán ver que el tema *Solarized Dark* tiene ciertos problemas. Para poder agregarle distintos temas, es
-necesario hacer los siguientes cambios:
-
-1. Primero clonamos el repositorio con los temas para *xfce4-terminal* con la siguiente línea:
-	
-	
-		git clone https://github.com/afq984/base16-xfce4-terminal.git
-	
-2. Una vez clonado, nos dirigimos a la siguiente ruta, y creamos las carpetas *terminal/colorschemes*:
-	
-	
-		cd ~/.local/share/xfce4
-		mkdir -p terminal/colorschemes
-			
-3. Después de creada las carpetas, nos dirigimos a la ubicación del repositorio descargado, y escribimos lo siguiente:
-
-	
-		cp -r colorschemes ~/.local/share/xfce4/terminal
-	
-
-Y listo, ya tendremos nuestros temas para esta terminal.
-
-(Aclaración: Puede llegar a ser pesado este cambio, así que cuidado)	
-
 ## Opcional: Instalación de Powerline en i3
 Para instalar Powerline, desde Debian o Ubuntu, escribimos lo siguiente en la terminal:
 	
