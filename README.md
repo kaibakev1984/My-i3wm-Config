@@ -332,4 +332,4 @@ reinician i3wm, y listo.
 
 ![forest scheme](/screenshots/forest-scheme.png)
 
-![autumn scheme](/screenshots/autumm-scheme.png)
+![autumn scheme](/screenshots/autumn-scheme.png)
