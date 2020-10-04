@@ -317,3 +317,4 @@ reinician i3wm, y listo.
 ![punk-city scheme](/screenshots/punk-city-scheme.png)
 ![cyber-city scheme](/screenshots/cyber-city-scheme.png)
 ![night scheme](/screenshots/night-scheme.png)
+![lofi-rain scheme](/screenshots/lofi-rain-scheme.png)
