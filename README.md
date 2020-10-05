@@ -310,3 +310,5 @@ reinician i3wm, y listo.
 ![autumn scheme](/screenshots/autumn-scheme.png)
 
 ![day-city scheme](/screenshots/day-city-scheme.png)
+
+![raining scheme](/screenshots/raining-scheme.png)
