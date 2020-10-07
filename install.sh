@@ -13,4 +13,5 @@ sudo apt-get -y install build-essential valgrind manpages-dev gdb polybar feh bs
 sudo pip3 install --upgrade youtube-dl
 cp -r .fonts ~/
 cp .vimrc ~/
-
+mkdir ~/.bspwm
+mkdir ~/.sxhkd
