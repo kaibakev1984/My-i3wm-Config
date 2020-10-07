@@ -9,7 +9,7 @@
 #!/bin/bash
 sudo apt-get -y update
 sudo apt-get -y upgrade
-sudo apt-get -y install build-essential valgrind manpages-dev gdb polybar feh bspwm sxhkd libx11-dev libxft-dev vim compton rofi python3-pip neofetch cmatrix htop  
+sudo apt-get -y install build-essential valgrind manpages-dev gdb polybar feh bspwm sxhkd libx11-dev libxft-dev vim compton rofi python3-pip neofetch cmatrix htop pcmanfm
 sudo pip3 install --upgrade youtube-dl
 cp -r .fonts ~/
 cp .vimrc ~/
