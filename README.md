@@ -166,6 +166,7 @@ Algunos enlaces útiles
 9. [Ranger - Terminal File Manager](https://wikimatze.de/ranger-a-terminal-browser-for-vim/)
 10. [Gtop](https://www.bleepingcomputer.com/forums/t/667825/how-to-install-gtop-on-ubuntu/)
 11. [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
+12. [st - Suckless Terminal](https://st.suckless.org/)
 
 ## Opcional: Instalación de Powerline en i3
 Para instalar Powerline, desde Debian o Ubuntu, escribimos lo siguiente en la terminal:
