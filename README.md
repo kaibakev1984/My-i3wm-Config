@@ -319,3 +319,5 @@ reinician i3wm, y listo.
 ![girl-glasses scheme](/screenshots/girl-glasses-scheme.png)
 
 ![rem scheme](/screenshots/rem-scheme.png)
+
+![books scheme](/screenshots/books-scheme.png)
