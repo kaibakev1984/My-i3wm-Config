@@ -44,7 +44,7 @@ focused = #D8A2A2
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 24
+height = 27
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -493,7 +493,7 @@ click-right = st
 
 [module/code]
 type = custom/text
-content =  
+content =  
 content-foreground = ${colors.foreground}
 ;content-foreground = ${colors.background}
 ;content-background = ${colors.foreground}
@@ -502,7 +502,7 @@ click-right = geany &
 
 [module/app]
 type = custom/text
-content =  XUnix
+content =  
 content-foreground  = ${colors.foreground}
-click-left = rofi -show run -theme rem
-click-right = rofi -show window -theme rem
+click-left = rofi -show run -theme books
+click-right = rofi -show window -theme books
