@@ -323,3 +323,5 @@ reinician i3wm, y listo.
 ![books scheme](/screenshots/books-scheme.png)
 
 ![old-computer scheme](/screenshots/old-computer-scheme.png)
+
+![keyboard scheme](/screenshots/keyboard-scheme.png)
