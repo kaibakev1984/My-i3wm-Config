@@ -321,3 +321,5 @@ reinician i3wm, y listo.
 ![rem scheme](/screenshots/rem-scheme.png)
 
 ![books scheme](/screenshots/books-scheme.png)
+
+![old-computer scheme](/screenshots/old-computer.png)
