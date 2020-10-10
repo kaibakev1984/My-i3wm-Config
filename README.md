@@ -315,3 +315,5 @@ reinician i3wm, y listo.
 ![raining scheme](/screenshots/raining-scheme.png)
 
 ![sleepy-hollow scheme](/screenshots/sleepy-hollow.png)
+
+![girl-glasses scheme](/screenshots/girl-glasses-scheme.png)
