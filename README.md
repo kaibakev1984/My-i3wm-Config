@@ -317,3 +317,5 @@ reinician i3wm, y listo.
 ![sleepy-hollow scheme](/screenshots/sleepy-hollow.png)
 
 ![girl-glasses scheme](/screenshots/girl-glasses-scheme.png)
+
+![rem scheme](/screenshots/rem-scheme.png)
