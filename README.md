@@ -325,3 +325,5 @@ reinician i3wm, y listo.
 ![old-computer scheme](/screenshots/old-computer-scheme.png)
 
 ![keyboard scheme](/screenshots/keyboard-scheme.png)
+
+![retro-cat scheme](/screenshots/retro-cat-scheme.png)
