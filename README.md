@@ -331,3 +331,5 @@ reinician i3wm, y listo.
 ![flower scheme](/screenshots/flower-scheme.png)
 
 ![sunset scheme](/screenshots/sunset-scheme.png)
+
+![umbrellas scheme](/screenshots/umbrellas-scheme.png)
