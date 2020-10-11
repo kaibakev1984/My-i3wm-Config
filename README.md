@@ -329,3 +329,5 @@ reinician i3wm, y listo.
 ![retro-cat scheme](/screenshots/retro-cat-scheme.png)
 
 ![flower scheme](/screenshots/flower-scheme.png)
+
+![sunset scheme](/screenshots/sunset-scheme.png)
