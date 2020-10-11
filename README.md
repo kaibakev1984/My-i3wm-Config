@@ -333,3 +333,5 @@ reinician i3wm, y listo.
 ![sunset scheme](/screenshots/sunset-scheme.png)
 
 ![umbrellas scheme](/screenshots/umbrellas-scheme.png)
+
+![aesthetic-sea scheme](/screenshots/aesthetic-sea-scheme.png)
