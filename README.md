@@ -327,3 +327,5 @@ reinician i3wm, y listo.
 ![keyboard scheme](/screenshots/keyboard-scheme.png)
 
 ![retro-cat scheme](/screenshots/retro-cat-scheme.png)
+
+![flower scheme](/screenshots/flower-scheme.png)
