@@ -24,13 +24,13 @@
     background: #0C2417;
     foreground: #e7c7a4;
     border-color: #C9A85B;
-    spacing: 2;
+    spacing: 1;
 }
 
 #window {
     background-color: @background;
-    border: 1;
-    padding: 2.5ch;
+    border: 0;
+    padding: 1.5ch;
 }
 
 #mainbox {
