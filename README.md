@@ -339,3 +339,5 @@ reinician i3wm, y listo.
 ![lofi-fog scheme](/screenshots/lofi-fog-scheme.png)
 
 ![traffic-lights scheme](/screenshots/traffic-lights-scheme.png)
+
+![rain-at-night scheme](/screenshots/rain-at-night-scheme.png)
