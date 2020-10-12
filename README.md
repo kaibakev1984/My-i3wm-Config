@@ -335,3 +335,5 @@ reinician i3wm, y listo.
 ![umbrellas scheme](/screenshots/umbrellas-scheme.png)
 
 ![aesthetic-sea scheme](/screenshots/aesthetic-sea-scheme.png)
+
+![lofi-fog scheme](/screenshots/lofi-fog-scheme.png)
