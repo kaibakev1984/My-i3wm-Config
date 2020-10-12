@@ -341,3 +341,5 @@ reinician i3wm, y listo.
 ![traffic-lights scheme](/screenshots/traffic-lights-scheme.png)
 
 ![rain-at-night scheme](/screenshots/rain-at-night-scheme.png)
+
+![rose scheme](/screenshots/rose-scheme.png)
