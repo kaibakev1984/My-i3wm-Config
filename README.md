@@ -343,3 +343,5 @@ reinician i3wm, y listo.
 ![rain-at-night scheme](/screenshots/rain-at-night-scheme.png)
 
 ![rose scheme](/screenshots/rose-scheme.png)
+
+![office scheme](/screenshots/office-scheme.png)
