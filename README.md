@@ -345,3 +345,5 @@ reinician i3wm, y listo.
 ![rose scheme](/screenshots/rose-scheme.png)
 
 ![office scheme](/screenshots/office-scheme.png)
+
+![powerlines scheme](/screenshots/powerlines-scheme.png)
