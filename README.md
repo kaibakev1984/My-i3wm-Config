@@ -347,3 +347,5 @@ reinician i3wm, y listo.
 ![office scheme](/screenshots/office-scheme.png)
 
 ![powerlines scheme](/screenshots/powerlines-scheme.png)
+
+![john-wick scheme](/screenshots/john-wick-scheme.png)
