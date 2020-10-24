@@ -1,6 +1,6 @@
-# My-i3wm-Config
+# Lorblak-Dotfiles
 
-Backup para no tener que estar reinstalando todo y buscarlo.
+Con gusto, presento mis dotfiles, para todos aquellos que vieron mis capturas en `Linux Latinoamérica` y `XUnix`. La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables de distribuciones Debian y derivados.
 
 Requisitos
 ==========
@@ -10,63 +10,42 @@ Algunas de las aplicaciones listadas se deberán instalar a mano:
 3. *i3blocks* (otro status menu)
 4. *rofi* (buscador de aplicaciones)
 5. *i3lock-fancy* (Para que se vea lock "cool")
-6. Chromium (opcional)
-
-**NOTA**: Varias de las aplicaciones, pueden ser o
-no necesariamente esenciales. Las primeras 5 son
-las que considero esenciales para disfrutar de una 
-mejor experiencia con **i3wm**.
-
-INSTALACIÓN
-===========
-Para instalar *i3wm*, ingresar lo siguiente por terminal:
-	
-	  sudo apt-get install i3
-	
-
-Para instalar *i3blocks*, ingresar por terminal lo siguiente:
-
-	
-	  sudo apt-get install i3blocks
-		
 
 **ATENCIÓN**: la configuración de i3 la vamos a crear en el /home del usuario.
 		La carpeta debe crearse como .i3, y debemos importar las configuraciones
 		en dicha carpeta.
 
-Instalación opcional
-====================
-Básico para desarrolladores de C "Fiubenses":
+Precondiciones
+==============
+Deben tener instalado lo siguiente:
+## Paquetes generales
 	
-	
-	   sudo apt install build-essential valgrind manpages-dev gdb
+	   sudo apt install build-essential valgrind manpages-dev gdb feh compton rofi i3lock-fancy cmatrix htop pcmanfm vim neofetch
 
-	
+## Para i3wm
 
-Instalando i3-gaps
-==================
+Para una instalación de *i3wm*, solo deben ingresar lo siguiente:
+
+		sudo apt-get install i3wm
+
+
+
+## Opcional: i3-gaps
 Para instalar i3-gaps, se tienen que cumplir las siguientes dependencias:
 
-
-  ```
-    sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libsnack2-dev libxcb-shape0-dev autoconf libev-dev build-essential git
-  ```
+		sudo apt install -y libxcb1-dev libxcb-keysyms1-dev libpango1.0-dev libxcb-util0-dev libxcb-icccm4-dev libyajl-dev libstartup-notification0-dev libxcb-randr0-dev libev-dev libxcb-cursor-dev libxcb-xinerama0-dev libxcb-xkb-dev libxkbcommon-dev libxkbcommon-x11-dev autoconf libxcb-xrm0 libxcb-xrm-dev automake libsnack2-dev libxcb-shape0-dev autoconf libev-dev build-essential git
 
 Luego, deberán reiniciar su equipo.
 Después de reiniciar el equipo, tienen que copiar el repositorio de [i3-gaps Airblender](git clone https://www.github.com/Airblader/i3 i3-gaps)
 
 Una vez clonado el repositorio, hacemos lo siguiente:
 
-
-```
-	cd i3-gaps
-	autoreconf --force --install
-	rm -rf build/
-	mkdir -p build && cd build/
-	../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
-	make && sudo make install
-
-```
+		cd i3-gaps
+		autoreconf --force --install
+		rm -rf build/
+		mkdir -p build && cd build/
+		../configure --prefix=/usr --sysconfdir=/etc --disable-sanitizers
+		make && sudo make install
 
 Después de concluida la instalación, deberán agregar la configuración, al
 archivo de configuración de *i3*. ¿Cómo lo hacemos?
@@ -140,10 +119,78 @@ mode "$mode_gaps_outer" {
 
 Una vez terminado, guardamos y reiniciamos *i3*. (con mod+shit+r)
 
+
+## Para bspwm
+Las configuraciones solo trabajan con `bspwm`, `sxhkd` y `polybar`
+
+		sudo apt-get install bspwm sxhkd
+
+**NOTA**: Para los que usen Debian 10 o derivados, deben tener en cuenta que la instalación les va a traer la versión `0.9.5`, el cuál viene con un bug que se resolvió en versiones posteriores. Por eso, antes de realizar la instalación de `bspwm`, asegúrense de tener habilitado el siguiente repositorio en su archivo `/etc/apt/sources.list`
+
+		 deb http://ftp.de.debian.org/debian sid main 
+
+Para hacer la instalación sin tener que agregar Sid, solamente ingresar en terminal `sudo apt-get update && sudo apt-get install bspwm`, y después borrar del repositorio la línea que agregaron en `sources.list`
+
+##	Eligiendo una barra
+La barra que se deberá usar dependerá si está disponible para el dotfile que se elija. La mayor parte del trabajo fue pensado para i3wm. En caso de bspwm, por el momento, se trabajará con polybar.
+
+###	i3blocks
+Para instalar i3blocks, y poder configurarlo:
+
+		sudo apt-get install i3blocks
+		mkdir ~/.i3 && cp /etc/i3blocks.conf ~/.i3
+
+Se tendrá una copia en el directorio `~/.i3`, desde el cuál, podrán usarlo con i3, al agregar lo siguiente en `~/.config/i3/config`:
+
+		bar {
+			status_command i3blocks -c ~/.i3/i3blocks.conf
+		}
+
+### Py3status
+Como una alternativa a i3blocks, tenemos a py3status, cuyas instrucciones para la instalación, están [aquí](https://py3status.readthedocs.io/en/latest/intro.html#installation). Lo único que necesitamos es cambiar dentro de nuestro archivo de configuración de i3 de la siguiente forma:
+
+    	bar {
+        	status_command py3status -c ~/.i3/i3status/config
+    	    font pango:InconsolataLGC Nerd Font Bold 9
+	    }
+
+**Cuidado**: en mi caso, tengo guardado el archivo de configuración para py3status dentro de la ruta especificada. Asegúrense de no sobre escribir el archivo de configuración de i3, si es que tienen guardado dicho archivo en esa carpeta. En todo caso, pueden cambiar el nombre del mismo para asegurarse de que no se sobre escriban.
+
+### Powerline
+Para la instalación de Powerline, ingresar lo siguiente en la terminal:
+	
+		sudo apt-get install powerline fonts-powerline
+	
+Una vez instalado, cambiamos la barra en nuestro archivo `~/.config/i3/config`:
+
+		bar {
+ 			status_command python3.7 /usr/share/powerline/bindings/i3/powerline-i3.py  
+			}
+
+**NOTA 1:** Instalar i3ipc en caso de tener conflictos, ingresado por terminal `pip3 install i3ipc`.
+
+**NOTA 2:** No olviden copiar los archivos de configuración, creándose una carpeta con la siguiente ruta: *~/.config/powerline/*, y copiando todo el contenido dentro en */usr/share/powerline/config_files*. Algunos archivos van a necesitar que los cambies para agregar algunos *segmentos* (por ejemplo el de Solarized).
+
+- [Powerline: configurándolo para bash y gnu/linux (of course)](http://www.tomatesasesinos.com/2019/11/15/powerline-configurandolo-para-bash-y-gnu-linux-of-course/)
+- [Powerline: añade poder a la terminal](https://www.ochobitshacenunbyte.com/2019/09/13/powerline-anade-poder-a-la-terminal/)
+- [Algunos segmentos de referencia](https://powerline.readthedocs.io/en/master/configuration/segments/common.html#module-powerline.segments.common.wthr)
+
+### Polybar
+Para la instalación de polybar, asegurarse de tener incluido el siguiente backport en `/etc/apt/sources.list`:
+
+		deb http://deb.debian.org/debian buster-backports main contrib non-free
+
+ Ingresar por terminal lo siguiente:
+
+		sudo apt-get install polybar
+
+
+- [Polybar](https://github.com/polybar/polybar)
+
 Algunos enlaces útiles
 ======================
 
-1. [Repositorio de Rofi](https://github.com/davatorium/rofi)
+* [Repositorio de Rofi](https://github.com/davatorium/rofi)
 	* **NOTA**: Se puede instalar mediante:
 		
 				sudo apt-get install rofi
@@ -156,48 +203,25 @@ Algunos enlaces útiles
 			
 				/usr/share/rofi/themes
 							
-2. [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
-3. [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
-4. [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
-5. [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
-6. [Polybar](https://github.com/regolith-linux/regolith-desktop/wiki/HowTo:-Swap-out-i3bar-for-Polybar?fbclid=IwAR3QtWfotVnkvgwtbUYXKAi9mz7sSSTlZRTmkOnqf8-UwXbhp72Dj4Pe4TI)
-7. [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
-8. [Font Awesome](https://fontawesome.com/cheatsheet) (Para elegir los íconos de i3blocks)
-9. [Ranger - Terminal File Manager](https://wikimatze.de/ranger-a-terminal-browser-for-vim/)
-10. [Gtop](https://www.bleepingcomputer.com/forums/t/667825/how-to-install-gtop-on-ubuntu/)
-11. [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
-12. [st - Suckless Terminal](https://st.suckless.org/)
-
-## Opcional: Instalación de Powerline en i3
-Para instalar Powerline, desde Debian o Ubuntu, escribimos lo siguiente en la terminal:
-	
-		sudo apt-get install powerline fonts-powerline
-	
-
-Si es la primera vez que lo instalás, vas a necesitar agregar los siguiente, para poder correrlo:
-
-	
-		pip3 install i3ipc
-	
-Para agregarlo en lugar de *i3status*, en el archivo de configuración de *i3* escribimos lo siguiente:
-
-
-		bar {
- 			status_command python3.7 /usr/share/powerline/bindings/i3/powerline-i3.py  
-			}
-
-**NOTA:** No olviden copiar los archivos de configuración, creándose una carpeta con la siguiente ruta: *~/.config/powerline/*, y copiando todo el contenido dentro en */usr/share/powerline/config_files*. Algunos archivos van a necesitar que los cambies para agregar algunos *segmentos* (por ejemplo el de Solarized).
-
-- [Powerline: configurándolo para bash y gnu/linux (of course)](http://www.tomatesasesinos.com/2019/11/15/powerline-configurandolo-para-bash-y-gnu-linux-of-course/)
-- [Powerline: añade poder a la terminal](https://www.ochobitshacenunbyte.com/2019/09/13/powerline-anade-poder-a-la-terminal/)
-- [Algunos segmentos de referencia](https://powerline.readthedocs.io/en/master/configuration/segments/common.html#module-powerline.segments.common.wthr)
+* [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
+* [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
+* [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
+* [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
+* [Polybar](https://github.com/regolith-linux/regolith-desktop/wiki/HowTo:-Swap-out-i3bar-for-Polybar?fbclid=IwAR3QtWfotVnkvgwtbUYXKAi9mz7sSSTlZRTmkOnqf8-UwXbhp72Dj4Pe4TI)
+* [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
+* [Font Awesome](https://fontawesome.com/cheatsheet)
+* [Ranger - Terminal File Manager](https://wikimatze.de/ranger-a-terminal-browser-for-vim/)
+* [Gtop](https://www.bleepingcomputer.com/forums/t/667825/how-to-install-gtop-on-ubuntu/)
+* [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
+* [st - Suckless Terminal](https://st.suckless.org/)
+* [pfetch](https://github.com/dylanaraps/pfetch)
 
 ##	Fuentes
-Tenemos algunas fuentes básicas para usar los íconos de [Font Awesome 4.7](https://fontawesome.com/cheatsheet). Solamente necesitamos copiar la carpeta *.fonts* para instalarlo haciendo lo siguiente:
+Se tienen algunas fuentes básicas dentro del repositorio. Para su instalación, abrir la terminal en el directorio del repositorio e ingresar lo siguiente por terminal:
 
-	
 		cp -r .fonts ~/
-	
+
+Se puede revisar el catálogo con los íconos para estas fuentes en [Font Awesome 4.7](https://fontawesome.com/cheatsheet).
 
 ##	Fuentes para Powerline
 En caso de instalar **Powerline**, vamos a tener que instalar el siguiente paquete de fuentes compatibles, haciendo lo siguiente:
@@ -220,9 +244,8 @@ y ya tendrás instaladas las fuentes. Para que aparezcan las fuentes, en el arch
 	
 Más información: [powerline/fonts](https://github.com/powerline/fonts)
 
-**Resolviendo dependencias para st (Suckless Terminal)**
-En caso de tener:
-
+##	ST (Suckless Terminal) con dependencias incompletas
+Es posible recibir los siguientes mensajes durante la instalación de st:
 	
 		x.c:11:10: fatal error: X11/Xatom.h: No existe el fichero o el directorio
 		#include <X11/Xatom.h>
@@ -230,39 +253,15 @@ En caso de tener:
 		compilation terminated.
 		make: *** [Makefile:22: x.o] Error 1
 	
-	
-ejectuen lo siguiente en la terminal para resolver la dependencia:
-
-	
-		sudo apt install libx11-dev
-
-
-
-En caso de tener:
-
-
-		c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.8.2\" -D_XOPEN_SOURCE=600  -O -c st.c
-		/bin/sh: 1: pkg-config: not found
-		/bin/sh: 1: pkg-config: not found
-		c99 -I/usr/X11R6/include  `pkg-config --cflags fontconfig`  `pkg-config --cflags freetype2` -DVERSION=\"0.8.2\" -D_XOPEN_SOURCE=600  -O -c x.c
-		/bin/sh: 1: pkg-config: not found
-		/bin/sh: 1: pkg-config: not found
 		x.c:15:10: fatal error: X11/Xft/Xft.h: No existe el fichero o el directorio
 		#include <X11/Xft/Xft.h>
 				 ^~~~~~~~~~~~~~~
 		compilation terminated.
 		make: *** [Makefile:22: x.o] Error 1
-	
-escriban lo siguiente para resolverlo:
-	
-		sudo apt install libxft-dev
-	
-##	Para hacer transparente la barra de estado (i3status) con Compton
-Simplemente añaden lo siguiente en el archivo de configuración de i3:
 
-		exec compton --opacity-rule '60:window_type = "dock" && class_g = "i3bar"'
+Para ambos casos, ejecutar lo siguiente en terminal:
 
-reinician i3wm, y listo.
+		sudo apt-get install libx11-dev libxft-dev
 
 # Screenshots
 ![astroids scheme](/screenshots/astroidsV2.jpg)
