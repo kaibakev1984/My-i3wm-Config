@@ -350,3 +350,5 @@ Para ambos casos, ejecutar lo siguiente en terminal:
 ![john-wick scheme](/screenshots/john-wick-scheme.png)
 
 ![sad scheme](/screenshots/sad-scheme.png)
+
+![castle scheme](/screenshots/castle-scheme.png)
