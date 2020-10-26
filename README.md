@@ -215,7 +215,7 @@ Algunos enlaces útiles
 * [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
 * [st - Suckless Terminal](https://st.suckless.org/)
 * [pfetch](https://github.com/dylanaraps/pfetch)
-
+* [ZSH](https://linoxide.com/tools/install-zsh-on-linux/)
 ##	Fuentes
 Se tienen algunas fuentes básicas dentro del repositorio. Para su instalación, abrir la terminal en el directorio del repositorio e ingresar lo siguiente por terminal:
 
