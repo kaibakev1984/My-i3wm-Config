@@ -352,3 +352,5 @@ Para ambos casos, ejecutar lo siguiente en terminal:
 ![sad scheme](/screenshots/sad-scheme.png)
 
 ![castle scheme](/screenshots/castle-scheme.png)
+
+![metropolis scheme](/screenshots/metropolis-scheme.png)
