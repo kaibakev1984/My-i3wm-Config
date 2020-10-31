@@ -221,7 +221,7 @@ Se tienen algunas fuentes básicas dentro del repositorio. Para su instalación,
 
 		cp -r .fonts ~/
 
-Se puede revisar el catálogo con los íconos para estas fuentes en [Font Awesome 4.7](https://fontawesome.com/cheatsheet).
+Se puede revisar el catálogo con los íconos para estas fuentes en [Font Awesome](https://fontawesome.com/cheatsheet).
 
 ##	Fuentes para Powerline
 En caso de instalar **Powerline**, vamos a tener que instalar el siguiente paquete de fuentes compatibles, haciendo lo siguiente:
@@ -262,6 +262,13 @@ Es posible recibir los siguientes mensajes durante la instalación de st:
 Para ambos casos, ejecutar lo siguiente en terminal:
 
 		sudo apt-get install libx11-dev libxft-dev
+
+##	Neofetch con imagen
+Ingresar por terminal lo siguiente:
+
+		neofetch --w3m --loop <path-image>
+
+**NOTA**: Se debe tener instalado `w3m`.
 
 # Screenshots
 ![astroids scheme](/screenshots/astroidsV2.jpg)
