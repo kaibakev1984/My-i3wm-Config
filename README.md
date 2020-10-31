@@ -290,7 +290,7 @@ Ingresar por terminal lo siguiente:
 
 ![cybergirl scheme](/screenshots/cybergirl_scheme.png)
 
-![solarized scheme](/screenshots/solarized_scheme.png)
+![solarized scheme](/screenshots/solarized-scheme.png)
 
 ![x-wing scheme](/screenshots/x-wing_scheme.png)
 
