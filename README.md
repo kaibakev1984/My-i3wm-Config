@@ -273,7 +273,7 @@ Ingresar por terminal lo siguiente:
 # Screenshots
 ![astroids scheme](/screenshots/astroidsV2.jpg)
 
-![dark_emo scheme](/screenshots/dark_emo_scheme.jpg)
+![darkemo scheme](/screenshots/darkemo-scheme.jpg)
 
 ![cute scheme](/screenshots/cute_scheme.png)
 
