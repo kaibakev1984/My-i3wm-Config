@@ -354,3 +354,5 @@ Para ambos casos, ejecutar lo siguiente en terminal:
 ![castle scheme](/screenshots/castle-scheme.png)
 
 ![metropolis scheme](/screenshots/metropolis-scheme.png)
+
+![futurist scheme](/screenshots/futurist-scheme.png)

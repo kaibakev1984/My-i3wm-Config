@@ -30,21 +30,21 @@
 
 [colors]
 #background = ${xrdb:color0:#222}
-background = #0B0C14
-background-alt = #2E5B98
+background = #030C15
+background-alt = #6DA38B
 ;foreground = ${xrdb:color7:#222}
-foreground = #6c8ba1
-foreground-alt = #6c8ba1
-primary = #CFB6C7
-secondary = #96AAD2
-alert = #A494AC
-underline = #96AAD2
-focused = #f0cdec
+foreground = #388575
+foreground-alt = #388575
+primary = #ADA56A
+secondary = #879085
+alert = #946A44
+underline = #879085
+focused = #ADA56A
 
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 100%
-height = 24
+height = 20
 ;offset-x = 1%
 ;offset-y = 1%
 radius = 0.0
@@ -460,8 +460,8 @@ screenchange-reload = true
 ;pseudo-transparency = false
 
 [global/wm]
-margin-top = 0
-margin-bottom = 0
+margin-top = 5
+margin-bottom = 5
 
 ; vim:ft=dosini
 
@@ -504,5 +504,5 @@ click-right = geany &
 type = custom/text
 content =  XUnix
 content-foreground  = ${colors.foreground}
-click-left = rofi -show run -theme metropolis
-click-right = rofi -show window -theme metropolis
+click-left = rofi -show run -theme futurist
+click-right = rofi -show window -theme futurist
