@@ -1,8 +1,0 @@
-"#f4e5bc",  /* 14: brcyan   */  Lo que està en negrita, en la terminal, el nombre de la màquina (zombie) aparece en negrita 
-"#fa339c",  /*  9: brred    */  Lo que se marca en color en el neofetch
-"#070e23",  /*  8: brblack  */  Vendrìa a ser lo que està en el fondo de pantalla
-"#fab476",  /* 10: brgreen  */  Lo que aparece en ~/Escritorio/st-transparency
-"#fefff1",  /* 12: brblue   */  Las letras de la terminal, por ej: 
-"#f92b97",  /* 13: brmagenta*/  Cambia color de mi nombre de usuario
-
-"#14ab4c",  /*  2: green    */  Lo que esta marcado en htop
