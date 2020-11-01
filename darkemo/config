@@ -107,7 +107,7 @@ set $ws10 "10"
 set $workspace1 "1 "
 set $workspace2 "2 "
 set $workspace3 "3 "
-set $workspace4 "4 "
+set $workspace4 "4 "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -167,14 +167,13 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color 	         #061E28
-set $inactive-bg-color   #2B6963
+set $bg-color 	         #090909
+set $inactive-bg-color   #7198BA
 set $urgent-bg-color     #dc322f
-set $text-color		       #bdaf97
+set $text-color		       #dbc8d6
 set $inactive-text-color #6C6044
 set $urgent-text-color	 #002b36 
-set $border-color	       #b58900
-set $indicator-color     #264D4C
+set $border-color	       #C544B6
 
 # window colors
 #			                  border              background          text                 indicator
@@ -188,13 +187,13 @@ client.urgent           $urgent-bg-color    $urgent-bg-color    $text-color     
 bar {
   status_command py3status -c ~/.i3/i3status.conf
   position top
-  separator_symbol "|"  #""
-  font pango:DejaVu Sans Mono 11
+  separator_symbol ""
+  font pango:InconsolataLGC Nerd Font Bold 9
   strip_workspace_numbers yes
   # bar colors	
 	colors {
 		background $bg-color
-		separator  $border-color 
+		separator  $inactive-bg-color 
 		#                  border             background          text
 		focused_workspace  $bg-color          $bg-color           $border-color
 		inactive_workspace $bg-color 		      $bg-color 	        $inactive-bg-color
@@ -204,7 +203,7 @@ bar {
 
 #  Autostart
 #  set Transparency
-exec_always compton
+# exec_always compton
 #  set background
 exec_always --no-startup-id exec bash $HOME/.fehbg
 # Add borders
