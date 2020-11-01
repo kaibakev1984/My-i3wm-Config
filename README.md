@@ -363,3 +363,5 @@ Ingresar por terminal lo siguiente:
 ![metropolis scheme](/screenshots/metropolis-scheme.png)
 
 ![futurist scheme](/screenshots/futurist-scheme.png)
+
+![astronaut scheme](/screenshots/astronaut-scheme.png)
