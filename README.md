@@ -2,20 +2,7 @@
 
 Con gusto, presento mis dotfiles, para todos aquellos que vieron mis capturas en `Linux Latinoamérica` y `XUnix`. La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables de distribuciones Debian y derivados.
 
-Requisitos
-==========
-Algunas de las aplicaciones listadas se deberán instalar a mano:
-1. *feh* (imagen de fondo)
-2. *compton* (transparencia de terminal
-3. *i3blocks* (otro status menu)
-4. *rofi* (buscador de aplicaciones)
-5. *i3lock-fancy* (Para que se vea lock "cool")
-
-**ATENCIÓN**: la configuración de i3 la vamos a crear en el /home del usuario.
-		La carpeta debe crearse como .i3, y debemos importar las configuraciones
-		en dicha carpeta.
-
-Precondiciones
+Prerrequisitos
 ==============
 Deben tener instalado lo siguiente:
 ## Paquetes generales
