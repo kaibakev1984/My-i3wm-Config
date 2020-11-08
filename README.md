@@ -352,3 +352,5 @@ Ingresar por terminal lo siguiente:
 ![futurist scheme](/screenshots/futurist-scheme.png)
 
 ![astronaut scheme](/screenshots/astronaut-scheme.png)
+
+![john wick 2 scheme](/screenshots/john-wick2-scheme.png)
