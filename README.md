@@ -354,3 +354,5 @@ Ingresar por terminal lo siguiente:
 ![astronaut scheme](/screenshots/astronaut-scheme.png)
 
 ![john wick 2 scheme](/screenshots/john-wick2-scheme.png)
+
+![cyber-hunter scheme](/screenshots/cyber-hunter-scheme.png)
