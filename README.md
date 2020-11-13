@@ -356,3 +356,5 @@ Ingresar por terminal lo siguiente:
 ![john wick 2 scheme](/screenshots/john-wick2-scheme.png)
 
 ![cyber-hunter scheme](/screenshots/cyber-hunter-scheme.png)
+
+![win7 scheme](/screenshots/win7-scheme.png)
