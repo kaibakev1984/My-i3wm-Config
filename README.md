@@ -269,7 +269,7 @@ Ingresar por terminal lo siguiente:
 
 ![flamie scheme](/screenshots/flamie_scheme.png)
 	
-![cyber_anime scheme](/screenshots/cyber_anime_scheme.png)
+![cyber_anime scheme](/screenshots/cyber-anime-scheme.png)
 
 ![bigcity scheme](/screenshots/bigcity_scheme.png)	
 	

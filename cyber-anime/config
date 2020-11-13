@@ -36,7 +36,7 @@ bindsym $mod+Return exec st
 bindsym $mod+Shift+q kill
 
 # start dmenu (a program launcher)
-bindsym $mod+d exec dmenu_run
+#bindsym $mod+d exec dmenu_run
 # There also is the (new) i3-dmenu-desktop which only displays applications
 # shipping a .desktop file. It is a wrapper around dmenu, so you need that
 # installed.
@@ -105,9 +105,9 @@ set $ws8 "8"
 set $ws9 "9"
 set $ws10 "10"
 set $workspace1 "1 "
-set $workspace2 "2 "
+set $workspace2 "2 "
 set $workspace3 "3 "
-set $workspace4 "4 "
+set $workspace4 "4 "
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -167,49 +167,52 @@ mode "resize" {
 
 bindsym $mod+r mode "resize"
 
-set $bg-color 	         #141553
-set $inactive-bg-color   #000f1d
-set $text-color		 #FD01EB
-set $urgent-text-color	 #eee8d5
-set $active-text-color   #000f1d
-set $inactive-text-color #7B53DB 
-set $urgent-bg-color     #FF21D9
-set $border-color	 #FD01EB
-set $indicator-color     #64C1EA
+set $bg-color 	         #0c0719
+set $inactive-bg-color   #A49AF0
+set $urgent-bg-color     #A115A4
+set $text-color		       #e3cbe7
+set $inactive-text-color #6E54D1
+set $urgent-text-color	 #e3cbe7 
+set $border-color	       #C544B6
 
 # window colors
-#			border              background         text                 indicator
-client.focused		$border-color       $border-color      $active-text-color   $indicator-color
-client.unfocused        $border-color       $border-color      $urgent-text-color   $indicator-color
-client.focused_inactive $border-color 	    $border-color      $inactive-text-color $indicator-color
-client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color          $indicator-color
+#			                  border              background          text                 indicator
+client.focused		      $border-color       $border-color       $urgent-text-color   $indicator-color
+client.unfocused        $bg-color           $inactive-bg-color  $bg-color   $indicator-color
+client.focused_inactive $bg-color 	        $bg-color           $inactive-text-color $indicator-color
+client.urgent           $urgent-bg-color    $urgent-bg-color    $text-color          $indicator-color
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
 bar {
-	#status_command i3status
-	status_command i3blocks -c ~/.i3/i3blocks.conf
-	position top
-  separator_symbol ""
-  font pango:InconsolataLGC Nerd Font Bold 9
+  status_command py3status -c ~/.i3/i3status.conf
+  position top
+  #separator_symbol ""
+  separator_symbol "|"
+  #font pango:InconsolataLGC Nerd Font Bold 9
+  font pango:Iosevka Nerd Font Regular 12
+  
   strip_workspace_numbers yes
   # bar colors	
 	colors {
 		background $bg-color
-		separator  $inactive-text-color 
-		#                  border             background         text
-		focused_workspace  $border-color      $bg-color          $text-color
-		inactive_workspace $bg-color 		  $bg-color 		 $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $urgent-text-color
+		separator  $inactive-bg-color 
+		#                  border             background          text
+		focused_workspace  $bg-color          $bg-color           $border-color
+		inactive_workspace $bg-color 		      $bg-color 	        $inactive-bg-color
+		urgent_workspace   $urgent-bg-color   $urgent-bg-color    $text-color
 	}
 }
 
 #  Autostart
 #  set Transparency
-exec_always compton
+# exec_always compton
 #  set background
 exec_always --no-startup-id exec bash $HOME/.fehbg
-#  Add borders
+# Add borders
 for_window [class="^.*"] border pixel 1
+
+# Personal keybindings
+bindsym $mod+d exec rofi -show run -theme cyber-anime
 
 
