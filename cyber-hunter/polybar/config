@@ -71,7 +71,7 @@ font-0 = Iosevka Nerd Font:style=Medium:size=10;3
 ; Icons Fonts
 font-1 = icomoon\-feather:style=Medium:size=10;3
 
-modules-left =  app bspwm files terminal code web   i3
+modules-left =  menu bspwm files terminal code web   i3
 modules-center = date
 modules-right = alsa wlan eth filesystem memory cpu temperature battery 
 ;modules-right = filesystem alsa xkeyboard memory cpu wlan eth battery temperature date powermenu
@@ -491,7 +491,7 @@ content-foreground = ${colors.foreground}
 click-left = code &
 click-right = geany &
 
-[module/app]
+[module/menu]
 type = custom/text
 content =  XUnix
 content-foreground  = ${colors.foreground}
