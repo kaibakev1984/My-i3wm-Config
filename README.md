@@ -358,3 +358,5 @@ Ingresar por terminal lo siguiente:
 ![cyber-hunter scheme](/screenshots/cyber-hunter-scheme.png)
 
 ![win7 scheme](/screenshots/win7-scheme.png)
+
+![murder scheme](/screenshots/murder-scheme.png)
