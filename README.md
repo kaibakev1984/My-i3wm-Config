@@ -360,3 +360,5 @@ Ingresar por terminal lo siguiente:
 ![win7 scheme](/screenshots/win7-scheme.png)
 
 ![murder scheme](/screenshots/murder-scheme.png)
+
+![hello-world scheme](/screenshots/hello-world-scheme.png)
