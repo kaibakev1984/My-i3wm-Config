@@ -362,3 +362,5 @@ Ingresar por terminal lo siguiente:
 ![murder scheme](/screenshots/murder-scheme.png)
 
 ![hello-world scheme](/screenshots/hello-world-scheme.png)
+
+![lofi-city scheme](/screenshots/lofi-city-scheme.png)

@@ -1,0 +1,467 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+
+background =       #0f233a
+background-alt =   #E69B75
+foreground =       #c2c6c6
+foreground-alt =   #c2c6c6
+primary =          #949493
+secondary =        #4E6BA0
+alert =            #9C1E38
+underline =        #4E6BA0
+focused   =        #B9C244
+
+files_color =      #EC7875
+code_color =       #EBD369
+web_color =        #00C7DF
+alsa_color =       #75A4CD
+filesystem_color = #EC6798
+eth_color =        #BE78D1
+wlan_color =       #BE78D1
+date_color =       #EBD369
+battery_color   =  #B9C244
+
+[bar/example]
+width = 98%
+height = 18
+offset-x = 1%
+offset-y = 1%
+radius = 0.0
+
+fixed-center = true
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = ${colors.underline}
+
+border-size = 4
+border-color = ${colors.background}
+
+padding-left = 0
+padding-right = 0
+module-margin-left = 0
+module-margin-right = 0
+
+overline-size = 0
+overline-color = ${colors.background-alt}
+
+font-0 = Iosevka Nerd Font:style=Medium:size=8;2
+font-1 = icomoon\-feather:style=Medium:size=8;2
+
+
+modules-left = separator bspwm separator files_i files separator code_i code separator web_i web
+modules-center = xwindow
+modules-right = alsa_i alsa  wlan separator filesystem_i filesystem temperature battery separator eth_i eth wlan_i wlan  separator date_i date separator battery_i battery 
+
+tray-position = none
+tray-detached = false
+tray-maxsize = 16
+tray-padding = 0
+tray-transparent = false
+tray-background = ${colors.background-alt}
+tray-scale 1.0
+
+wm-restack = bspwm
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+label =  %title:0:30:...%
+format-foreground = ${colors.foreground}
+format-padding = 4
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-prefix = " "
+format-prefix-foreground = ${root.foreground}
+format-prefix-underline = ${colors.underline}
+
+label-layout = %layout%
+label-layout-underline = ${colors.underline}
+
+label-indicator-padding = 2
+label-indicator-margin = 1
+label-indicator-background = ${colors.secondary}
+label-indicator-underline = ${colors.secondary}
+
+[module/filesystem_i]
+type = internal/fs
+
+mount-0 = /
+internal = 10
+fixed-values = true
+
+format-mounted = 
+format-mounted-foreground = ${colors.background}
+format-mounted-background = ${colors.filesystem_color}
+format-mounted-padding = 1
+
+format-unmounted = 
+format-unmounted-foreground = ${colors.background}
+format-unmounted-background = ${colors.filesystem_color}
+format-unmounted-padding = 1
+
+[module/filesystem]
+type = internal/fs
+
+mount-0 = /
+interval = 10
+
+fixed-values = true
+
+format-mounted =            <label-mounted>
+format-mounted-prefix =
+format-mounted-foreground = ${colors.background}
+format-mounted-background = ${colors.foreground}
+format-mounted-padding =    1
+label-mounted =             " %free%"
+
+format-unmounted =            <label-unmounted>
+format-unmounted-prefix =
+format-unmounted-foreground = ${colors.background}
+format-unmounted-background = ${colors.primary}
+format-unmounted-padding =    1
+label-unmounted =             %mountpoint%: not mounted
+
+
+[module/bspwm]
+type = internal/bspwm
+
+; Only show workpsaces on the same output as the bar
+;pin-workspaces=true
+ws-icon-0 = I;1
+ws-icon-1 = II;2
+ws-icon-2 = III;3
+ws-icon-3 = IV;4
+ws-icon-default = 
+
+format = <label-state> <label-mode>
+
+label-focused = %icon%
+label-focused-foreground = ${colors.background}
+label-focused-background = ${colors.focused}
+label-focused-padding = 2
+
+label-occupied = %icon%
+label-occupied-foreground = ${colors.background}
+label-occupied-background = ${colors.foreground}
+label-occupied-padding = 2
+
+label-urgent = %icon%
+label-urgent-foreground = ${colors.background}
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %icon%
+label-empty-foreground = ${colors.background}
+label-empty-background = ${colors.foreground}
+label-empty-padding = 2
+
+; Separator in between workspaces
+; label-separator = |
+
+[module/xbacklight]
+type = internal/xbacklight
+
+format = <label> <bar>
+label = BL
+
+bar-width = 10
+bar-indicator = |
+bar-indicator-foreground = #fff
+bar-indicator-font = 2
+bar-fill = ─
+bar-fill-font = 2
+bar-fill-foreground = #9f78e1
+bar-empty = ─
+bar-empty-font = 2
+bar-empty-foreground = ${colors.foreground-alt}
+
+[module/backlight-acpi]
+inherit = module/xbacklight
+type = internal/backlight
+card = intel_backlight
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${root.foreground}
+label = %percentage:3%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = " "
+format-prefix-foreground = ${root.foreground}
+label = %percentage_used%%
+
+[module/wlan_i]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected =            <label-connected>
+format-connected-foreground = ${colors.background}
+format-connected-background = ${colors.wlan_color}
+format-connected-padding =    1
+label-connected = 
+
+format-disconnected =            <label-disconnected>
+format-disconnected-foreground = ${colors.background}
+format-disconnected-background = ${colors.wlan_color}
+format-disconnected-padding =    1
+label-disconnected =              "Not Connected"
+
+[Module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected =            <label-connected>
+format-connected-foreground = ${colors.background}
+format-connected-background = ${colors.foreground}
+format-connected-padding =    1
+label-connected =             "%essid% %downspeed:8% %upspeed:8%"
+
+format-disconnected =            <label-disconnected>
+format-disconnected-foreground = ${colors.background}
+format-disconnected-background = ${colors.foreground}
+format-disconnected-padding =    1
+label-disconnected = 
+
+[module/eth_i]
+type = internal/network
+interface = eth0
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected =            <label-connected>
+format-connected-foreground = ${colors.background}
+format-connected-background = ${colors.eth_color}
+format-connected-padding =    1
+label-connected = 
+
+format-disconnected =            <label-disconnected>
+format-disconnected-foreground = ${colors.background}
+format-disconnected-background = ${colors.eth_color}
+format-disconnected-padding =    1
+label-disconnected =
+
+[module/eth]
+type = internal/network
+interface =  eth0
+interval = 1.0
+format-connected = <label-connected>
+
+format-connected-foreground = ${colors.background}
+format-connected-background = ${colors.foreground}
+format-connected-padding =    1
+label-connected =             %ifname%
+
+format-disconnected =            <label-disconnected>
+format-disconnected-foreground = ${colors.background}
+format-disconnected-background = ${colors.background-alt}
+format-disconnected-padding =    1
+label-disconnected =             "Disconnected"
+
+[module/date_i]
+type = internal/date
+
+interval = 1.0
+
+time = 
+time-alt = 
+
+format =            <label>
+format-foreground = ${colors.background}
+format-background = ${colors.date_color} 
+format-padding =    1
+ 
+label = %time%
+
+[module/date]
+type = internal/date
+interval = 1.0
+time = %I:%M %p
+time-alt =  %Y-%m-%d%
+
+format = <label>
+format-foreground = ${colors.background}
+format-background = ${colors.foreground}
+format-padding = 1
+label = %time%
+
+[module/alsa_i]
+type = internal/alsa 
+format-volume = 
+format-volume-foreground = ${colors.background}
+format-volume-background = ${colors.alsa_color}
+format-volume-padding =    1
+
+format-muted = 
+format-muted-foreground = ${colors.background}
+format-muted-background = ${colors.alsa_color}
+format-muted-padding =    1
+
+[module/alsa]
+type = internal/alsa
+
+format-volume =            <label-volume>
+format-volume-foreground = ${colors.background}
+format-volume-background = ${colors.foreground}
+format-volume-padding =    1
+label-volume =             %percentage%%
+
+format-muted-prefix = 
+label-muted = " muted"
+label-muted-foreground = ${colors.foreground}
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
+[module/battery_i]
+type = internal/battery
+full-at = 90
+battery = BAT1
+adapter = AC
+poll-interval = 2
+time-format = %H:%M
+
+format-charging =            <label-charging>
+format-charging-foreground = ${colors.background}
+format-charging-background = ${colors.battery_color}
+label-charging = 
+
+format-discharging =            <label-charging>
+format-discharging-foreground = ${colors.battery_color}
+format-discharging-background = ${colors.battery_color}
+label-discharging = 
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT1
+adapter = AC
+poll-interval = 2
+time-format = %H:%M
+
+format-charging =            <label-charging>
+format-charging-foreground = ${colors.background}
+format-charging-background = ${colors.foreground}
+label-charging =             %percentage%%
+
+format-discharging =            <label-discharging>
+format-discharging-foreground = ${colors.background}
+format-discharging-background = ${colors.foreground}
+label-discharging =             %percentage%%
+
+label-full = Fully Charged
+animation-charging-framerate = 750
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = true
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+;vim:ft=dosini
+
+[module/separator]
+type = custom/text
+content = |
+content-background = ${colors.background}
+content-foreground = ${colors.background}
+content-padding = 0.5
+
+[module/files_i]
+type = custom/text
+content = 
+content-foreground = ${colors.background}
+content-background = ${colors.files_color}
+content-padding = 1
+click-left = st -e ranger
+click-right = pcmanfm &
+
+[module/files]
+type = custom/text
+content = files
+content-foreground = ${colors.background}
+content-background = ${colors.foreground}
+content-padding = 1
+click-left = st -e ranger
+click-right = pcmanfm &
+
+[module/code_i]
+type = custom/text
+content = 
+content-foreground = ${colors.background}
+content-background = ${colors.code_color}
+content-padding = 1
+click-left = geany &
+click-right = code &
+
+[module/code]
+type = custom/text
+content = code
+content-foreground = ${colors.background}
+content-background = ${colors.foreground}
+content-padding = 1
+click-left = geany &
+click-right = code &
+
+[module/web_i]
+type = custom/text
+content = 
+content-foreground = ${colors.background}
+content-background = ${colors.web_color}
+content-padding = 1
+click-left = firefox &
+click-right = firefox &
+
+[module/web]
+type = custom/text
+content = web
+content-foreground = ${colors.background}
+content-background = ${colors.foreground}
+content-padding = 1
+click-left = firefox &
+click-right = firefox &
