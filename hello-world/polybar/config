@@ -52,8 +52,8 @@ border-bottom-color = ${colors.background-alt}
 ;padding-left = 2
 ;padding-right = 2
 padding = 4
-module-margin-left = 3
-module-margin-right = 3
+module-margin-left = 2
+module-margin-right = 2
 
 ;radius-top = 0.0
 ;radius-bottom = 0.0
@@ -68,7 +68,7 @@ font-2 = "xos4 Terminus:size=12;3"
 
 modules-left = menu  xwindow
 modules-center = bspwm
-modules-right = wlan eth alsa filesystem temperature battery date powermenu
+modules-right = alsa battery wlan eth date powermenu
 
 tray-position = none
 tray-detached = false
@@ -116,7 +116,7 @@ label-indicator-underline = ${colors.secondary}
 [module/filesystem]
 type = internal/fs
 
-mount-0 = /
+mount-0 = /home
 interval = 10
 
 fixed-values = true
@@ -257,7 +257,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp7s0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
@@ -265,7 +265,8 @@ unknown-as-up = true
 format-connected = <ramp-signal> <label-connected>
 format-disconnected = <label-disconnected>
 
-label-connected = "%essid% %downspeed:8% %upspeed:8%"
+;label-connected = "%essid% %downspeed:8% %upspeed:8%"
+label-connected = %essid%
 label-disconnected =  "Not Connected"
 
 ramp-signal-0 = 
@@ -276,7 +277,7 @@ ramp-signal-4 = 
 
 [module/eth]
 type = internal/network
-interface =  eth0
+interface =  enp5s0
 interval = 1.0
 
 accumulate-stats = true
@@ -285,8 +286,8 @@ unknown-as-up = true
 format-connected-prefix =
 format-connected-prefix-foreground = ${colors.foreground}
 label-connected = "%ifname% %downspeed:9% %upspeed:9%"
-
-format-disconnected =  "Not Connected" 
+format-disconnected = 
+;format-disconnected =  "Not Connected" 
 
 [module/date]
 type = internal/date
