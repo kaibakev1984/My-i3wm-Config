@@ -66,10 +66,9 @@ overline-color = ${colors.background-alt}
 font-0 = Iosevka Nerd Font:style=Medium:size=8;2
 font-1 = icomoon\-feather:style=Medium:size=8;2
 
-
 modules-left = separator bspwm separator files_i files separator code_i code separator web_i web
 modules-center = xwindow
-modules-right = alsa_i alsa  wlan separator filesystem_i filesystem temperature battery separator eth_i eth wlan_i wlan  separator date_i date separator battery_i battery 
+modules-right = alsa_i alsa separator filesystem_i filesystem separator eth_i eth wlan_i wlan separator date_i date separator battery_i battery separator
 
 tray-position = none
 tray-detached = false
@@ -220,7 +219,7 @@ label = %percentage_used%%
 
 [module/wlan_i]
 type = internal/network
-interface = wlp3s0
+interface = wlp7s0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
@@ -237,9 +236,9 @@ format-disconnected-background = ${colors.wlan_color}
 format-disconnected-padding =    1
 label-disconnected =              "Not Connected"
 
-[Module/wlan]
+[module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp7s0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
@@ -247,8 +246,9 @@ unknown-as-up = true
 format-connected =            <label-connected>
 format-connected-foreground = ${colors.background}
 format-connected-background = ${colors.foreground}
-format-connected-padding =    1
-label-connected =             "%essid% %downspeed:8% %upspeed:8%"
+format-connected-padding    = 1
+label-connected = %essid%
+;label-connected             = %essid% %downspeed:8% %upspeed:8%
 
 format-disconnected =            <label-disconnected>
 format-disconnected-foreground = ${colors.background}
@@ -321,28 +321,10 @@ label = %time%
 
 [module/alsa_i]
 type = internal/alsa 
-format-volume = 
+format-volume = <ramp-volume>
 format-volume-foreground = ${colors.background}
 format-volume-background = ${colors.alsa_color}
 format-volume-padding =    1
-
-format-muted = 
-format-muted-foreground = ${colors.background}
-format-muted-background = ${colors.alsa_color}
-format-muted-padding =    1
-
-[module/alsa]
-type = internal/alsa
-
-format-volume =            <label-volume>
-format-volume-foreground = ${colors.background}
-format-volume-background = ${colors.foreground}
-format-volume-padding =    1
-label-volume =             %percentage%%
-
-format-muted-prefix = 
-label-muted = " muted"
-label-muted-foreground = ${colors.foreground}
 
 ramp-volume-0 = 
 ramp-volume-1 = 
@@ -350,26 +332,46 @@ ramp-volume-2 = 
 ramp-volume-3 = 
 ramp-volume-4 = 
 
+format-muted = 
+format-muted-foreground = ${colors.background}
+format-muted-background = ${colors.background}
+format-muted-padding =    1
+
+[module/alsa]
+type = internal/alsa
+
+format-volume 			 = <label-volume>
+format-volume-foreground = ${colors.background}
+format-volume-background = ${colors.foreground}
+format-volume-padding 	 = 1
+label-volume 			 = %percentage%%
+
+format-muted-prefix = 
+label-muted = " muted"
+label-muted-foreground = ${colors.foreground}
+
 ramp-headphones-0 = 
 ramp-headphones-1 = 
 
 [module/battery_i]
 type = internal/battery
-full-at = 90
+full-at = 99
 battery = BAT1
 adapter = AC
 poll-interval = 2
 time-format = %H:%M
 
-format-charging =            <label-charging>
+format-charging 		   = <label-charging>
 format-charging-foreground = ${colors.background}
 format-charging-background = ${colors.battery_color}
-label-charging = 
+format-charging-padding    = 1
+label-charging 			   = 
 
-format-discharging =            <label-charging>
-format-discharging-foreground = ${colors.battery_color}
+format-discharging 			  = <label-discharging>
+format-discharging-foreground = ${colors.background}
 format-discharging-background = ${colors.battery_color}
-label-discharging = 
+format-discharging-padding    = 1
+label-discharging 			  = 
 
 [module/battery]
 type = internal/battery
@@ -382,14 +384,17 @@ time-format = %H:%M
 format-charging =            <label-charging>
 format-charging-foreground = ${colors.background}
 format-charging-background = ${colors.foreground}
+format-charging-padding    = 1
 label-charging =             %percentage%%
 
-format-discharging =            <label-discharging>
-format-discharging-foreground = ${colors.background}
-format-discharging-background = ${colors.foreground}
+format-discharging =             <label-discharging>
+format-discharging-foreground  = ${colors.background}
+format-discharging-background  = ${colors.foreground}
+format-discharging-padding = 1
 label-discharging =             %percentage%%
 
-label-full = Fully Charged
+format-full = <label-full>
+label-full = " Fully Charged"
 animation-charging-framerate = 750
 
 [settings]
