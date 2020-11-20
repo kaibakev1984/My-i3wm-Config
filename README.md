@@ -364,3 +364,5 @@ Ingresar por terminal lo siguiente:
 ![hello-world scheme](/screenshots/hello-world-scheme.png)
 
 ![lofi-city scheme](/screenshots/lofi-city-scheme.png)
+
+![smoke scheme](/screenshots/smoke-scheme.png)
