@@ -18,11 +18,11 @@
 
 [colors]
 
-background =     #012C37
-background-alt = #CF3884
+background =    #181321
+background-alt = #A34F5A
 ;foreground = ${xrdb:color7:#222}
-foreground =     #859900
-foreground-alt = #859900
+foreground =     #d7c5c6
+foreground-alt = #d7c5c6
 primary =    #949493
 secondary = #4E6BA0
 alert =     #9C1E38
@@ -34,7 +34,7 @@ focused =   #0a0d1e
 width = 98%
 height = 26
 offset-x = 1%
-;offset-y = 1%
+offset-y = 1%
 radius = 0.0
 fixed-center = true
 
@@ -46,21 +46,21 @@ line-color = ${colors.underline}
 
 ;border-size = 4
 ;border-color = ${colors.background}
-border-bottom-size = 1
+border-bottom-size = 3
 border-bottom-color = ${colors.background-alt}
 
 ;padding-left = 2
 ;padding-right = 2
-padding = 4
-module-margin-left = 2
-module-margin-right = 2
+padding = 2
+module-margin-left = 3
+module-margin-right = 3
 
-;radius-top = 0.0
-;radius-bottom = 0.0
+radius-top = 0.0
+radius-bottom = 0.0
 overline-size = 2
 overline-color = ${colors.background-alt}
-;spacing = 0
-;dim-value = 1.0
+spacing = 0
+dim-value = 1.0
 
 font-0 = "Ubuntu Condensed:size=10;2"
 font-1 = "icomoon\-feather:size=10;2"
@@ -68,7 +68,7 @@ font-2 = "xos4 Terminus:size=12;3"
 
 modules-left = menu  xwindow
 modules-center = bspwm
-modules-right = alsa battery wlan eth date powermenu
+modules-right = alsa wlan eth filesystem temperature battery date powermenu
 
 tray-position = none
 tray-detached = false
@@ -116,7 +116,7 @@ label-indicator-underline = ${colors.secondary}
 [module/filesystem]
 type = internal/fs
 
-mount-0 = /home
+mount-0 = /
 interval = 10
 
 fixed-values = true
@@ -145,7 +145,7 @@ format = <label-state> <label-mode>
 label-focused = %icon%
 label-focused-foreground = ${colors.background-alt}
 label-focused-background = ${colors.background}
-;label-focused-underline= ${colors.background-alt}
+label-focused-underline= ${colors.background-alt}
 label-focused-padding = 4
 
 label-occupied = %icon%
@@ -156,7 +156,7 @@ label-urgent-background = ${colors.alert}
 label-urgent-padding = 4
 
 label-empty = %icon%
-label-empty-foreground = ${colors.foreground}
+label-empty-foreground = ${colors.foreground-alt}
 label-empty-padding = 4
 
 ; Separator in between workspaces
@@ -257,7 +257,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp7s0
+interface = wlp3s0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
@@ -265,8 +265,7 @@ unknown-as-up = true
 format-connected = <ramp-signal> <label-connected>
 format-disconnected = <label-disconnected>
 
-;label-connected = "%essid% %downspeed:8% %upspeed:8%"
-label-connected = %essid%
+label-connected = "%essid% %downspeed:8% %upspeed:8%"
 label-disconnected =  "Not Connected"
 
 ramp-signal-0 = 
@@ -277,7 +276,7 @@ ramp-signal-4 = 
 
 [module/eth]
 type = internal/network
-interface =  enp5s0
+interface =  eth0
 interval = 1.0
 
 accumulate-stats = true
@@ -286,8 +285,8 @@ unknown-as-up = true
 format-connected-prefix =
 format-connected-prefix-foreground = ${colors.foreground}
 label-connected = "%ifname% %downspeed:9% %upspeed:9%"
-format-disconnected = 
-;format-disconnected =  "Not Connected" 
+
+format-disconnected =  "Not Connected" 
 
 [module/date]
 type = internal/date
@@ -326,14 +325,12 @@ bar-volume-fill-font = 2
 bar-volume-empty = ─
 bar-volume-empty-font = 2
 bar-volume-empty-foreground = ${colors.foreground-alt}
-
 [module/alsa]
 type = internal/alsa
 
 format-volume = <ramp-volume> <label-volume>
 
 label-volume = %percentage%%
-label-volume-foreground = ${colors.foreground}
 format-muted-prefix = 
 label-muted = " Muted"
 label-muted-foreground = ${colors.foreground}
@@ -455,5 +452,5 @@ type = custom/text
 content = 
 content-foreground  = ${colors.background-alt}
 content-background = ${colors.background}
-click-left = rofi -show run -theme hello-world
-click-right = rofi -show window -theme hello-world
+click-left = rofi -show run -theme smoke
+click-right = rofi -show window -theme smoke
