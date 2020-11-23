@@ -366,3 +366,5 @@ Ingresar por terminal lo siguiente:
 ![lofi-city scheme](/screenshots/lofi-city-scheme.png)
 
 ![smoke scheme](/screenshots/smoke-scheme.png)
+
+![ruiner scheme](/screenshots/ruiner-scheme.png)
