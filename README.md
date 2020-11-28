@@ -174,3 +174,5 @@ Ingresar por terminal lo siguiente:
 ![smoke scheme](/screenshots/smoke-scheme.png)
 
 ![ruiner scheme](/screenshots/ruiner-scheme.png)
+
+![chicago95 scheme](/screenshots/chicago95-scheme.png)
