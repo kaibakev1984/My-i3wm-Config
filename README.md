@@ -176,3 +176,5 @@ Ingresar por terminal lo siguiente:
 ![ruiner scheme](/screenshots/ruiner-scheme.png)
 
 ![chicago95 scheme](/screenshots/chicago95-scheme.png)
+
+![focus scheme](/screenshots/focus-scheme.png)
