@@ -178,3 +178,5 @@ Ingresar por terminal lo siguiente:
 ![chicago95 scheme](/screenshots/chicago95-scheme.png)
 
 ![focus scheme](/screenshots/focus-scheme.png)
+
+![break scheme](/screenshots/break-scheme.png)
