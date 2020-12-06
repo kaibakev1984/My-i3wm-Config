@@ -180,3 +180,5 @@ Ingresar por terminal lo siguiente:
 ![focus scheme](/screenshots/focus-scheme.png)
 
 ![break scheme](/screenshots/break-scheme.png)
+
+![triangles scheme](/screenshots/triangles-scheme.png)
