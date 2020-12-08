@@ -182,3 +182,5 @@ Ingresar por terminal lo siguiente:
 ![break scheme](/screenshots/break-scheme.png)
 
 ![triangles scheme](/screenshots/triangles-scheme.png)
+
+![404-error scheme](/screenshots/404-error-scheme.png)
