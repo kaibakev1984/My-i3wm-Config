@@ -28,13 +28,6 @@ alert          = #674793
 underline      = #E3A4E3
 focused        = #0a0d1e
 
-eth            = #869901
-filesystem     = #b68800
-xkeyboard      = #6e70c5
-alsa           = #d33683
-battery        = #c7a0c9
-
-
 [bar/example]
 ;monitor = ${env:MONITOR:HDMI-1}
 width = 80%
