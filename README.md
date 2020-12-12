@@ -184,3 +184,5 @@ Ingresar por terminal lo siguiente:
 ![triangles scheme](/screenshots/triangles-scheme.png)
 
 ![404-error scheme](/screenshots/404-error-scheme.png)
+
+![soft scheme](/screenshots/soft-scheme.png)
