@@ -351,10 +351,8 @@ adapter = AC
 poll-interval = 2
 time-format = %H:%M
 
-format-charging = <label-charging> <animation-charging>
-;format-charging-foreground = ${colors.battery}
-format-discharging = <label-discharging> <ramp-capacity> 
-format-discharging-foreground = ${colors.battery}
+format-charging = <animation-charging> <label-charging>
+format-discharging = <ramp-capacity> <label-discharging>
 label-charging = %percentage%%
 label-discharging = %percentage%%
 
