@@ -121,29 +121,29 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
 [![forest scheme](https://i.postimg.cc/90V3dyyz/forest-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/forest)
 
-[![autumn scheme](/screenshots/autumn-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
+[![autumn scheme](https://i.postimg.cc/6pFmVdXw/autumn-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
 
-[![day-city scheme](/screenshots/day-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/day-city)
+[![day-city scheme](https://i.postimg.cc/DZPpKHby/day-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/day-city)
 
-[![raining scheme](/screenshots/raining-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/raining)
+[![raining scheme](https://i.postimg.cc/qM5b08gn/raining-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/raining)
 
-[![sleepy-hollow scheme](/screenshots/sleepy-hollow.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sleepy-hollow)
+[![sleepy-hollow scheme](https://i.postimg.cc/rmMggjY6/sleepy-hollow.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sleepy-hollow)
 
-[![girl-glasses scheme](/screenshots/girl-glasses-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/girl-glasses)
+[![girl-glasses scheme](https://i.postimg.cc/ydLhjHZ9/girl-glasses-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/girl-glasses)
 
-[![rem scheme](/screenshots/rem-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
+[![rem scheme](https://i.postimg.cc/vDF4Lq3f/rem-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
 
-[![books scheme](/screenshots/books-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
+[![books scheme](https://i.postimg.cc/MHkBdpGn/books-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
 
-[![old-computer scheme](/screenshots/old-computer-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
+[![old-computer scheme](https://i.postimg.cc/Mprv9pPz/old-computer-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
 
-[![keyboard scheme](/screenshots/keyboard-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/keyboard)
+[![keyboard scheme](https://i.postimg.cc/MKp6g8jH/keyboard-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/keyboard)
 
-[![retro-cat scheme](/screenshots/retro-cat-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/retro-cat)
+[![retro-cat scheme](https://i.postimg.cc/K85dbKSy/retro-cat-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/retro-cat)
 
-[![flower scheme](/screenshots/flower-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/flower-scheme)
+[![flower scheme](https://i.postimg.cc/k4NSYdRw/flower-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/flower-scheme)
 
-[![sunset scheme](/screenshots/sunset-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sunset)
+[![sunset scheme](https://i.postimg.cc/j2prDBZ0/sunset-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sunset)
 
 [![umbrellas scheme](/screenshots/umbrellas-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/umbrellas)
 
