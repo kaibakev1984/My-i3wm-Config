@@ -7,8 +7,6 @@ super + Return
   st	
 
 # program launcher
-#super + @space
-#  rofi -show drun -theme night
 super + d 
   rofi -show drun -theme robocity
 

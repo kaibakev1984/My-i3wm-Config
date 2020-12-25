@@ -1,9 +1,15 @@
+/** 
+ *  User: Lorblak
+ *  Copyright: Lorblak
+ */
+
+
 * {
-    active-background: #624E68;
+    active-background: #9E3F54;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #4F4A6D;
+    urgent-background: #54434D;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,24 +19,27 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #4F4A6D;
+    selected-active-background: #54434D;
     selected-active-foreground: @foreground;
-    selected-normal-background: #624E68;
-    selected-normal-foreground: @foreground;
-    selected-urgent-background: #B1576E;
+    selected-normal-background: #324BA8;
+    selected-normal-foreground: #000F1D;
+    selected-urgent-background: #181590;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #0C0C17;
-    foreground: #dcccd1;
-    border-color: #dcccd1;
+    background:   #0D0C17D9;
+    foreground:   #dcccd2;
+    border-color: #324BA8;
     spacing: 2;
+    font: "unifont 9";
 }
 
 #window {
     background-color: @background;
-    border: 1;
-    padding: 1.5ch;
+    height: 40%;
+    width: 30%;
+    border: 2;
+    padding: 2.5ch;
 }
 
 #mainbox {
