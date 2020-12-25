@@ -119,84 +119,84 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
 [![robocity scheme](/screenshots/robocity-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
 
-![forest scheme](/screenshots/forest-scheme.png)
+[![forest scheme](/screenshots/forest-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/forest)
 
-![autumn scheme](/screenshots/autumn-scheme.png)
+[![autumn scheme](/screenshots/autumn-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
 
-![day-city scheme](/screenshots/day-city-scheme.png)
+[![day-city scheme](/screenshots/day-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/day-city)
 
-![raining scheme](/screenshots/raining-scheme.png)
+[![raining scheme](/screenshots/raining-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/raining)
 
-![sleepy-hollow scheme](/screenshots/sleepy-hollow.png)
+[![sleepy-hollow scheme](/screenshots/sleepy-hollow.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sleepy-hollow)
 
-![girl-glasses scheme](/screenshots/girl-glasses-scheme.png)
+[![girl-glasses scheme](/screenshots/girl-glasses-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/girl-glasses)
 
-![rem scheme](/screenshots/rem-scheme.png)
+[![rem scheme](/screenshots/rem-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
 
-![books scheme](/screenshots/books-scheme.png)
+[![books scheme](/screenshots/books-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
 
-![old-computer scheme](/screenshots/old-computer-scheme.png)
+[![old-computer scheme](/screenshots/old-computer-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
 
-![keyboard scheme](/screenshots/keyboard-scheme.png)
+[![keyboard scheme](/screenshots/keyboard-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/keyboard)
 
-![retro-cat scheme](/screenshots/retro-cat-scheme.png)
+[![retro-cat scheme](/screenshots/retro-cat-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/retro-cat)
 
-![flower scheme](/screenshots/flower-scheme.png)
+[![flower scheme](/screenshots/flower-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/flower-scheme)
 
-![sunset scheme](/screenshots/sunset-scheme.png)
+[![sunset scheme](/screenshots/sunset-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sunset)
 
-![umbrellas scheme](/screenshots/umbrellas-scheme.png)
+[![umbrellas scheme](/screenshots/umbrellas-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/umbrellas)
 
-![aesthetic-sea scheme](/screenshots/aesthetic-sea-scheme.png)
+[![aesthetic-sea scheme](/screenshots/aesthetic-sea-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/aesthetic-sea)
 
-![lofi-fog scheme](/screenshots/lofi-fog-scheme.png)
+[![lofi-fog scheme](/screenshots/lofi-fog-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-fog)
 
-![traffic-lights scheme](/screenshots/traffic-lights-scheme.png)
+[![traffic-lights scheme](/screenshots/traffic-lights-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/traffic-lights)
 
-![rain-at-night scheme](/screenshots/rain-at-night-scheme.png)
+[![rain-at-night scheme](/screenshots/rain-at-night-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rain-at-night)
 
-![rose scheme](/screenshots/rose-scheme.png)
+[![rose scheme](/screenshots/rose-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rose)
 
-![office scheme](/screenshots/office-scheme.png)
+[![office scheme](/screenshots/office-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/office)
 
-![powerlines scheme](/screenshots/powerlines-scheme.png)
+[![powerlines scheme](/screenshots/powerlines-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/powerlines)
 
-![john-wick scheme](/screenshots/john-wick-scheme.png)
+[![john-wick scheme](/screenshots/john-wick-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick)
 
-![sad scheme](/screenshots/sad-scheme.png)
+[![sad scheme](/screenshots/sad-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sad)
 
-![castle scheme](/screenshots/castle-scheme.png)
+[![castle scheme](/screenshots/castle-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/castle)
 
-![metropolis scheme](/screenshots/metropolis-scheme.png)
+[![metropolis scheme](/screenshots/metropolis-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/metropolis)
 
-![futurist scheme](/screenshots/futurist-scheme.png)
+[![futurist scheme](/screenshots/futurist-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/futurist)
 
-![astronaut scheme](/screenshots/astronaut-scheme.png)
+[![astronaut scheme](/screenshots/astronaut-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/astronaut)
 
-![john wick 2 scheme](/screenshots/john-wick2-scheme.png)
+[![john wick 2 scheme](/screenshots/john-wick2-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick2)
 
-![cyber-hunter scheme](/screenshots/cyber-hunter-scheme.png)
+[![cyber-hunter scheme](/screenshots/cyber-hunter-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyber-hunter)
 
-![win7 scheme](/screenshots/win7-scheme.png)
+[![win7 scheme](/screenshots/win7-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/win7)
 
-![murder scheme](/screenshots/murder-scheme.png)
+[![murder scheme](/screenshots/murder-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/murder)
 
-![hello-world scheme](/screenshots/hello-world-scheme.png)
+[![hello-world scheme](/screenshots/hello-world-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/hello-world)
 
-![lofi-city scheme](/screenshots/lofi-city-scheme.png)
+[![lofi-city scheme](/screenshots/lofi-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-city)
 
-![smoke scheme](/screenshots/smoke-scheme.png)
+[![smoke scheme](/screenshots/smoke-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/smoke)
 
-![ruiner scheme](/screenshots/ruiner-scheme.png)
+[![ruiner scheme](/screenshots/ruiner-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/ruiner)
 
-![chicago95 scheme](/screenshots/chicago95-scheme.png)
+[![chicago95 scheme](/screenshots/chicago95-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/chicago95)
 
-![focus scheme](/screenshots/focus-scheme.png)
+[![focus scheme](/screenshots/focus-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/focus)
 
-![break scheme](/screenshots/break-scheme.png)
+[![break scheme](/screenshots/break-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/break)
 
-![triangles scheme](/screenshots/triangles-scheme.png)
+[![triangles scheme](/screenshots/triangles-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/triangles)
 
-![404-error scheme](/screenshots/404-error-scheme.png)
+[![404-error scheme](/screenshots/404-error-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/404-error)
 
-![soft scheme](/screenshots/soft-scheme.png)
+[![soft scheme](/screenshots/soft-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/soft)
