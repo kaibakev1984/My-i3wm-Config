@@ -111,11 +111,13 @@ Ingresar por terminal lo siguiente:
 
 ## Galería
 
-![night scheme](/screenshots/night-scheme.png)
+Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
-![lofi-rain scheme](/screenshots/lofi-rain-scheme.png)
+[![night scheme](/screenshots/night-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/night)
 
-![robocity scheme](/screenshots/robocity-scheme.png)
+[![lofi-rain scheme](/screenshots/lofi-rain-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
+
+[![robocity scheme](/screenshots/robocity-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
 
 ![forest scheme](/screenshots/forest-scheme.png)
 
