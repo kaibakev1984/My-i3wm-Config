@@ -113,13 +113,13 @@ Ingresar por terminal lo siguiente:
 
 Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
-[![night scheme](/screenshots/night-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/night)
+[![night scheme](https://i.postimg.cc/Y0fHZdt1/night-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/night)
 
-[![lofi-rain scheme](/screenshots/lofi-rain-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
+[![lofi-rain scheme](https://i.postimg.cc/8khN7zLj/lofi-rain-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
 
-[![robocity scheme](/screenshots/robocity-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
+[![robocity scheme](https://i.postimg.cc/YCyw5GBy/robocity-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
 
-[![forest scheme](/screenshots/forest-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/forest)
+[![forest scheme](https://i.postimg.cc/90V3dyyz/forest-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/forest)
 
 [![autumn scheme](/screenshots/autumn-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
 
