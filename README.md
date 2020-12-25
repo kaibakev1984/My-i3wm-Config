@@ -1,11 +1,24 @@
-# Lorblak-Dotfiles
+##  Tabla de Contenidos
+
+* [Introducción](#introducción)
+* [Prerrequisitos](#prerrequisitos)
+  * [Paquetes Generales](#paquetes-generales)
+  * [Instalando bspwm](#instalando-bspwm)
+  * [Instalando Polybar](#instalando-polybar)
+
+* [Enlaces Útiles](#enlaces-útiles)
+* [Fuentes](#fuentes)
+* [Galería](#galería)
+
+
+## Introducción
 
 Con gusto, presento mis dotfiles, para todos aquellos que vieron mis capturas en `Linux Latinoamérica` y `XUnix`. La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables de distribuciones Debian y derivados.
 
-Prerrequisitos
-==============
+## Prerrequisitos
+
 Deben tener instalado lo siguiente:
-## Paquetes generales
+## Paquetes Generales
 	
 	   sudo apt install build-essential valgrind manpages-dev gdb feh compton rofi i3lock-fancy cmatrix htop pcmanfm vim neofetch
 
@@ -22,7 +35,7 @@ Las configuraciones solo trabajan con `bspwm`, `sxhkd` y `polybar`
 Para hacer la instalación sin tener que agregar Sid, solamente ingresar en terminal `sudo apt-get update && sudo apt-get install bspwm`, y después borrar del repositorio la línea que agregaron en `sources.list`
 
 
-### Instalando Polybar
+## Instalando Polybar
 Para la instalación de polybar, asegurarse de tener incluido el siguiente backport en `/etc/apt/sources.list`:
 
 		deb http://deb.debian.org/debian buster-backports main contrib non-free
@@ -34,8 +47,7 @@ Para la instalación de polybar, asegurarse de tener incluido el siguiente backp
 
 - [Polybar](https://github.com/polybar/polybar)
 
-Algunos enlaces útiles
-======================
+## Enlaces útiles
 
 * [Repositorio de Rofi](https://github.com/davatorium/rofi)
 	* **NOTA**: Se puede instalar mediante:
@@ -97,7 +109,7 @@ Ingresar por terminal lo siguiente:
 
 **NOTA**: Se debe tener instalado `w3m`.
 
-# Screenshots
+## Galería
 
 ![night scheme](/screenshots/night-scheme.png)
 
