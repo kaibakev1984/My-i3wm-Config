@@ -205,4 +205,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
 [![diary scheme](https://i.postimg.cc/dtx3KFC7/diary-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/diary)
 
-[![futurist-city scheme](https://i.postimg.cc/5twMfsbz/futurist-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/futurist-city)
+[![futurist-city scheme](https://postimg.cc/sBDLc9Bf)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/futurist-city)
