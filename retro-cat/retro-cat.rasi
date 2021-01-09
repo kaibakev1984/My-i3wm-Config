@@ -1,9 +1,14 @@
+configuration {
+    show-icons:     false;
+    
+}
+
 * {
-    active-background: #2E7A84;
+    active-background: #58344C;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #C09F65;
+    urgent-background: #1C304B;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,24 +18,27 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #C09F65;
+    selected-active-background: #1e1b1c;
     selected-active-foreground: @foreground;
     selected-normal-background: #2E7A84;
-    selected-normal-foreground: @foreground;
-    selected-urgent-background: #67AB97;
+    selected-normal-foreground: #1f1a18;
+    selected-urgent-background: #3D4A4E;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #1f1a18;
-    foreground: #cdefdc;
-    border-color: @background;
-    spacing: 1;
+    background:     #1f1a18;
+    foreground:     #cdefdc;
+    border-color:   #C09F65;
+    spacing:        4;
+    font:           "unifont 10";
 }
 
 #window {
     background-color: @background;
-    border: 0;
-    padding: 1.5ch;
+    height: 50%;
+    width: 30%;
+    border: 4;
+    padding: 2.5ch;
 }
 
 #mainbox {

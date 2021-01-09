@@ -7,10 +7,8 @@ super + Return
   st	
 
 # program launcher
-#super + @space
-#  rofi -show drun -theme night
 super + d 
-  rofi -show drun -theme books
+  rofi -show drun -theme retro-cat
 
 # 
 # Audio Controls
@@ -27,7 +25,6 @@ XF86AudioLowerVolume
 # Mute Volume
 XF86AudioMute
   amixer -q sset Master toggle
-
 
 
 #	Start ranger
