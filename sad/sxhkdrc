@@ -2,15 +2,24 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
+# st -  terminal emulator
 super + Return
   st	
 
+# rxvt - terminal emulator
+alt + Return 
+  rxvt
+
 # program launcher
-#super + @space
-#  rofi -show drun -theme night
 super + d 
   rofi -show drun -theme sad
+# start pcmanfm
+alt + p
+  pcmanfm
+
+# start ranger
+alt + r 
+  st -e ranger
 
 # 
 # Audio Controls
@@ -27,12 +36,6 @@ XF86AudioLowerVolume
 # Mute Volume
 XF86AudioMute
   amixer -q sset Master toggle
-
-
-
-#	Start ranger
-alt + p 
-	pcmanfm
 
 # make sxhkd reload its configuration files:
 super + Escape
