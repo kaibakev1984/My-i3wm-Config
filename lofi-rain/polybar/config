@@ -212,7 +212,7 @@ ramp-volume-0 = 婢
 ramp-volume-1 = 奄
 ramp-volume-2 = 奔
 ramp-volume-3 = 墳
-ramp-volume-foreground = ${colors.background-color}
+ramp-volume-foreground = ${colors.background-alt}
 
 ; Only applies if <bar-volume> is used
 bar-volume-width = 10
