@@ -114,7 +114,7 @@ Ingresar por terminal lo siguiente:
 Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
 [![night scheme](https://i.postimg.cc/kgf40wZ8/night-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/night)
-[![lofi-rain scheme](https://i.postimg.cc/8khN7zLj/lofi-rain-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
+[![lofi-rain scheme](https://i.postimg.cc/ZRCpgx4r/lofi-rain-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
 [![robocity scheme](https://i.postimg.cc/YCyw5GBy/robocity-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
 [![forest scheme](https://i.postimg.cc/90V3dyyz/forest-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/forest)
 [![autumn scheme](https://i.postimg.cc/6pFmVdXw/autumn-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
