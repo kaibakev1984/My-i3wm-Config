@@ -136,7 +136,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![rain-at-night scheme](https://i.postimg.cc/MphthqX8/rain-at-night-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rain-at-night)
 [![rose scheme](https://i.postimg.cc/6QnzKgG4/rose-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rose)
 [![office scheme](https://i.postimg.cc/D0ycqzp1/office-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/office)
-[![powerlines scheme](https://i.postimg.cc/28txZrQB/powerlines-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/powerlines)
+[![powerlines scheme](https://i.postimg.cc/BQx1LXY5/powerlines-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/powerlines)
 [![john-wick scheme](https://i.postimg.cc/LXmkpXpG/john-wick-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick)
 [![sad scheme](https://i.postimg.cc/Gm2CDVhc/sad-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sad)
 [![castle scheme](https://i.postimg.cc/G37FWdSS/castle-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/castle)
