@@ -160,3 +160,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![alley scheme](https://i.postimg.cc/C5v5H2Vf/alley-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/alley)
 [![diary scheme](https://i.postimg.cc/dtx3KFC7/diary-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/diary)
 [![futurist-city scheme](https://i.postimg.cc/5twMfsbz/futurist-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/futurist-city)
+[![qa scheme](https://i.postimg.cc/k4yrh4Qf/qa-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/qa)
