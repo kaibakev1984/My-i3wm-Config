@@ -259,7 +259,9 @@ format-discharging   = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.foreground-alt}
 
 label-charging    = %percentage%%
+label-charging-foreground = ${colors.foreground-alt}
 label-discharging = %percentage%%
+label-discharging-foreground = ${colors.foreground-alt}
 
 label-full = 
 
