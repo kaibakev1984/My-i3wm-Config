@@ -9,11 +9,12 @@ xrandr -s 1360x768
 
 bspc monitor -d I II III IV
 
-bspc config border_width         2
-bspc config window_gap          12
-bspc config normal_border_color "#150612"
-bspc config active_border_color "#E22539"
-bspc config focused_border_color "#150612"
+bspc config border_width          2.5
+bspc config window_gap            10
+# bspc config top_padding         29
+bspc config normal_border_color   "#6A4B50"
+bspc config active_border_color   "#4E6BA0"
+bspc config focused_border_color  "#E22539"
 bspc config presel_feedback_color "#f2d382"
 
 # bspc config automatic_scheme     spiral
@@ -22,13 +23,8 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 # Application Rules
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-bspc rule -a Brave-browser desktop='^2'
-bspc rule -a Code desktop='^3' follow=on
-bspc rule -a Geany desktop='^3' follow=on
-bspc rule -a Firefox-esr desktop='^2' follow=on
-bspc rule -a st-256color desktop='^1' follow=on
+bspc rule -a Brave-browser desktop='^2' follow=on
+bspc rule -a Code          desktop='^3' follow=on
+bspc rule -a Geany         desktop='^3' follow=on
+bspc rule -a Firefox-esr   desktop='^2' follow=on
+bspc rule -a st-256color   desktop='^1' follow=on
