@@ -216,6 +216,14 @@ Nos debería quedar algo así:
   patch -i st-break.diff
   sudo make clean install
 ```
+13. Para el fondo de pantalla, copiamos la imagen *break.jpg* en la ruta de nuestro gusto. En mi caso lo instalo en `~/Imágenes`. Para agregarle el fondo ingresamos por terminal:
+```
+  feh --bg-fill ~/Imágenes/break.jpg
+```
+
+14. Nuestro tema se debería ver así:
+
+
 
 
 ## Enlaces útiles
