@@ -163,3 +163,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![qa scheme](https://i.postimg.cc/k4yrh4Qf/qa-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/qa)
 [![qa scheme](https://i.postimg.cc/s2xK9Xfk/samurai-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/samurai)
 [![fantasy scheme](https://i.postimg.cc/gJqzF5Jd/fantasy-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/fantasy)
+[![cobra kai scheme](https://i.postimg.cc/2Smd75H2/cobra-kai-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cobra-kai)
