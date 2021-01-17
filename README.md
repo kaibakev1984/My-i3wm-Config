@@ -54,7 +54,7 @@ De momento, la instalación es manual. Para realizar la instalación, debemos as
 1. Abrimos la terminal y clonamos el repositorio con el siguiente comando:
 
 ```
-  git -C ~/ clone https://github.com/kaibakev1984/Lorblak-Dotfiles
+  git clone https://github.com/kaibakev1984/Lorblak-Dotfiles
 ```
 
 ![git clone](https://i.postimg.cc/kMTLn6KV/capture1.png)
