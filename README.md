@@ -49,7 +49,7 @@ Para la instalación de polybar, asegurarse de tener incluido el siguiente backp
 
 ## Instalación
 
-De momento, la instalación es manual. Para realizar la instalación, debemos asegurarnos de tener instalado *bspwm* y *polybar*. También necesitaremos tener descargado *st*. Vamos a realizar la instalación del tema *break*.
+De momento, la instalación es manual. Para realizar la instalación, debemos asegurarnos de tener instalado *bspwm*, *polybar*, *Rofi*, *Compton*. También necesitaremos tener descargado *st* (incluída sus dependencias). Vamos a realizar la instalación del tema *break*.
 
 1. Abrimos la terminal y clonamos el repositorio con el siguiente comando:
 
