@@ -57,11 +57,11 @@ De momento, la instalación es manual. Para realizar la instalación, debemos as
   git -C ~/ clone https://github.com/kaibakev1984/Lorblak-Dotfiles
 ```
 
-![git clone](screenshots/capture1.png)
+![git clone](https://i.postimg.cc/kMTLn6KV/capture1.png)
 
 2. Una vez descargado, nos dirigimos al repositorio y accedemos al directorio *break*. Tendremos lo siguiente:
 
-![break directory](screenshots/capture2.png)
+![break directory](https://i.postimg.cc/GmCnSBDH/capture2.png)
 
 Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
 
@@ -78,12 +78,6 @@ Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
   mkdir ~/.config/sxhkd
   cp sxhkdrc ~/.config/sxhkd
 ```
-
-
-
-![break directory](screenshots/capture2.png)
-
-Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
 
 5. Instalamos el tema `Break` para *Rofi* ingresando lo siguiente por terminal:
 ```
@@ -104,7 +98,7 @@ Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
 
 9. Para configurar `st`, primero descargamos el archivo comprimido `st.0.8.4` de este [enlace](https://st.suckless.org/). 
 
-![st suckless terminal](screenshots/capture3.png)
+![st suckless terminal](https://i.postimg.cc/43p52dzN/capture3.png)
 
 10. Nos ubicamos en donde tenemos instalado *st* y descomprimimos haciendo:
 
@@ -113,11 +107,11 @@ Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
 ```
 Nos debería quedar algo así:
 
-![st ](screenshots/capture4.png)
+![st ](https://i.postimg.cc/1R8LM089/capture4.png)
 
 11. En nuestro directorio con el tema *break* hay un archivo llamado `st-break.diff`, que contiene nuestro tema para *st*. Para instalarlo, copiamos dicho documento en el directorio donde descomprimimos *st*. Nos debería quedar algo así:
 
-![st ls](screenshot/capture5.png)
+![st ls](https://i.postimg.cc/Pf007LD1/capture5.png)
 
 12. Para instalar nuestro tema, nos ubicaremos al directorio *st.0.8.4* e ingresamos lo siguiente:
 
@@ -135,6 +129,7 @@ Nos debería quedar algo así:
 
 14. Nuestro tema se debería ver así:
 
+[capture6.png](https://postimg.cc/vxB6Zh0f)
 
 
 
