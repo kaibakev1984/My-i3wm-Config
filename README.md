@@ -5,7 +5,7 @@
   * [Paquetes Generales](#paquetes-generales)
   * [Instalando bspwm](#instalando-bspwm)
   * [Instalando Polybar](#instalando-polybar)
-
+* [Instalación](#instalación)
 * [Enlaces Útiles](#enlaces-útiles)
 * [Fuentes](#fuentes)
 * [Galería](#galería)
@@ -56,6 +56,7 @@ De momento, la instalación es manual. Para realizar la instalación, debemos as
 ```
   git -C ~/ clone https://github.com/kaibakev1984/Lorblak-Dotfiles
 ```
+
 ![git clone](screenshots/capture1.png)
 
 2. Una vez descargado, nos dirigimos al repositorio y accedemos al directorio *break*. Tendremos lo siguiente:
@@ -102,26 +103,32 @@ Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
 8. Una vez terminado de copiar los archivos, reiniciamos *bspwm* haciendo `super + alt + r` 
 
 9. Para configurar `st`, primero descargamos el archivo comprimido `st.0.8.4` de este [enlace](https://st.suckless.org/). 
+
 ![st suckless terminal](screenshots/capture3.png)
 
 10. Nos ubicamos en donde tenemos instalado *st* y descomprimimos haciendo:
+
 ```
   tar -xvf st.0.8.4.tar.gz
 ```
-
 Nos debería quedar algo así:
+
 ![st ](screenshots/capture4.png)
 
 11. En nuestro directorio con el tema *break* hay un archivo llamado `st-break.diff`, que contiene nuestro tema para *st*. Para instalarlo, copiamos dicho documento en el directorio donde descomprimimos *st*. Nos debería quedar algo así:
+
 ![st ls](screenshot/capture5.png)
 
 12. Para instalar nuestro tema, nos ubicaremos al directorio *st.0.8.4* e ingresamos lo siguiente:
+
 ```
   sudo make uninstall
   patch -i st-break.diff
   sudo make clean install
 ```
+
 13. Para el fondo de pantalla, copiamos la imagen *break.jpg* en la ruta de nuestro gusto. En mi caso lo instalo en `~/Imágenes`. Para agregarle el fondo ingresamos por terminal:
+
 ```
   feh --bg-fill ~/Imágenes/break.jpg
 ```
