@@ -13,7 +13,7 @@
 
 ## Introducción
 
-Con gusto, presento mis dotfiles, para todos aquellos que vieron mis capturas en `Linux Latinoamérica` y `XUnix`. La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables de distribuciones Debian y derivados.
+gusto, presento mis dotfiles, para todos aquellos que vieron mis capturas en `Linux Latinoamérica` y `XUnix`. La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables de distribuciones Debian y derivados.
 
 ## Prerrequisitos
 
@@ -46,6 +46,177 @@ Para la instalación de polybar, asegurarse de tener incluido el siguiente backp
 
 
 - [Polybar](https://github.com/polybar/polybar)
+
+## Instalación
+
+De momento, la instalación es manual. Para realizar la instalación, debemos asegurarnos de tener instalado *bspwm* y *polybar*. También necesitaremos tener descargado *st*. Vamos a realizar la instalación del tema *break*.
+
+1. Abrimos la terminal y clonamos el repositorio con el siguiente comando:
+
+```
+  git -C ~/ clone https://github.com/kaibakev1984/Lorblak-Dotfiles
+```
+![git clone](screenshots/capture1.png)
+
+2. Una vez descargado, nos dirigimos al repositorio y accedemos al directorio *break*. Tendremos lo siguiente:
+
+![break directory](screenshots/capture2.png)
+
+Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
+
+3. El archivo *bspwmrc* es el archivo que necesitaremos para configurar *bspwm*. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/bspwm
+  cp bspwmrc ~/.config/bspwm
+```
+
+4. El archivo `sxhkdrc` nos permite configurar los atajos de nuestro teclado. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/sxhkd
+  cp sxhkdrc ~/.config/sxhkd
+```
+
+
+
+![break directory](screenshots/capture2.png)
+
+Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
+
+3. El archivo *bspwmrc* es el archivo que necesitaremos para configurar *bspwm*. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/bspwm
+  cp bspwmrc ~/.config/bspwm
+```
+
+4. El archivo `sxhkdrc` nos permite configurar los atajos de nuestro teclado. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/sxhkd
+  cp sxhkdrc ~/.config/sxhkd
+```
+
+
+
+![break directory](screenshots/capture2.png)
+
+Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
+
+3. El archivo *bspwmrc* es el archivo que necesitaremos para configurar *bspwm*. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/bspwm
+  cp bspwmrc ~/.config/bspwm
+```
+
+4. El archivo `sxhkdrc` nos permite configurar los atajos de nuestro teclado. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/sxhkd
+  cp sxhkdrc ~/.config/sxhkd
+```
+
+
+
+![break directory](screenshots/capture2.png)
+
+Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
+
+3. El archivo *bspwmrc* es el archivo que necesitaremos para configurar *bspwm*. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/bspwm
+  cp bspwmrc ~/.config/bspwm
+```
+
+4. El archivo `sxhkdrc` nos permite configurar los atajos de nuestro teclado. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/sxhkd
+  cp sxhkdrc ~/.config/sxhkd
+```
+
+
+
+![break directory](screenshots/capture2.png)
+
+Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
+
+3. El archivo *bspwmrc* es el archivo que necesitaremos para configurar *bspwm*. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/bspwm
+  cp bspwmrc ~/.config/bspwm
+```
+
+4. El archivo `sxhkdrc` nos permite configurar los atajos de nuestro teclado. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/sxhkd
+  cp sxhkdrc ~/.config/sxhkd
+```
+
+
+
+![break directory](screenshots/capture2.png)
+
+Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
+
+3. El archivo *bspwmrc* es el archivo que necesitaremos para configurar *bspwm*. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/bspwm
+  cp bspwmrc ~/.config/bspwm
+```
+
+4. El archivo `sxhkdrc` nos permite configurar los atajos de nuestro teclado. Para instalarlo hacemos lo siguiente:
+
+```
+  mkdir ~/.config/sxhkd
+  cp sxhkdrc ~/.config/sxhkd
+```
+Una vez copiado, reiniciamos la configuración haciendo `super + esc`
+
+5. Instalamos el tema `Break` para *Rofi* ingresando lo siguiente por terminal:
+```
+  sudo cp break.rasi /usr/share/rofi/themes
+```
+
+6. Tenemos el directorio *polybar*, en el cual se encuentran los archivos de configuración para dicha barra. Para instalarlo hacemos lo siguiente:
+```
+  cp -r polybar ~/.config
+```
+
+7. Para instalar las fuentes, tenemos el directorio `.fonts`. En mi caso, lo vamos a instalar en nuestro $HOME haciendo:
+```
+  cp -r .fonts ~/
+```
+
+8. Una vez terminado de copiar los archivos, reiniciamos *bspwm* haciendo `super + alt + r` 
+
+9. Para configurar `st`, primero descargamos el archivo comprimido `st.0.8.4` de este [enlace](https://st.suckless.org/). 
+![st suckless terminal](screenshots/capture3.png)
+
+10. Nos ubicamos en donde tenemos instalado *st* y descomprimimos haciendo:
+```
+  tar -xvf st.0.8.4.tar.gz
+```
+
+Nos debería quedar algo así:
+![st ](screenshots/capture4.png)
+
+11. En nuestro directorio con el tema *break* hay un archivo llamado `st-break.diff`, que contiene nuestro tema para *st*. Para instalarlo, copiamos dicho documento en el directorio donde descomprimimos *st*. Nos debería quedar algo así:
+![st ls](screenshot/capture5.png)
+
+12. Para instalar nuestro tema, nos ubicaremos al directorio *st.0.8.4* e ingresamos lo siguiente:
+```
+  sudo make uninstall
+  patch -i st-break.diff
+  sudo make clean install
+```
+
 
 ## Enlaces útiles
 
