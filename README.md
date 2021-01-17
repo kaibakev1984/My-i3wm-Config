@@ -129,7 +129,7 @@ Nos debería quedar algo así:
 
 14. Nuestro tema se debería ver así:
 
-[capture6.png](https://postimg.cc/vxB6Zh0f)
+[![capture6.png](https://i.postimg.cc/GtPPzSY7/capture6.png)](https://postimg.cc/vxB6Zh0f)
 
 
 
