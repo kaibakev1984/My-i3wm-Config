@@ -14,7 +14,7 @@
 
   spacing: 0;
   background-color: transparent;
-  font: "unifont 10";
+  font: "Iosevka Nerd Font 10";
  
   text-color: @text;
 }
@@ -22,7 +22,7 @@
 window {
   transparency: "real";
   fullscreen: true;
-  background-color: #0C100fD9;
+  background-color: #061E28D9;
 }
 
 mainbox {
