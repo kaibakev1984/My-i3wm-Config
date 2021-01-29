@@ -22,7 +22,7 @@
 window {
   transparency: "real";
   fullscreen: true;
-  background-color: #0C100fD9;
+  background-color: #061E28D9;
 }
 
 mainbox {
