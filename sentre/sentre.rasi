@@ -14,7 +14,7 @@
 
   spacing: 0;
   background-color: transparent;
-  font: "unifont 10";
+  font: "Iosevka Nerd Font 10";
  
   text-color: @text;
 }
