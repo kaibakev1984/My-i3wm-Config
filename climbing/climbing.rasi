@@ -28,7 +28,7 @@ configuration {
     background-color: @background;
     background:     #282a36;
     foreground:     #f8f8f2;
-    border-color:   #1F7388;
+    border-color:   #282a36D9;
     spacing:        4;
     font:           "Iosevka Nerd Font 10";
 }
