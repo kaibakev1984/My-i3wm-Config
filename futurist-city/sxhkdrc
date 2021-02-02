@@ -2,14 +2,28 @@
 # wm independent hotkeys
 #
 
-# terminal emulator
+# st -  terminal emulator
 super + Return
   st	
+
+# rxvt - terminal emulator
+alt + Return 
+  rxvt
 
 # program launcher
 super + d 
   rofi -show drun -theme futurist-city
 
+# start ranger
+alt + r 
+  st -e ranger
+
+# start i3lock-fancy
+super + shift + x
+  i3lock-fancy
+# start Telegram
+alt + t
+  Telegram
 # 
 # Audio Controls
 #
@@ -26,11 +40,12 @@ XF86AudioLowerVolume
 XF86AudioMute
   amixer -q sset Master toggle
 
+# Brightness Control
+XF86MonBrightnessDown
+  xbacklight -dec 5
 
-#	Start ranger
-alt + p 
-	pcmanfm
-
+XF86MonBrightnessUp
+  xbacklight -inc 5
 # make sxhkd reload its configuration files:
 super + Escape
 	pkill -USR1 -x sxhkd
