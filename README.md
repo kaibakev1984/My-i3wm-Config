@@ -251,3 +251,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![cobra kai scheme](https://i.postimg.cc/2Smd75H2/cobra-kai-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cobra-kai)
 [![sentre scheme](https://i.postimg.cc/bJG45CKp/Captura-de-pantalla-de-2021-01-27-00-49-38.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sentre)
 [![climbing scheme](https://i.postimg.cc/MKnQYznW/climbing-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/climbing)
+[![tower scheme](https://i.postimg.cc/XY96QhXK/tower-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/tower)
