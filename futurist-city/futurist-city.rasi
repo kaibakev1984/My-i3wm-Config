@@ -30,13 +30,13 @@ configuration {
     foreground:     #b6cabe;
     border-color:   #53698C;
     spacing:        2;
-    font:           "unifont 10";
+    font:           "Iosevka Nerd Font 11";
 }
 
 #window {
     background-color: @background;
-    height: 50%;
-    width: 30%;
+    height: 55%;
+    width: 35%;
     border: 0;
     padding: 2.5ch;
 }
