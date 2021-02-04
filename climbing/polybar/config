@@ -46,14 +46,14 @@ border-color = ${colors.background}
 padding-left = 2
 padding-right = 2
 
-module-margin-left = 2
-module-margin-right = 2
+module-margin-left = 1
+module-margin-right = 1
 
 font-0 = Iosevka Nerd Font:style=Medium:size=8;2
 
 modules-left    = menu bspwm
 modules-center  = date 
-modules-right   = alsa filesystem wlan eth xkeyboard battery
+modules-right   = wlan eth alsa filesystem xkeyboard battery
 
 ;tray-position = none
 ;tray-detached = false
@@ -97,7 +97,7 @@ label-indicator-padding = 2
 type = internal/fs
 interval = 25
 
-mount-0 = /
+mount-0 = /home
 
 format-mounted = <label-mounted>
 format-mounted-prefix = 
@@ -117,6 +117,7 @@ ws-icon-0 = I;I
 ws-icon-1 = II;II
 ws-icon-2 = III;III
 ws-icon-3 = IV;IV
+ws-icon-4 = V;V
 ws-icon-default = 
 
 format = <label-state> <label-mode>
@@ -156,7 +157,7 @@ label = %percentage_used%%
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp7s0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
@@ -166,16 +167,17 @@ format-connected-prefix               = 直
 format-connected-prefix-foreground    = ${colors.secondary}
 
 format-disconnected                   = <label-disconnected>
+format-disconnected-foreground        = ${colors.alert}
 format-disconnected-prefix            = 睊
-format-disconnected-prefix-foreground = ${colors.secondary}
+;;format-disconnected-prefix-foreground = ${colors.secondary}
 
 label-connected = " %essid%"
-label-disconnected = Not connected
+label-disconnected = " No signal"
 
 
 [module/eth]
 type = internal/network
-interface = enp0s3
+interface = enp5s0
 interval = 3.0
 
 format-connected = <label-connected>
@@ -300,7 +302,7 @@ margin-bottom = 0
 
 [module/menu]
 type = custom/text
-content =  Menu
+content =  Menu
 content-foreground = ${colors.secondary}
 content-background = ${colors.background}
 ;;content-padding    = 2
