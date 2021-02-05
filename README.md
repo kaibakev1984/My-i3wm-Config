@@ -253,3 +253,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![climbing scheme](https://i.postimg.cc/MKnQYznW/climbing-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/climbing)
 [![tower scheme](https://i.postimg.cc/XY96QhXK/tower-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/tower)
 [![anime-cat scheme](https://i.postimg.cc/zDtXPLDp/anime-cat-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/anime-cat)
+[![anime minimal scheme](https://i.postimg.cc/j2bvMLQz/anime-minimal-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/anime-minimal)
