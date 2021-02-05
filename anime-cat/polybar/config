@@ -65,7 +65,7 @@ font-4 = Iosevka Nerd Font:style=Medium:size=7;4
 
 modules-left    = bspwm xwindow 
 modules-center  = 
-modules-right   = arrow1-right wlan eth arrow2-right xkeyboard arrow3-right date arrow4-right alsa battery 
+modules-right   = arrow1-right wlan eth arrow2-right memory cpu arrow3-right info-kernel alsa arrow4-right date xkeyboard battery 
 
 ;tray-position = none
 ;tray-detached = false
@@ -99,8 +99,8 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-foreground        = ${colors.foreground}
-format-background        = ${colors.arrow2}
-;;format-underline         = ${colors.background}
+format-background        = ${colors.arrow4}
+format-padding = 2
 format-prefix =   
 label-layout = " %layout%"
 label-layout-foreground = ${colors.foreground}
@@ -146,7 +146,7 @@ label-occupied = %icon%
 label-occupied-padding = 2
 
 label-urgent = %icon%
-label-urgent-foreground = ${colors.alert}
+label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %icon%
@@ -160,15 +160,17 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-label = %percentage:2%%
+format-background = ${colors.arrow2}
+format-padding = 2
+label = %percentage:3%%
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${root.foreground}
-label = %percentage_used%%
+format-background = ${colors.arrow2}
+format-padding = 2
+format-prefix = ﬙
+label = " %percentage_used:3%%"
 
 [module/wlan]
 type = internal/network
@@ -200,13 +202,14 @@ interface = enp0s3
 interval = 3.0
 
 format-connected = <label-connected>
-format-connected-prefix =  
+;;format-connected-prefix =  
+format-connected-prefix = 
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.arrow1}
 format-connected-padding    = 2
 ;;format-connected-underline  = ${colors.background}
-;;label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
-label-connected = " %ifname%"
+label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
+;;label-connected = " %ifname%"
 
 ;format-disconnected = 
 format-disconnected =
@@ -221,7 +224,7 @@ time = " %I:%M %p "
 time-alt  = " %d-%m-%Y"
 
 format-foreground = ${colors.foreground}
-format-background = ${colors.arrow3}
+format-background = ${colors.arrow4}
 ;;format-underline  = ${colors.background}
 format-padding    = 2
 
@@ -233,14 +236,14 @@ type = internal/alsa
 
 format-volume            = <ramp-volume> <label-volume>
 format-volume-foreground = ${colors.foreground}
-format-volume-background = ${colors.arrow4}
+format-volume-background = ${colors.arrow3}
 ;;format-volume-underline  = ${colors.background}
 format-volume-padding    = 2
 
-label-volume = " %percentage:3%%"
+label-volume = %percentage%%
 label-volume-foreground = ${colors.foreground}
 
-format-muted-background = ${colors.arrow4}
+format-muted-background = ${colors.arrow3}
 format-muted-prefix = ﱝ
 format-muted-padding = 2
 label-muted = " Muted"
@@ -370,6 +373,16 @@ format-prefix = " "
 format-padding = 2
 exec = echo "$(whoami)"
 format-prefix-font = 2
+
+[module/info-kernel]
+type = custom/script
+interval = 1024
+exec = uname -r
+format = "<label>"
+format-prefix = " "
+format-background = ${colors.arrow3}
+format-padding = 2
+
 
 [module/arrow1-right]
 type = custom/text
