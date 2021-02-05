@@ -249,7 +249,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![qa scheme](https://i.postimg.cc/s2xK9Xfk/samurai-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/samurai)
 [![fantasy scheme](https://i.postimg.cc/gJqzF5Jd/fantasy-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/fantasy)
 [![cobra kai scheme](https://i.postimg.cc/2Smd75H2/cobra-kai-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cobra-kai)
-[![sentre scheme](https://i.postimg.cc/bJG45CKp/Captura-de-pantalla-de-2021-01-27-00-49-38.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sentre)
+[![sentre scheme](https://i.postimg.cc/bvCDx4mH/sentre-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sentre)
 [![climbing scheme](https://i.postimg.cc/MKnQYznW/climbing-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/climbing)
 [![tower scheme](https://i.postimg.cc/XY96QhXK/tower-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/tower)
 [![anime-cat scheme](https://i.postimg.cc/zDtXPLDp/anime-cat-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/anime-cat)
