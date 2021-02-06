@@ -163,15 +163,16 @@ accumulate-stats = true
 unknown-as-up = true
 
 format-connected                      = <label-connected>
-format-connected-prefix               = 直
-format-connected-prefix-foreground    = ${colors.background-alt}
+format-connected-prefix               = wifi:
+format-connected-underline            = ${colors.background-alt}
 
 format-disconnected                   = <label-disconnected>
-format-disconnected-prefix            = 睊
-format-disconnected-prefix-foreground = ${colors.background-alt}
+format-disconnected-foreground        = ${colors.alert}
+format-disconnected-prefix            = wifi:
+format-disconnected-underline         = ${colors.background-alt}
 
-label-connected = %essid%
-label-disconnected = Not connected
+label-connected = " %essid%"
+label-disconnected = " Not connected"
 
 
 [module/eth]
