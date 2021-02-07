@@ -1,5 +1,3 @@
-# WIP : ETA - 10 Days
-
 ![logo](/logo-bspwm.png) <br />
 
 ##  Tabla de Contenidos
