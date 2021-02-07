@@ -43,8 +43,8 @@ line-color = ${colors.background-alt}
 border-size = 4
 border-color = ${colors.background}
 
-padding-left = 2
-padding-right = 2
+padding-left = 1
+padding-right = 1
 
 module-margin-left = 1
 module-margin-right = 1
@@ -55,7 +55,7 @@ font-1 = Iosevka Nerd Font:style=Medium:size=8;2
 
 modules-left    = bspwm user-host xwindow
 modules-center  = 
-modules-right   = memory cpu wlan eth alsa date battery
+modules-right   = ram cpu wlan eth alsa date battery
 
 ;tray-position = none
 ;tray-detached = false
@@ -146,18 +146,18 @@ type = internal/cpu
 interval = 2
 format-prefix = cpu:
 format-underline = ${colors.background-alt}
-label = " %percentage:2%%"
+label = " %percentage:3%%"
 
-[module/memory]
+[module/ram]
 type = internal/memory
 interval = 2
 format-prefix = ram: 
 format-underline = ${colors.background-alt}
-label = " %percentage_used%%"
+label = " %percentage_used:3%%"
 
 [module/wlan]
 type = internal/network
-interface = wlp3s0
+interface = wlp7s0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
@@ -247,14 +247,15 @@ adapter = AC
 poll-interval = 2
 time-format = %H:%M
 
-format-prefix        = bat: 
-format-underline     = ${colors.background-alt}
-format-charging      = <label-charging>
-format-discharging   = <label-discharging>
+format-charging               = bat: <label-charging>
+format-charging-underline     = ${colors.background-alt}
+format-discharging            = bat: <label-discharging>
+format-discharging-underline  = ${colors.background-alt}
+format-full                   = bat: <label-full>
+format-full-underline         = ${colors.background-alt}
 
 label-charging    = " %percentage%%"
 label-discharging = " %percentage%%"
-
 label-full = " %percentage%%"
 
 ramp-capacity-0 = 
