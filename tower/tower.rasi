@@ -20,7 +20,7 @@ configuration {
 
     selected-active-background: #1e1b1c;
     selected-active-foreground: @foreground;
-    selected-normal-background: #F35D70;
+    selected-normal-background: #AC335F;
     selected-normal-foreground: #dfdfdf;
     selected-urgent-background: #3D4A4E;
     selected-urgent-foreground: @foreground;
@@ -28,7 +28,7 @@ configuration {
     background-color: @background;
     background:     #01010D;
     foreground:     #dfdfdf;
-    border-color:   #213346;
+    border-color:   #26f2f1;
     spacing:        4;
     font:           "Iosevka Nerd Font 10";
 }
