@@ -1,3 +1,5 @@
+![logo](/logo-bspwm.png) <br />
+
 ##  Tabla de Contenidos
 
 * [Introducción](#introducción)
