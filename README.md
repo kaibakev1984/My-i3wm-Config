@@ -2,6 +2,10 @@
 <img src="https://i.postimg.cc/XNk5Rfnp/logo-bspwm.png" alt="Logo Lorblak bspwm">
 </div>
 </br>
+
+***
+
+</br>
 <div align="center">
 <a href='https://postimg.cc/pyXg7xGH' target='_blank'><img src='https://i.postimg.cc/pyXg7xGH/lofi-rain-scheme.png' border='0' alt='lofi-rain-scheme'/></a> <a href='https://postimg.cc/sMS8S2Xp' target='_blank'><img src='https://i.postimg.cc/sMS8S2Xp/robocity-scheme.png' border='0' alt='robocity-scheme'/></a> <a href='https://postimg.cc/ygSS62nY' target='_blank'><img src='https://i.postimg.cc/ygSS62nY/girl-glasses-scheme.png' border='0' alt='girl-glasses-scheme'/></a> <a href='https://postimg.cc/RWKSF4xY' target='_blank'><img src='https://i.postimg.cc/RWKSF4xY/old-computer-scheme.png' border='0' alt='old-computer-scheme'/></a> </br><a href='https://postimg.cc/qtZ6cpgG' target='_blank'><img src='https://i.postimg.cc/qtZ6cpgG/john-wick-scheme.png' border='0' alt='john-wick-scheme'/></a> <a href='https://postimg.cc/PpJs1SYF' target='_blank'><img src='https://i.postimg.cc/PpJs1SYF/fantasy-scheme.png' border='0' alt='fantasy-scheme'/></a> <a href='https://postimg.cc/G43fpXF9' target='_blank'><img src='https://i.postimg.cc/G43fpXF9/tower-scheme.png' border='0' alt='tower-scheme'/></a> <a href='https://postimg.cc/D8Wj1zZx' target='_blank'><img src='https://i.postimg.cc/D8Wj1zZx/umbrellas-scheme.png' border='0' alt='umbrellas-scheme'/></a> </br>
 <a href='https://postimg.cc/2qWSm9RV' target='_blank'><img src='https://i.postimg.cc/2qWSm9RV/sentre-scheme.png' border='0' alt='sentre-scheme'/></a> <a href='https://postimg.cc/cgh4WS8n' target='_blank'><img src='https://i.postimg.cc/cgh4WS8n/break-scheme.png' border='0' alt='break-scheme'/></a> <a href='https://postimg.cc/DJxqZfNZ' target='_blank'><img src='https://i.postimg.cc/DJxqZfNZ/anime-minimal-scheme.png' border='0' alt='anime-minimal-scheme'/></a> <a href='https://postimg.cc/9rpMtcnq' target='_blank'><img src='https://i.postimg.cc/9rpMtcnq/metropolis-scheme.png' border='0' alt='metropolis-scheme'/></a>
