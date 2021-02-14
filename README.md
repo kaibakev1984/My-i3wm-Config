@@ -149,18 +149,18 @@ Nos debería quedar algo así:
 			
 				/usr/share/rofi/themes
 							
+* [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
+* [Font Awesome Cheatsheet](https://fontawesome.com/cheatsheet)
+* [Nerd Font Cheatsheet](https://www.nerdfonts.com/cheat-sheet)
 * [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
 * [Vimplug - Para poner plugins a VIM](https://www.ostechnix.com/vim-plug-a-minimalist-vim-plugin-manager/)
-* [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
-* [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
 * [Polybar](https://github.com/regolith-linux/regolith-desktop/wiki/HowTo:-Swap-out-i3bar-for-Polybar?fbclid=IwAR3QtWfotVnkvgwtbUYXKAi9mz7sSSTlZRTmkOnqf8-UwXbhp72Dj4Pe4TI)
-* [Kthulu120 Themes](https://github.com/Kthulu120/i3wm-themes) (requiere i3-gaps instalado)
-* [Font Awesome](https://fontawesome.com/cheatsheet)
-* [Ranger - Terminal File Manager](https://wikimatze.de/ranger-a-terminal-browser-for-vim/)
+* [Ranger](https://wikimatze.de/ranger-a-terminal-browser-for-vim/)
 * [Gtop](https://www.bleepingcomputer.com/forums/t/667825/how-to-install-gtop-on-ubuntu/)
-* [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
-* [st - Suckless Terminal](https://st.suckless.org/)
 * [pfetch](https://github.com/dylanaraps/pfetch)
+* [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
+* [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
+* [st - Suckless Terminal](https://st.suckless.org/)
 * [ZSH](https://linoxide.com/tools/install-zsh-on-linux/)
 
 ##	Fuentes
