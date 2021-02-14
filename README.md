@@ -132,8 +132,10 @@ Nos debería quedar algo así:
 
 14. Nuestro tema se debería ver así:
 
-[![capture6.png](https://i.postimg.cc/GtPPzSY7/capture6.png)](https://postimg.cc/vxB6Zh0f)
-[![capture7.png](https://i.postimg.cc/6q16sBdy/capture7.png)](https://postimg.cc/gL8b8FtW)
+<p align="center">
+<a href='https://i.postimg.cc/GtPPzSY7/capture6.png' target='_blank'><img align="center" width="300" height="200" src='https://i.postimg.cc/GtPPzSY7/capture6.png' border='0' alt='st-main-page'/></a> </br>
+<a href='https://i.postimg.cc/6q16sBdy/capture7.png' target='_blank'><img align="center" width="300" height="200" src='https://i.postimg.cc/6q16sBdy/capture7.png' border='0' alt='st-main-page'/></a>
+</p>
 
 
 ## Paquetes Opcionales
