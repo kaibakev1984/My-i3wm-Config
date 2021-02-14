@@ -101,7 +101,7 @@ Estos los son archivos que necesitaremos para configurar nuestro *Riced*.
 9. Para configurar `st`, primero descargamos el archivo comprimido `st.0.8.4` de este [enlace](https://st.suckless.org/). 
 
 <p align="center">
-<a href='https://postimg.cc/HJ6F4Rq6' target='_blank'><img align="center" width="300" height="200" src='https://i.postimg.cc/HJ6F4Rq6/st-main-page.png' border='0' alt='st-main-page'/></a>
+<a href='https://i.postimg.cc/XNB20DpQ/st-main-page.png' target='_blank'><img align="center" width="300" height="200" src='https://i.postimg.cc/XNB20DpQ/st-main-page.png' border='0' alt='st-main-page'/></a>
 </p>
 
 10. Nos ubicamos en donde tenemos instalado *st* y descomprimimos haciendo:
