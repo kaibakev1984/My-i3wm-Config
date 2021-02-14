@@ -9,7 +9,6 @@
   * [Instalando Polybar](#instalando-polybar)
 * [Instalación](#instalación)
 * [Enlaces Útiles](#enlaces-útiles)
-* [Fuentes](#fuentes)
 * [Galería](#galería)
 
 
@@ -136,20 +135,7 @@ Nos debería quedar algo así:
 
 ## Enlaces útiles
 
-* [Repositorio de Rofi](https://github.com/davatorium/rofi)
-	* **NOTA**: Se puede instalar mediante:
-		
-				sudo apt-get install rofi
-		
-  	El principal problema es que, desde la instlación por línea de comandos,
-			se tiene problemas con el layout con algunos temas.
-			Para ello, pueden instarlo a mano, y luego clonan el repositorio,
-			para copiar todos los temas bajados del repositorio, en su carpeta
-			de temas **themes** de rofi, que está en la siguiente ruta:
-			
-				/usr/share/rofi/themes
-							
-* [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
+* [Rofi](https://github.com/davatorium/rofi)
 * [Font Awesome Cheatsheet](https://fontawesome.com/cheatsheet)
 * [Nerd Font Cheatsheet](https://www.nerdfonts.com/cheat-sheet)
 * [Mutt - Cliente de Mail por Terminal](https://www.thegeekdiary.com/how-to-install-and-configure-mutt-in-centos-rhel/)
@@ -161,14 +147,8 @@ Nos debería quedar algo así:
 * [Colorizer - Vim plugin](https://github.com/lilydjwg/colorizer)
 * [i3lock-fancy](https://github.com/meskarune/i3lock-fancy)
 * [st - Suckless Terminal](https://st.suckless.org/)
-* [ZSH](https://linoxide.com/tools/install-zsh-on-linux/)
-
-##	Fuentes
-Se tienen algunas fuentes básicas dentro del repositorio. Para su instalación, abrir la terminal en el directorio del repositorio e ingresar lo siguiente por terminal:
-
-		cp -r .fonts ~/
-
-Se puede revisar el catálogo con los íconos para estas fuentes en [Font Awesome](https://fontawesome.com/cheatsheet).
+* [zsh](https://linoxide.com/tools/install-zsh-on-linux/)
+* [SimpleDesktops - Fondos de Pantalla Minimalistas](http://simpledesktops.com/)
 
 ##	ST (Suckless Terminal) con dependencias incompletas
 Es posible recibir los siguientes mensajes durante la instalación de st:
