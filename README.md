@@ -118,18 +118,17 @@ Nos debería quedar algo así:
 ![st ls](https://i.postimg.cc/Pf007LD1/capture5.png)
 
 12. Para instalar nuestro tema, nos ubicaremos al directorio *st.0.8.4* e ingresamos lo siguiente:
-
-```
+~~~bash
   sudo make uninstall
   patch -i st-break.diff
   sudo make clean install
-```
+~~~
 
 13. Para el fondo de pantalla, copiamos la imagen *break.jpg* en la ruta de nuestro gusto. En mi caso lo instalo en `~/Imágenes`. Para agregarle el fondo ingresamos por terminal:
 
-```
+~~~bash
   feh --bg-fill ~/Imágenes/break.jpg
-```
+~~~
 
 14. Nuestro tema se debería ver así:
 
@@ -138,8 +137,9 @@ Nos debería quedar algo así:
 
 
 ## Paquetes Opcionales
-	
+~~~bash	
 	   sudo apt install build-essential valgrind manpages-dev gdb feh compton rofi i3lock-fancy cmatrix htop pcmanfm vim neofetch
+~~~
 
 ## Enlaces útiles
 * [Polybar](https://github.com/polybar/polybar)
