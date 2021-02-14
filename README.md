@@ -25,7 +25,7 @@
 
 ## Introducción
 
-La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables en Arch Linux, Debian y derivados.
+La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables en **Arch Linux**, **Debian** y derivados.
 
 ## Instalación
 
@@ -35,9 +35,9 @@ Por el momento, la instalación de **bspwm** y **polybar** descripta a continuac
 
 ## Instalando bspwm
 Las configuraciones solo trabajan con `bspwm`, `sxhkd` y `polybar`
-
+~~~bash
 		sudo apt-get install bspwm sxhkd
-
+~~~
 **NOTA**: Para los que usen Debian 10 o derivados, deben tener en cuenta que la instalación les va a traer la versión `0.9.5`, el cuál viene con un bug que se resolvió en versiones posteriores. Por eso, antes de realizar la instalación de `bspwm`, asegúrense de tener habilitado el siguiente repositorio en su archivo `/etc/apt/sources.list`
 
 		 deb http://ftp.de.debian.org/debian sid main 
@@ -51,9 +51,9 @@ Para la instalación de polybar, asegurarse de tener incluido el siguiente backp
 		deb http://deb.debian.org/debian buster-backports main contrib non-free
 
  Ingresar por terminal lo siguiente:
-
+~~~bash
 		sudo apt-get install polybar
-
+~~~
 
 ## Instalando un tema
 
