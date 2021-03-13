@@ -198,7 +198,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![lofi-rain scheme](https://i.postimg.cc/ZRCpgx4r/lofi-rain-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
 [![robocity scheme](https://i.postimg.cc/YCyw5GBy/robocity-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
 [![forest scheme](https://i.postimg.cc/90V3dyyz/forest-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/forest)
-[![autumn scheme](https://i.postimg.cc/6pFmVdXw/autumn-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
+[![autumn scheme](https://i.imgur.com/sAUm0hg.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
 [![day-city scheme](https://i.postimg.cc/tCWfYN2Q/day-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/day-city)
 [![raining scheme](https://i.postimg.cc/qM5b08gn/raining-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/raining)
 [![sleepy-hollow scheme](https://i.postimg.cc/rmMggjY6/sleepy-hollow.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sleepy-hollow)
