@@ -203,7 +203,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![raining scheme](https://i.postimg.cc/qM5b08gn/raining-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/raining)
 [![sleepy-hollow scheme](https://i.postimg.cc/rmMggjY6/sleepy-hollow.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sleepy-hollow)
 [![girl-glasses scheme](https://i.postimg.cc/x1wCF1YR/girl-glasses-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/girl-glasses)
-[![rem scheme](https://i.postimg.cc/vDF4Lq3f/rem-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
+[![rem scheme](https://i.imgur.com/IdBNfcl.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
 [![books scheme](https://i.imgur.com/gTiD7lZ.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
 [![old-computer scheme](https://i.postimg.cc/4dZ9Fv23/old-computer-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
 [![keyboard scheme](https://i.imgur.com/0DJ1PyV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/keyboard)

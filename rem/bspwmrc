@@ -1,34 +1,32 @@
 #! /bin/sh
 
 sxhkd &
-compton &
-#polybar example &
+picom --config ~/.config/picom/picom.conf & 
+# polybar example &
 ~/.config/polybar/launch.sh
 ~/.fehbg
 xrandr -s 1360x768
 
-bspc monitor -d I II III IV
+bspc monitor -d I II III IV V
 
-bspc config border_width         2
-bspc config window_gap          12
-bspc config normal_border_color "#352d31"
-bspc config active_border_color "#3394DB"
-bspc config focused_border_color "#352d31"
-bspc config presel_feedback_color "#D8A2A2"
+bspc config border_width          0
+bspc config window_gap            12
+bspc config normal_border_color   "#7c7c74"
+bspc config active_border_color   "#BE6E8C"
+bspc config focused_border_color  "#82d4f8"
+bspc config presel_feedback_color "#f2e097"
 
-# bspc config automatic_scheme     spiral
-bspc config split_ratio          0.5
-bspc config borderless_monocle   true
-bspc config gapless_monocle      true
+# bspc config automatic_scheme    spiral
+bspc config split_ratio           0.5
+bspc config borderless_monocle    true
+bspc config gapless_monocle       true
+bspc config focus_follows_pointer true
+bspc config border_radius         6
 
 # Application Rules
-bspc rule -a Gimp desktop='^8' state=floating follow=on
-bspc rule -a Chromium desktop='^2'
-bspc rule -a mplayer2 state=floating
-bspc rule -a Kupfer.py focus=on
-bspc rule -a Screenkey manage=off
-bspc rule -a Brave-browser desktop='^2'
-bspc rule -a Code desktop='^3' follow=on
-bspc rule -a Geany desktop='^3' follow=on
-bspc rule -a Firefox-esr desktop='^2' follow=on
 bspc rule -a st-256color desktop='^1' follow=on
+bspc rule -a Code desktop='^2' 
+bspc rule -a Geany desktop='^2' 
+bspc rule -a Brave-browser desktop='^3'
+bspc rule -a Firefox-esr desktop='^3' 
+bspc rule -a TelegramDesktop desktop='^4' 

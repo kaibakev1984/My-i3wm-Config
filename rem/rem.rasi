@@ -1,9 +1,14 @@
+configuration {
+    show-icons:     false;
+    
+}
+
 * {
-    active-background: #3394DB;
+    active-background: #58344C;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #698CAE;
+    urgent-background: #1C304B;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,24 +18,27 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #698CAE;
+    selected-active-background: #120813;
     selected-active-foreground: @foreground;
-    selected-normal-background: #3394DB;
-    selected-normal-foreground: @foreground;
-    selected-urgent-background: #54AAE8;
+    selected-normal-background: #99D2F1;
+    selected-normal-foreground: @background;
+    selected-urgent-background: #839BBC;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #352d31;
-    foreground: #e6eae6;
-    border-color: @background;
-    spacing: 2;
+    background:     #352c31;
+    foreground:     #a09991;
+    border-color:   #352c31;
+    spacing:        0;
+    font:           "Iosevka Nerd Font 10";
 }
 
 #window {
     background-color: @background;
+    height: 55%;
+    width: 35%;
     border: 0;
-    padding: 1.5ch;
+    padding: 2.5ch;
 }
 
 #mainbox {
