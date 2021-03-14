@@ -18,8 +18,8 @@
 
 [colors]
 background           = #061E28
-background-alt       = #b58900  
-foreground           = #eee8d5 
+background-alt       = #b58900
+foreground           = #eee8d5
 foreground-alt       = #44c4af
 primary              = #5D9094
 secondary            = #6F6F6F
@@ -50,7 +50,7 @@ line-color = ${colors.background-alt}
 border-size = 0
 border-color = ${colors.background}
 
-padding-left = 2
+padding-left = 0
 padding-right = 0
 
 module-margin-left  = 0
@@ -63,9 +63,9 @@ font-3 = Iosevka Nerd Font:style=Medium:size=12;4
 font-4 = Iosevka Nerd Font:style=Medium:size=7;4
 
 
-modules-left    = bspwm xwindow
+modules-left    = bspwm xwindow 
 modules-center  = 
-modules-right   = arrow1-right wlan eth arrow2-right xkeyboard arrow3-right date arrow4-right alsa battery 
+modules-right   = arrow1-right wlan eth arrow2-right memory cpu arrow3-right info-kernel alsa arrow4-right date xkeyboard battery 
 
 ;tray-position = none
 ;tray-detached = false
@@ -90,20 +90,19 @@ cursor-scroll = ns-resize
 
 [module/xwindow]
 type = internal/xwindow
-label = %title:0:30:...%
+label = %title:0:40:...%
 format-foreground = ${colors.foreground-alt}
 format-padding = 4
 
 [module/xkeyboard]
 type = internal/xkeyboard
 blacklist-0 = num lock
-
+;;blacklist-1 = caps lock
 format-foreground        = ${colors.foreground}
-format-background        = ${colors.arrow2}
-;;format-underline         = ${colors.background}
+format-background        = ${colors.arrow4}
+format-padding = 1
 format-prefix =   
 label-layout = " %layout%"
-label-layout-foreground = ${colors.foreground}
 
 label-indicator-background = ${colors.alert}
 label-indicator-padding = 2
@@ -129,8 +128,8 @@ type = internal/bspwm
 ; Only show workpsaces on the same output as the bar
 ; pin-workspaces=true
 ws-icon-0 = I;
-ws-icon-1 = II;
-ws-icon-2 = III;
+ws-icon-1 = II;
+ws-icon-2 = III;
 ws-icon-3 = IV;
 ws-icon-4 = V;
 ws-icon-default = 
@@ -146,7 +145,7 @@ label-occupied = %icon%
 label-occupied-padding = 2
 
 label-urgent = %icon%
-label-urgent-foreground = ${colors.alert}
+label-urgent-background = ${colors.alert}
 label-urgent-padding = 2
 
 label-empty = %icon%
@@ -160,19 +159,21 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-prefix-foreground = ${colors.foreground}
-label = %percentage:2%%
+format-background = ${colors.arrow2}
+format-padding = 2
+label = %percentage:3%%
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-prefix = " "
-format-prefix-foreground = ${root.foreground}
-label = %percentage_used%%
+format-background = ${colors.arrow2}
+format-padding = 1
+format-prefix = ﬙
+label = " %percentage_used:3%%"
 
 [module/wlan]
 type = internal/network
-interface = wlp7s0
+interface = wlan0
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
@@ -180,16 +181,17 @@ unknown-as-up = true
 format-connected                      = <label-connected>
 format-connected-foreground           = ${colors.foreground}
 format-connected-background           = ${colors.arrow1}
-;;format-connected-underline            = ${colors.background}
 format-connected-prefix               = 直
+format-connected-padding              = 1
 
 format-disconnected                   = <label-disconnected>
 format-disconnected-foreground        = ${colors.foreground}
 format-disconnected-background        = ${colors.arrow1}
-;;format-disconnected-underline         = ${colors.background}
 format-disconnected-prefix            = 睊
+format-disconnected-padding           = 1
 
-label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
+label-connected = " %essid%: %upspeed:9%   %downspeed:9% "
+;;label-connected = " %essid%"
 label-disconnected = Not connected
 
 
@@ -199,12 +201,14 @@ interface = enp0s3
 interval = 3.0
 
 format-connected = <label-connected>
+;;format-connected-prefix =  
 format-connected-prefix = 
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.arrow1}
 format-connected-padding    = 2
 ;;format-connected-underline  = ${colors.background}
 label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
+;;label-connected = " %ifname%"
 
 ;format-disconnected = 
 format-disconnected =
@@ -219,9 +223,9 @@ time = " %I:%M %p "
 time-alt  = " %d-%m-%Y"
 
 format-foreground = ${colors.foreground}
-format-background = ${colors.arrow3}
+format-background = ${colors.arrow4}
 ;;format-underline  = ${colors.background}
-format-padding    = 2
+format-padding    = 1
 
 format-prefix =   
 label = " %time%"
@@ -231,16 +235,17 @@ type = internal/alsa
 
 format-volume            = <ramp-volume> <label-volume>
 format-volume-foreground = ${colors.foreground}
-format-volume-background = ${colors.arrow4}
+format-volume-background = ${colors.arrow3}
 ;;format-volume-underline  = ${colors.background}
 format-volume-padding    = 2
 
 label-volume = %percentage%%
 label-volume-foreground = ${colors.foreground}
 
+format-muted-background = ${colors.arrow3}
 format-muted-prefix = ﱝ
+format-muted-padding = 2
 label-muted = " Muted"
-label-muted-foreground = ${colors.foreground}
 
 ramp-volume-0 = 婢
 ramp-volume-1 = 奄
@@ -289,7 +294,7 @@ format-charging      = <animation-charging> <label-charging>
 format-charging-foreground = ${colors.foreground}
 format-charging-background = ${colors.arrow4}
 ;format-charging-underline  = ${colors.background}
-format-charging-padding-right    = 2
+format-charging-padding     = 2
 
 format-discharging   = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.foreground}
@@ -297,10 +302,16 @@ format-discharging-background = ${colors.arrow4}
 ;format-discharging-underline  = ${colors.background}
 format-discharging-padding    = 2
 
-label-charging    = %percentage%%
-label-discharging = %percentage%%
+format-full                   = <ramp-capacity> <label-full>
+format-full-foreground = ${colors.foreground}
+format-full-background = ${colors.arrow4}
+;format-discharging-underline  = ${colors.background}
+format-full-padding    = 2
 
-label-full = 
+label-charging    = " %percentage%%"
+label-discharging = " %percentage%%"
+
+label-full = " %percentage%%" 
 
 ramp-capacity-0 = 
 ramp-capacity-1 = 
@@ -367,6 +378,16 @@ format-prefix = " "
 format-padding = 2
 exec = echo "$(whoami)"
 format-prefix-font = 2
+
+[module/info-kernel]
+type = custom/script
+interval = 1024
+exec = uname -r
+format = "<label>"
+format-prefix = " "
+format-background = ${colors.arrow3}
+format-padding = 2
+
 
 [module/arrow1-right]
 type = custom/text
