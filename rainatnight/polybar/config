@@ -1,0 +1,247 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;   To learn more about how to configure Polybar
+;   go to https://github.com/polybar/polybar
+;
+;   The README contains a lot of information
+;
+;==========================================================
+
+[colors]
+background           = #0a0b0d
+background-alt       = #386E88
+foreground           = #acbbc6
+foreground-alt       = #5685A5
+alert                = #EA142E
+primary              = #5A6E92
+secondary            = #718D61
+
+[bar/example]
+width = 100%
+height = 30
+;;offset-x = 1%
+;;offset-y = 1%
+radius = 0.0
+fixed-center = true
+bottom = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 0
+line-color = ${colors.background-alt}
+
+border-bottom-size = 0
+border-bottom-color = ${colors.foreground}
+
+padding-left = 2
+padding-right = 2
+
+module-margin-left = 1
+module-margin-right = 1
+
+
+font-0 = Liberation Mono:style=Medium:size=8;2
+;;font-0 = "unifont:fontformat=truetype:size=8:antialias=false;2"
+;; font-1 = Inconsolata Nerd Font:style=Medium:size=8;2
+;; font-2 = Iosevka Nerd Font:style=Medium:size=8;2
+
+modules-left    = bspwm
+modules-center  = date 
+modules-right   = alsa wlan eth xkeyboard battery
+
+wm-restack = bspwm
+;wm-restack = i3
+
+override-redirect = false
+
+;; scroll-up = bspwm-desknext
+;; scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:30:...%
+format-foreground = ${colors.foreground}
+format-padding = 4
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-spacing = 0
+format-prefix = KEYBOARD:
+format-foreground = ${colors.foreground}
+label-layout = "  %layout%"
+
+label-indicator-foreground = ${colors.alert}
+label-indicator-padding = 1
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+format-mounted = <label-mounted>
+format-mounted-foreground = ${colors.foreground}
+format-mounted-prefix = 
+label-mounted =  "  %free%"
+
+format-unmounted = <label-unmounted>
+format-unmounted-prefix = 
+label-unmounted = %mountpoint%: not mounted
+
+[module/bspwm]
+type = internal/bspwm
+
+; Only show workpsaces on the same output as the bar
+; pin-workspaces=true
+ws-icon-0 = I;1
+ws-icon-1 = II;2
+ws-icon-2 = III;3
+ws-icon-3 = IV;4
+ws-icon-4 = V;5
+ws-icon-default = 
+
+format = <label-state> <label-mode>
+
+label-focused = %icon%
+label-focused-foreground = ${colors.background-alt}
+label-focused-padding = 2
+
+label-occupied = %icon%
+label-occupied-padding = 2
+
+label-urgent = %icon%
+label-urgent-background = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %icon%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 2
+
+; Separator in between workspaces
+; label-separator = |
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = CPU:
+format-prefix-foreground = ${colors.foreground}
+label = %percentage:2%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-prefix = RAM:
+format-prefix-foreground = ${root.foreground}
+label = %percentage_used%%
+
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+battery = BAT0
+adapter = AC
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging      = <label-charging>
+format-charging-prefix     = BAT:
+format-charging-foreground = ${colors.foreground}
+
+format-discharging   = <label-discharging>
+format-discharging-prefix = BAT:
+format-discharging-foreground = ${colors.foreground}
+
+format-full                   =  <label-full>
+format-full-prefix            =  BAT:
+format-full-foreground = ${colors.foreground}
+format-full-background = ${colors.battery}
+
+label-charging    = %percentage:4%%
+label-discharging = %percentage:4%%
+label-full = %percentage:4%% 
+
+[module/wlan]
+type = internal/network
+interface = wlp3s0
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected               = <label-connected>
+format-connected-foreground    = ${colors.foreground}
+format-connected-prefix        = 直
+
+format-disconnected            = <label-disconnected>
+format-disconnected-foreground = ${colors.alert}
+format-disconnected-prefix     = 睊
+
+label-connected = %essid%
+label-disconnected = " Not connected"
+
+
+[module/eth]
+type = internal/network
+interface = enp0s3
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-foreground = ${colors.foreground}
+format-connected-prefix = ETH:
+label-connected = "  %ifname%"
+
+format-disconnected =
+label-disconnected = " Not connected"
+
+[module/date]
+type = internal/date
+interval = 5
+
+time      = %I:%M %p
+time-alt  = %A, %d %B %Y
+format-prefix =   
+label = " %time%"
+
+[module/alsa]
+type = internal/alsa
+
+format-volume = <label-volume>
+format-volume-prefix = VOL:
+label-volume = " %percentage:4%%"
+
+format-muted-prefix = VOL: 
+format-muted-foreground = ${colors.alert}
+label-muted = " Muted"
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini 
