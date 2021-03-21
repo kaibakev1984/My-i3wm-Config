@@ -195,7 +195,6 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![autumn scheme](https://i.imgur.com/sAUm0hg.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
 [![day-city scheme](https://i.postimg.cc/tCWfYN2Q/day-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/day-city)
 [![raining scheme](https://i.postimg.cc/qM5b08gn/raining-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/raining)
-[![sleepy-hollow scheme](https://i.postimg.cc/rmMggjY6/sleepy-hollow.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sleepy-hollow)
 [![girl-glasses scheme](https://i.postimg.cc/x1wCF1YR/girl-glasses-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/girl-glasses)
 [![rem scheme](https://i.imgur.com/IdBNfcl.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
 [![books scheme](https://i.imgur.com/gTiD7lZ.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
