@@ -247,3 +247,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![cyber-city scheme](https://i.postimg.cc/TPxJkB74/cyber-city-bspwm-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyber-city)
 [![cyber-city scheme](https://i.imgur.com/sTyehEw.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/code)
 [![arch scheme](https://i.imgur.com/pCkn3Iv.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/arch)
+[![ghostintheshell scheme](https://i.imgur.com/qdGLemf.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/ghostintheshell)
