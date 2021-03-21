@@ -13,7 +13,6 @@
 
 ##  Tabla de Contenidos
 
-* [Introducción](#introducción)
 * [Instalación](#instalación)
   * [Instalando bspwm](#instalando-bspwm)
   * [Instalando Polybar](#instalando-polybar)
@@ -21,11 +20,6 @@
   * [Paquetes Opcionales](#paquetes-opcionales)
 * [Enlaces Útiles](#enlaces-útiles)
 * [Galería](#galería)
-
-
-## Introducción
-
-La mayor parte del trabajo se hizo en AntiX, y estas configuraciones pretenden ser aplicables en **Arch Linux**, **Debian** y derivados.
 
 ## Instalación
 
