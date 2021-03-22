@@ -18,26 +18,26 @@ configuration {
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #1e1b1c;
+    selected-active-background: #120813;
     selected-active-foreground: @foreground;
-    selected-normal-background: #A60300;
-    selected-normal-foreground: #dfdede;
-    selected-urgent-background: #3D4A4E;
+    selected-normal-background: #990401;
+    selected-normal-foreground: #d9d5d7;
+    selected-urgent-background: #839BBC;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
     background:     #0A0A0A;
-    foreground:     #dfdede;
-    border-color:   #6F6F6F;
+    foreground:     #6F6F6F;
+    border-color:   #990401;
     spacing:        4;
-    font:           "unifont 10";
+    font:           "Liberation Mono 10";
 }
 
 #window {
     background-color: @background;
-    height: 50%;
-    width: 30%;
-    border: 3;
+    height: 55%;
+    width: 35%;
+    border: 1;
     padding: 2.5ch;
 }
 
