@@ -59,8 +59,6 @@ module-margin-right = 0
 font-0 = Iosevka Nerd Font:style=Medium:size=8;1
 font-1 = feather:style=Medium:size=12;3
 font-2 = Iosevka Nerd Font:style=Medium:size=19;5
-font-3 = Iosevka Nerd Font:style=Medium:size=12;4
-font-4 = Iosevka Nerd Font:style=Medium:size=7;4
 
 
 modules-left    = bspwm xwindow 
@@ -105,7 +103,7 @@ format-prefix = 
 label-layout = " %layout%"
 label-layout-foreground = ${colors.foreground}
 
-label-indicator-background = ${colors.alert}
+label-indicator-foreground = ${colors.alert}
 label-indicator-padding = 2
 
 [module/filesystem]
@@ -198,18 +196,17 @@ label-disconnected = Not connected
 
 [module/eth]
 type = internal/network
-interface = enp2s6
+interface = enp0s3
 interval = 3.0
 
 format-connected = <label-connected>
-;;format-connected-prefix =  
-format-connected-prefix = 
+format-connected-prefix =  
 format-connected-foreground = ${colors.foreground}
 format-connected-background = ${colors.arrow1}
 format-connected-padding    = 2
 ;;format-connected-underline  = ${colors.background}
-label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
-;;label-connected = " %ifname%"
+;;label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
+label-connected = " %ifname%"
 
 ;format-disconnected = 
 format-disconnected =
@@ -285,7 +282,7 @@ ramp-headphones-1 = 
 type = internal/battery
 
 full-at = 99
-battery = BAT1
+battery = BAT0
 adapter = AC
 
 poll-interval = 2
@@ -295,7 +292,7 @@ format-charging      = <animation-charging> <label-charging>
 format-charging-foreground = ${colors.foreground}
 format-charging-background = ${colors.arrow4}
 ;format-charging-underline  = ${colors.background}
-format-charging-padding-right    = 2
+format-charging-padding     = 2
 
 format-discharging   = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.foreground}

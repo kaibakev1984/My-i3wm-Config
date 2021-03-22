@@ -9,7 +9,7 @@ xrandr -s 1360x768
 
 bspc monitor -d I II III IV V
 
-bspc config border_width          2
+bspc config border_width          1
 bspc config window_gap            8
 bspc config normal_border_color   "#1e1b1c"
 bspc config active_border_color   "#d33682"

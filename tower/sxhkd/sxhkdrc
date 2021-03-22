@@ -12,7 +12,7 @@ alt + r
   
 # program launcher
 super + d 
-  rofi -show drun -theme tower
+  rofi -show drun -theme samurai
 
 # 
 # Audio Controls

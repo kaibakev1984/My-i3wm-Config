@@ -240,7 +240,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![cobra kai scheme](https://i.postimg.cc/2Smd75H2/cobra-kai-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cobra-kai)
 [![sentre scheme](https://i.postimg.cc/bvCDx4mH/sentre-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sentre)
 [![climbing scheme](https://i.postimg.cc/MKnQYznW/climbing-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/climbing)
-[![tower scheme](https://i.postimg.cc/XY96QhXK/tower-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/tower)
+[![tower scheme](https://i.imgur.com/Qnvzzud.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/tower)
 [![anime-cat scheme](https://i.postimg.cc/zDtXPLDp/anime-cat-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/anime-cat)
 [![anime minimal scheme](https://i.postimg.cc/j2bvMLQz/anime-minimal-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/anime-minimal)
 [![cyber-city scheme](https://i.postimg.cc/TPxJkB74/cyber-city-bspwm-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyber-city)
