@@ -216,6 +216,7 @@ ramp-volume-5 = 墳
 ramp-headphones-0 = 
 ramp-headphones-1 = 
 
+
 [module/battery]
 type = internal/battery
 
@@ -227,26 +228,40 @@ poll-interval = 2
 time-format = %H:%M
 
 format-charging      = <animation-charging> <label-charging>
+format-charging-foreground = ${colors.battery}
+format-charging-padding     = 2
+
 format-discharging   = <ramp-capacity> <label-discharging>
+format-discharging-foreground = ${colors.battery}
+format-discharging-padding    = 2
 
-label-charging    = %percentage%%
-label-discharging = %percentage%%
+format-full                   = <ramp-capacity> <label-full>
+format-full-foreground = ${colors.battery}
+format-full-padding    = 2
 
-label-full = 
+label-charging    = " %percentage%%"
+label-discharging = " %percentage%%"
+label-full = " %percentage%%" 
 
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
-ramp-capacity-foreground = ${colors.background-alt}
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+ramp-capacity-0-foreground = ${colors.alert}
 
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-animation-charging-foreground = ${colors.background-alt}
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+animation-charging-6 = 
 
 animation-charging-framerate = 750
 
