@@ -283,25 +283,18 @@ time-format = %H:%M
 
 format-charging      = <animation-charging> <label-charging>
 format-charging-foreground = ${colors.foreground}
-format-charging-background = ${colors.arrow4}
-;format-charging-underline  = ${colors.background}
 format-charging-padding     = 2
 
 format-discharging   = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.foreground}
-format-discharging-background = ${colors.arrow4}
-;format-discharging-underline  = ${colors.background}
 format-discharging-padding    = 2
 
 format-full                   = <ramp-capacity> <label-full>
 format-full-foreground = ${colors.foreground}
-format-full-background = ${colors.arrow4}
-;format-discharging-underline  = ${colors.background}
 format-full-padding    = 2
 
 label-charging    = " %percentage%%"
 label-discharging = " %percentage%%"
-
 label-full = " %percentage%%" 
 
 ramp-capacity-0 = 
