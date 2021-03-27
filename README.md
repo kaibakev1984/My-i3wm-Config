@@ -248,3 +248,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![arch scheme](https://i.imgur.com/pCkn3Iv.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/arch)
 [![ghostintheshell scheme](https://i.imgur.com/qdGLemf.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/ghostintheshell)
 [![horizont scheme](https://i.imgur.com/K65Fiyh.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/horizont)
+[![rikka scheme](https://i.imgur.com/d0dT4PG.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rikka)
