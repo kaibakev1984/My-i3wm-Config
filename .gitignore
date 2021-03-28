@@ -1,2 +1,4 @@
 *.swp
 .uuid
+__init__.py 
+__pycache__/
