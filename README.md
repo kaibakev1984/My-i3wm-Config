@@ -251,3 +251,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![rikka scheme](https://i.imgur.com/d0dT4PG.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rikka)
 [![earth scheme](https://i.imgur.com/qaPxiSu.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/earth)
 [![gruvgirl scheme](https://i.imgur.com/q2OIuIC.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/gruvgirl)
+[![year scheme](https://i.imgur.com/BzAASrO.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/year)
