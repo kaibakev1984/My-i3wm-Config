@@ -14,25 +14,26 @@ Plug 'https://github.com/uiiaoo/java-syntax.vim'
 Plug 'itchyny/lightline.vim'
 Plug 'https://github.com/lilydjwg/colorizer'
 Plug 'https://github.com/rafi/awesome-vim-colorschemes'
+Plug 'https://github.com/preservim/nerdtree'
 call plug#end()
 
-" Enable syntax highlighting
+" "  Enable syntax highlighting
 syntax on
-"
+
 " " Change tabs to 2 spaces
 set expandtab 
 set tabstop=2
 set shiftwidth=2
-"
+
 " " Automatically indent when starting new lines in code blocks
 set autoindent
-"
+
 " " Add line numbers
 set number
-"
+
 " " shows column, & line number in bottom right 
 set ruler
-"
+
 " " Color scheme I found that works best with PowerShell
 " " colorscheme default
 colorscheme minimalist 
@@ -43,3 +44,12 @@ highlight LineNr term=bold cterm=NONE ctermfg=DarkGrey ctermbg=NONE gui=NONE gui
 
 " " Disable bell sounds 
 set noerrorbells visualbell t_vb=
+
+"" Autostart
+autocmd VimEnter * NERDTree
+
+"" Nerd Tree keybinds
+nnoremap <leader>n :NERDTreeFocus<CR>
+nnoremap <C-n> :NERDTree<CR>
+nnoremap <C-t> :NERDTreeToggle<CR>
+nnoremap <C-f> :NERDTreeFind<CR>
