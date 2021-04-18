@@ -230,6 +230,7 @@ poll-interval = 2
 time-format = %H:%M
 
 format-charging = <animation-charging> <label-charging>
+format-charging-foreground = ${colors.battery}
 label-charging  = " %percentage%%"
 ramp-capacity-0 =  
 ramp-capacity-1 = 
@@ -255,6 +256,7 @@ animation-charging-6 = 
 animation-charging-framerate = 750
 
 format-full          = <label-full>
+format-full-foreground = ${colors.battery}
 format-full-prefix   = 
 label-full           = " %percentage%%"
 
