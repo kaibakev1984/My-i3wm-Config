@@ -252,3 +252,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![earth scheme](https://i.imgur.com/qaPxiSu.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/earth)
 [![gruvgirl scheme](https://i.imgur.com/q2OIuIC.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/gruvgirl)
 [![year scheme](https://i.imgur.com/BzAASrO.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/year)
+[![cyberpunk-astronaut scheme](https://i.imgur.com/ucWoqpp.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyberpunk-astronaut)
