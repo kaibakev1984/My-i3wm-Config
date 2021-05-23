@@ -1,0 +1,406 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;==========================================================
+
+[colors]
+background           = #1c2125
+background-alt       = #7488A6
+foreground           = #dfdedf
+foreground-alt       = #7488A6
+primary              = #5D9094
+secondary            = #6F6F6F
+alert                = #FF0000
+
+color0               = #101316
+color1               = #5E738B
+color2               = #677B93
+color3               = #7A899C
+color4               = #7E8EA1
+color5               = #9D9D9D
+color6               = #C9A7A6
+
+[bar/example]
+width = 98%
+height = 26
+offset-x = 1%
+offset-y = 1%
+radius = 0.0
+fixed-center = true
+bottom = false
+
+background = ${colors.background}
+foreground = ${colors.foreground}
+
+line-size = 2
+line-color = ${colors.background-alt}
+
+border-size = 0
+border-color = ${colors.background}
+
+padding-left = 0
+padding-right = 0
+
+module-margin-left  = 0
+module-margin-right = 0
+
+font-0 = Iosevka Nerd Font:style=Medium:size=8;1
+font-1 = feather:style=Medium:size=12;3
+font-2 = Iosevka Nerd Font:style=Medium:size=19;5
+font-3 = Iosevka Nerd Font:style=Medium:size=12;4
+font-4 = Iosevka Nerd Font:style=Medium:size=7;4
+
+
+modules-left    = bspwm separator-left-0 xwindow 
+modules-center  = 
+modules-right   = separator-left-1 wlan eth separator-left-2 memory cpu separator-left-3 info-kernel alsa separator-left-4 date battery 
+
+wm-restack = bspwm
+;wm-restack = i3
+
+;override-redirect = true
+
+;scroll-up = bspwm-desknext
+;scroll-down = bspwm-deskprev
+
+;scroll-up = i3wm-wsnext
+;scroll-down = i3wm-wsprev
+
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:40:...%
+format-foreground = ${colors.foreground-alt}
+format-padding = 4
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+blacklist-1 = scroll lock
+
+format-foreground        = ${colors.foreground}
+format-background        = ${colors.color4}
+format-padding = 1
+format-prefix =   
+label-layout = " %layout%"
+label-layout-foreground = ${colors.foreground}
+
+label-indicator-background = ${colors.alert}
+label-indicator-padding = 2
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+format-mounted = <label-mounted>
+format-mounted-prefix = 
+format-mounted-prefix-foreground = ${colors.background-alt}
+label-mounted =  " %free%"
+
+format-unmounted = <label-unmounted>
+format-unmounted-prefix = 
+label-unmounted = %mountpoint%: not mounted
+
+[module/bspwm]
+type = internal/bspwm
+
+; Only show workpsaces on the same output as the bar
+; pin-workspaces=true
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-default = 
+
+format = <label-state> <label-mode>
+
+label-focused = %icon%
+label-focused-foreground = ${colors.background-alt}
+label-focused-background = ${colors.color0}
+label-focused-underline  = ${colors.background-alt}
+label-focused-padding    = 3
+
+label-occupied = %icon%
+label-occupied-background = ${colors.color0}
+label-occupied-padding = 3
+
+label-urgent = %icon%
+label-urgent-foreground = ${colors.alert}
+label-urgent-background = ${colors.color0}
+label-urgent-padding = 3
+
+label-empty = %icon%
+label-empty-foreground = ${colors.secondary}
+label-empty-background = ${colors.color0}
+label-empty-padding = 3
+
+; Separator in between workspaces
+; label-separator = |
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = " "
+format-background = ${colors.color2}
+format-padding = 1
+label = %percentage:3%%
+
+[module/memory]
+type = internal/memory
+interval = 2
+format-background = ${colors.color2}
+format-padding = 1
+format-prefix = ﬙
+label = " %percentage_used:3%%"
+
+[module/wlan]
+type = internal/network
+interface = wlp7s0
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected                      = <label-connected>
+format-connected-foreground           = ${colors.foreground}
+format-connected-background           = ${colors.color1}
+;;format-connected-underline            = ${colors.background}
+format-connected-prefix               = 直
+
+format-disconnected                   = <label-disconnected>
+format-disconnected-foreground        = ${colors.foreground}
+format-disconnected-background        = ${colors.color1}
+;;format-disconnected-underline         = ${colors.background}
+format-disconnected-prefix            = 睊
+
+;;label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
+label-connected = " %essid%"
+label-disconnected = Not connected
+
+
+[module/eth]
+type = internal/network
+interface = enp0s3
+interval = 3.0
+
+format-connected = <label-connected>
+format-connected-prefix =  
+format-connected-foreground = ${colors.foreground}
+format-connected-background = ${colors.color1}
+format-connected-padding    = 1
+label-connected = " %ifname%"
+
+;format-disconnected = 
+format-disconnected =
+label-disconnected = Not connected
+
+[module/date]
+type = internal/date
+interval = 5
+
+;time = " %a %b %d, %I:%M %p "
+time = " %I:%M %p "
+time-alt  = " %d-%m-%Y"
+
+format-foreground = ${colors.foreground}
+format-background = ${colors.color4}
+;;format-underline  = ${colors.background}
+format-padding    = 1
+
+format-prefix =   
+label = " %time%"
+
+[module/alsa]
+type = internal/alsa
+
+format-volume            = <ramp-volume> <label-volume>
+format-volume-foreground = ${colors.foreground}
+format-volume-background = ${colors.color3}
+;;format-volume-underline  = ${colors.background}
+format-volume-padding    = 1
+
+label-volume = %percentage%%
+label-volume-foreground = ${colors.foreground}
+
+format-muted-foreground = ${colors.background}
+format-muted-background = ${colors.color3}
+format-muted-prefix = ﱝ
+format-muted-padding = 1
+label-muted = " Muted"
+
+ramp-volume-0 = 婢
+ramp-volume-1 = 奄
+ramp-volume-2 = 奔
+ramp-volume-3 = 墳
+ramp-volume-foreground = ${colors.foreground}
+
+; Only applies if <bar-volume> is used
+bar-volume-width = 10
+bar-volume-gradient = false
+
+bar-volume-indicator = 
+bar-volume-indicator-foreground = ${colors.foreground}
+bar-volume-indicator-font = 2
+
+bar-volume-fill = ━
+bar-volume-foreground-0 = ${colors.secondary}
+bar-volume-foreground-1 = ${colors.secondary}
+bar-volume-foreground-2 = ${colors.secondary}
+bar-volume-foreground-3 = ${colors.primary}
+bar-volume-foreground-4 = ${colors.primary}
+bar-volume-foreground-5 = ${colors.primary}
+bar-volume-foreground-6 = ${colors.background-alt}
+bar-volume-foreground-7 = ${colors.background-alt}
+bar-volume-foreground-8 = ${colors.background-alt}
+bar-volume-fill-font = 2
+
+bar-volume-empty = ┉
+bar-volume-empty-foreground = ${colors.foreground}
+bar-volume-empty-font = 2
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
+[module/battery]
+type = internal/battery
+
+full-at = 99
+battery = BAT0
+adapter = AC
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging      = <animation-charging> <label-charging>
+format-charging-foreground = ${colors.foreground}
+format-charging-background = ${colors.color4}
+
+format-charging-padding = 2
+
+format-discharging   = <ramp-capacity> <label-discharging>
+format-discharging-foreground = ${colors.foreground}
+format-discharging-background = ${colors.color4}
+;format-discharging-underline  = ${colors.background}
+format-discharging-padding    = 2
+
+label-charging    = %percentage%%
+label-discharging = %percentage%%
+
+label-full = 
+
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+ramp-capacity-5 = 
+ramp-capacity-6 = 
+ramp-capacity-7 = 
+ramp-capacity-8 = 
+ramp-capacity-9 = 
+
+animation-charging-0 = 
+animation-charging-1 = 
+animation-charging-2 = 
+animation-charging-3 = 
+animation-charging-4 = 
+animation-charging-5 = 
+animation-charging-6 = 
+
+animation-charging-framerate = 750
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = false
+
+[global/wm]
+margin-top = 0
+margin-bottom = 0
+
+; vim:ft=dosini 
+
+[module/hostname]
+type = custom/script
+interval = 256
+format = "<label>"
+format-foreground = ${colors.foreground}
+format-background = ${colors.color2}
+format-underline  = ${colors.background}
+format-prefix = " "
+format-padding = 2
+exec = echo "$(uname -n)"
+format-prefix-font = 2
+
+[module/updates]
+type = custom/script
+exec = apt-get upgrade -s | grep -i security
+format-foreground = ${colors.secondary}
+interval = 1000
+bel = %output:0:30:...%
+
+[module/username]
+type = custom/script
+interval = 256
+format = "<label>"
+format-foreground = ${colors.foreground}
+format-background= ${colors.color1}
+format-underline = ${colors.background}
+format-prefix = " "
+format-padding = 2
+exec = echo "$(whoami)"
+format-prefix-font = 2
+
+[module/info-kernel]
+type = custom/script
+interval = 1024
+exec = uname -r
+format = "<label>"
+format-prefix = " "
+format-background = ${colors.color3}
+format-padding = 1
+
+[module/separator-base]
+type = custom/text
+content = "%{T3}%{T-}"
+content-padding = 0
+
+[module/separator-left-0]
+inherit = module/separator-base
+content-foreground  = ${colors.background}
+content-background = ${colors.color0}
+
+[module/separator-left-1]
+inherit = module/separator-base
+content-foreground  = ${colors.color1}
+content-background = ${colors.background}
+
+[module/separator-left-2]
+inherit = module/separator-base
+content-foreground  = ${colors.color2}
+content-background = ${colors.color1}
+
+[module/separator-left-3]
+inherit = module/separator-base
+content-foreground = ${colors.color3}
+content-background = ${colors.color2}
+
+[module/separator-left-4]
+inherit = module/separator-base
+content-foreground = ${colors.color4}
+content-background = ${colors.color3}
