@@ -25,7 +25,7 @@ color2               = #BE5439
 color3               = #9C1D16
 color4               = #6e2e20
 
-[bar/example]
+[bar/main]
 width = 100%
 height = 22
 ;offset-x = 10%
