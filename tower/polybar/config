@@ -9,11 +9,6 @@
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;
 ;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
 ;==========================================================
 
 [colors]
@@ -25,10 +20,10 @@ primary              = #5D9094
 secondary            = #6F6F6F
 alert                = #FF0000
 
-arrow1               = #AC335F
-arrow2               = #2B6963
-arrow3               = #215A93
-arrow4               = #b58900
+color1               = #AC335F
+color2               = #2B6963
+color3               = #215A93
+color4               = #b58900
 arrow5               = #9D9D9D
 arrow6               = #C9A7A6
 
@@ -63,7 +58,7 @@ font-2 = Iosevka Nerd Font:style=Medium:size=19;5
 
 modules-left    = bspwm xwindow 
 modules-center  = 
-modules-right   = arrow1-right wlan eth arrow2-right memory cpu arrow3-right info-kernel alsa arrow4-right date xkeyboard battery 
+modules-right   = right1 wlan eth right2 memory cpu right3 info-kernel alsa right4 date xkeyboard battery 
 
 ;tray-position = none
 ;tray-detached = false
@@ -97,7 +92,7 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-foreground        = ${colors.foreground}
-format-background        = ${colors.arrow4}
+format-background        = ${colors.color4}
 format-padding = 2
 format-prefix =   
 label-layout = " %layout%"
@@ -158,14 +153,14 @@ label-empty-padding = 2
 type = internal/cpu
 interval = 2
 format-prefix = " "
-format-background = ${colors.arrow2}
+format-background = ${colors.color2}
 format-padding = 2
 label = %percentage:3%%
 
 [module/memory]
 type = internal/memory
 interval = 2
-format-background = ${colors.arrow2}
+format-background = ${colors.color2}
 format-padding = 2
 format-prefix = ﬙
 label = " %percentage_used:3%%"
@@ -179,13 +174,13 @@ unknown-as-up = true
 
 format-connected                      = <label-connected>
 format-connected-foreground           = ${colors.foreground}
-format-connected-background           = ${colors.arrow1}
+format-connected-background           = ${colors.color1}
 ;;format-connected-underline            = ${colors.background}
 format-connected-prefix               = 直
 
 format-disconnected                   = <label-disconnected>
 format-disconnected-foreground        = ${colors.foreground}
-format-disconnected-background        = ${colors.arrow1}
+format-disconnected-background        = ${colors.color1}
 ;;format-disconnected-underline         = ${colors.background}
 format-disconnected-prefix            = 睊
 
@@ -202,7 +197,7 @@ interval = 3.0
 format-connected = <label-connected>
 format-connected-prefix =  
 format-connected-foreground = ${colors.foreground}
-format-connected-background = ${colors.arrow1}
+format-connected-background = ${colors.color1}
 format-connected-padding    = 2
 ;;format-connected-underline  = ${colors.background}
 ;;label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
@@ -221,7 +216,7 @@ time = " %I:%M %p "
 time-alt  = " %d-%m-%Y"
 
 format-foreground = ${colors.foreground}
-format-background = ${colors.arrow4}
+format-background = ${colors.color4}
 ;;format-underline  = ${colors.background}
 format-padding    = 2
 
@@ -233,47 +228,27 @@ type = internal/alsa
 
 format-volume            = <ramp-volume> <label-volume>
 format-volume-foreground = ${colors.foreground}
-format-volume-background = ${colors.arrow3}
-;;format-volume-underline  = ${colors.background}
+format-volume-background = ${colors.color3}
 format-volume-padding    = 2
 
 label-volume = %percentage%%
 label-volume-foreground = ${colors.foreground}
 
-format-muted-background = ${colors.arrow3}
+format-muted-background = ${colors.color3}
+format-muted-foreground = ${colors.alert}
 format-muted-prefix = ﱝ
 format-muted-padding = 2
 label-muted = " Muted"
 
 ramp-volume-0 = 婢
 ramp-volume-1 = 奄
-ramp-volume-2 = 奔
-ramp-volume-3 = 墳
+ramp-volume-2 = 奄
+ramp-volume-3 = 奔
+ramp-volume-4 = 奔
+ramp-volume-5 = 奔
+ramp-volume-6 = 墳
+ramp-volume-7 = 墳
 ramp-volume-foreground = ${colors.foreground}
-
-; Only applies if <bar-volume> is used
-bar-volume-width = 10
-bar-volume-gradient = false
-
-bar-volume-indicator = 
-bar-volume-indicator-foreground = ${colors.foreground}
-bar-volume-indicator-font = 2
-
-bar-volume-fill = ━
-bar-volume-foreground-0 = ${colors.secondary}
-bar-volume-foreground-1 = ${colors.secondary}
-bar-volume-foreground-2 = ${colors.secondary}
-bar-volume-foreground-3 = ${colors.primary}
-bar-volume-foreground-4 = ${colors.primary}
-bar-volume-foreground-5 = ${colors.primary}
-bar-volume-foreground-6 = ${colors.background-alt}
-bar-volume-foreground-7 = ${colors.background-alt}
-bar-volume-foreground-8 = ${colors.background-alt}
-bar-volume-fill-font = 2
-
-bar-volume-empty = ┉
-bar-volume-empty-foreground = ${colors.foreground}
-bar-volume-empty-font = 2
 
 ramp-headphones-0 = 
 ramp-headphones-1 = 
@@ -290,13 +265,13 @@ time-format = %H:%M
 
 format-charging      = <animation-charging> <label-charging>
 format-charging-foreground = ${colors.foreground}
-format-charging-background = ${colors.arrow4}
+format-charging-background = ${colors.color4}
 ;format-charging-underline  = ${colors.background}
 format-charging-padding     = 2
 
 format-discharging   = <ramp-capacity> <label-discharging>
 format-discharging-foreground = ${colors.foreground}
-format-discharging-background = ${colors.arrow4}
+format-discharging-background = ${colors.color4}
 ;format-discharging-underline  = ${colors.background}
 format-discharging-padding    = 2
 
@@ -340,123 +315,42 @@ margin-bottom = 0
 
 ; vim:ft=dosini 
 
-[module/hostname]
-type = custom/script
-interval = 256
-format = "<label>"
-format-foreground = ${colors.foreground}
-format-background = ${colors.arrow2}
-format-underline  = ${colors.background}
-format-prefix = " "
-format-padding = 2
-exec = echo "$(uname -n)"
-format-prefix-font = 2
-
-[module/updates]
-type = custom/script
-exec = apt-get upgrade -s | grep -i security
-format-foreground = ${colors.secondary}
-interval = 1000
-bel = %output:0:30:...%
-
-[module/username]
-type = custom/script
-interval = 256
-format = "<label>"
-format-foreground = ${colors.foreground}
-format-background= ${colors.arrow1}
-format-underline = ${colors.background}
-format-prefix = " "
-format-padding = 2
-exec = echo "$(whoami)"
-format-prefix-font = 2
-
 [module/info-kernel]
 type = custom/script
 interval = 1024
 exec = uname -r
 format = "<label>"
 format-prefix = " "
-format-background = ${colors.arrow3}
+format-background = ${colors.color3}
 format-padding = 2
 
+[arrow]
+aright = "%{T3}%{T-}"
+aleft  = "%{T3}%{T-}"
 
-[module/arrow1-right]
+[module/right1]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow1}
-;;content-underline   = ${colors.background}
+content = ${arrow.aright}
+content-foreground  = ${colors.color1}
 content-padding = 0
 
-[module/arrow2-right]
+[module/right2]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow2}
-content-background  = ${colors.arrow1}
-;;content-underline   = ${colors.background}
+content = ${arrow.aright}
+content-foreground  = ${colors.color2}
+content-background  = ${colors.color1}
 content-padding = 0
 
-[module/arrow3-right]
+[module/right3]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow3}
-content-background  = ${colors.arrow2}
-;;content-underline   = ${colors.background}
+content = ${arrow.aright}
+content-foreground  = ${colors.color3}
+content-background  = ${colors.color2}
 content-padding = 0
 
-[module/arrow4-right]
+[module/right4]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow4}
-content-background  = ${colors.arrow3}
-;;content-underline   = ${colors.background}
-content-padding = 0
-
-[module/arrow5-right]
-type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.background}
-content-background  = ${colors.arrow4}
-content-underline   = ${colors.background}
-content-padding = 0
-
-[module/arrow6-right]
-type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow6}
-content-background  = ${colors.arrow5}
-content-underline   = ${colors.background}
-content-padding = 0
-
-
-[module/arrow1-left]
-type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.background}
-content-background  = ${colors.arrow1}
-content-underline   = ${colors.background}
-content-padding = 0
-
-[module/arrow2-left]
-type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow1}
-content-background  = ${colors.arrow2}
-content-underline   = ${colors.background}
-content-padding = 0
-
-[module/arrow3-left]
-type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow2}
-content-background  = ${colors.arrow3}
-content-underline   = ${colors.background}
-content-padding = 0
-
-[module/arrow4-left]
-type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow3}
-content-background  = ${colors.background}
-content-underline   = ${colors.background}
+content = ${arrow.aright}
+content-foreground  = ${colors.color4}
+content-background  = ${colors.color3}
 content-padding = 0
