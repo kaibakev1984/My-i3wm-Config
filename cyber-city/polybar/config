@@ -9,11 +9,6 @@
 ;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
 ;
 ;
-;   To learn more about how to configure Polybar
-;   go to https://github.com/polybar/polybar
-;
-;   The README contains a lot of information
-;
 ;==========================================================
 
 [colors]
@@ -25,10 +20,10 @@ primary              = #5D9094
 secondary            = #6F6F6F
 alert                = #FF0000
 
-arrow1               = #CE935D
-arrow2               = #BE5439
-arrow3               = #9C1D16
-arrow4               = #6e2e20
+color1               = #CE935D
+color2               = #BE5439
+color3               = #9C1D16
+color4               = #6e2e20
 
 [bar/example]
 width = 100%
@@ -60,26 +55,11 @@ font-2 = Iosevka Nerd Font:style=Medium:size=19;5
 
 modules-left    = bspwm 
 modules-center  = 
-modules-right   = arrow1-right wlan eth arrow2-right ram cpu arrow3-right info-kernel alsa arrow4-right date xkeyboard battery 
-
-;tray-position = none
-;tray-detached = false
-;tray-maxsize = 16
-;tray-padding = 0
-;tray-scale = 1.0
-;tray-background = #0063ff
-
-;;  wm-restack = bspwm
-wm-restack = i3
+modules-right   = right1 wlan eth right2 ram cpu right3 info-kernel alsa right4 date xkeyboard battery
 
 
-;override-redirect = true
-
-;scroll-up = bspwm-desknext
-;scroll-down = bspwm-deskprev
-
-;scroll-up = i3wm-wsnext
-;scroll-down = i3wm-wsprev
+wm-restack = bspwm
+;; wm-restack = i3
 
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -95,7 +75,7 @@ type = internal/xkeyboard
 blacklist-0 = num lock
 
 format-foreground        = ${colors.foreground}
-format-background        = ${colors.arrow4}
+format-background        = ${colors.color4}
 format-padding = 1
 format-prefix = layout:
 label-layout = " %layout%"
@@ -197,14 +177,14 @@ label-urgent-padding = 2
 type = internal/cpu
 interval = 2
 format-prefix = cpu:
-format-background = ${colors.arrow2}
-format-padding = 1
+format-background = ${colors.color2}
+format-padding = 2
 label = " %percentage:3%%"
 
 [module/ram]
 type = internal/memory
 interval = 2
-format-background = ${colors.arrow2}
+format-background = ${colors.color2}
 format-padding = 1
 format-prefix = ram:
 label = " %percentage_used:3%%"
@@ -218,12 +198,12 @@ unknown-as-up = true
 
 format-connected                      = <label-connected>
 format-connected-foreground           = ${colors.foreground}
-format-connected-background           = ${colors.arrow1}
+format-connected-background           = ${colors.color1}
 format-connected-prefix               = wifi:
 
 format-disconnected                   = <label-disconnected>
 format-disconnected-foreground        = ${colors.alert}
-format-disconnected-background        = ${colors.arrow1}
+format-disconnected-background        = ${colors.color1}
 format-disconnected-prefix            = wifi:
 
 ;;label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
@@ -240,7 +220,7 @@ format-connected = <label-connected>
 ;;format-connected-prefix = 
 format-connected-prefix = ip: 
 format-connected-foreground = ${colors.foreground}
-format-connected-background = ${colors.arrow1}
+format-connected-background = ${colors.color1}
 format-connected-padding    = 1
 ;;format-connected-underline  = ${colors.background}
 ;;label-connected = " %ifname%: %upspeed:9%   %downspeed:9% "
@@ -259,7 +239,7 @@ time = "%I:%M %p "
 time-alt  = "%d-%m-%Y"
 
 format-foreground = ${colors.foreground}
-format-background = ${colors.arrow4}
+format-background = ${colors.color4}
 ;;format-underline  = ${colors.background}
 format-padding    = 1
 
@@ -272,7 +252,7 @@ type = internal/alsa
 format-volume            = <label-volume>
 format-volume-prefix     = vol:
 format-volume-foreground = ${colors.foreground}
-format-volume-background = ${colors.arrow3}
+format-volume-background = ${colors.color3}
 ;;format-volume-underline  = ${colors.background}
 format-volume-padding    = 1
 
@@ -280,7 +260,7 @@ label-volume = " %percentage%%"
 label-volume-foreground = ${colors.foreground}
 
 format-muted-foreground = ${colors.alert}
-format-muted-background = ${colors.arrow3}
+format-muted-background = ${colors.color3}
 format-muted-prefix = vol:
 format-muted-padding = 1
 label-muted = " muted"
@@ -322,7 +302,7 @@ ramp-headphones-1 = 
 type = internal/battery
 
 full-at = 99
-battery = BAT1
+battery = BAT0
 adapter = AC
 
 poll-interval = 2
@@ -331,45 +311,24 @@ time-format = %H:%M
 format-charging            = <label-charging>
 format-charging-prefix     = bat:
 format-charging-foreground = ${colors.foreground}
-format-charging-background = ${colors.arrow4}
+format-charging-background = ${colors.color4}
 format-charging-padding    = 1
 
 format-discharging            = <label-discharging>
 format-discharging-prefix     = bat:
 format-discharging-foreground = ${colors.foreground}
-format-discharging-background = ${colors.arrow4}
+format-discharging-background = ${colors.color4}
 format-discharging-padding    = 1
 
-format-full                   = <label-discharging>
+format-full                   = <label-full>
 format-full-prefix            = bat:
 format-full-foreground        = ${colors.foreground}
-format-full-background        = ${colors.arrow4}
+format-full-background        = ${colors.color4}
 format-full-padding           = 1
 
 label-charging    = " %percentage%%"
 label-discharging = " %percentage%%"
 label-full        = " %percentage%%"
-
-ramp-capacity-0 = 
-ramp-capacity-1 = 
-ramp-capacity-2 = 
-ramp-capacity-3 = 
-ramp-capacity-4 = 
-ramp-capacity-5 = 
-ramp-capacity-6 = 
-ramp-capacity-7 = 
-ramp-capacity-8 = 
-ramp-capacity-9 = 
-
-animation-charging-0 = 
-animation-charging-1 = 
-animation-charging-2 = 
-animation-charging-3 = 
-animation-charging-4 = 
-animation-charging-5 = 
-animation-charging-6 = 
-
-animation-charging-framerate = 750
 
 [settings]
 screenchange-reload = true
@@ -385,75 +344,37 @@ margin-bottom = 0
 
 ; vim:ft=dosini 
 
-[module/hostname]
-type = custom/script
-interval = 256
-format = "<label>"
-format-foreground = ${colors.foreground}
-format-background = ${colors.arrow2}
-format-underline  = ${colors.background}
-format-prefix = " "
-format-padding = 2
-exec = echo "$(uname -n)"
-format-prefix-font = 2
-
-[module/updates]
-type = custom/script
-exec = apt-get upgrade -s | grep -i security
-format-foreground = ${colors.secondary}
-interval = 1000
-bel = %output:0:30:...%
-
-[module/username]
-type = custom/script
-interval = 256
-format = "<label>"
-format-foreground = ${colors.foreground}
-format-background= ${colors.arrow1}
-format-underline = ${colors.background}
-format-prefix = " "
-format-padding = 2
-exec = echo "$(whoami)"
-format-prefix-font = 2
-
 [module/info-kernel]
 type = custom/script
 interval = 1024
 exec = uname -r
 format = "<label>"
 format-prefix = "kernel: "
-format-background = ${colors.arrow3}
+format-background = ${colors.color3}
 format-padding = 1
 
+[arrow]
+aleft = "%{T3}%{T-}"
 
-[module/arrow1-right]
+[module/right1]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow1}
-;;content-underline   = ${colors.background}
-content-padding = 0
+content = ${arrow.aleft}
+content-foreground  = ${colors.color1}
 
-[module/arrow2-right]
+[module/right2]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow2}
-content-background  = ${colors.arrow1}
-;;content-underline   = ${colors.background}
-content-padding = 0
+content = ${arrow.aleft}
+content-foreground  = ${colors.color2}
+content-background  = ${colors.color1}
 
-[module/arrow3-right]
+[module/right3]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow3}
-content-background  = ${colors.arrow2}
-;;content-underline   = ${colors.background}
-content-padding = 0
+content = ${arrow.aleft}
+content-foreground  = ${colors.color3}
+content-background  = ${colors.color2}
 
-[module/arrow4-right]
+[module/right4]
 type = custom/text
-content = "%{T3}%{T-}"
-content-foreground  = ${colors.arrow4}
-content-background  = ${colors.arrow3}
-;;content-underline   = ${colors.background}
-content-padding = 0
-
+content = ${arrow.aleft}
+content-foreground  = ${colors.color4}
+content-background  = ${colors.color3}
