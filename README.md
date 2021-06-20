@@ -221,7 +221,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![cyber-hunter scheme](https://i.postimg.cc/fRjJhvRT/cyber-hunter-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyber-hunter)
 [![win7 scheme](https://i.postimg.cc/V5PLxSyC/win7-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/win7)
 [![murder scheme](https://i.imgur.com/X4lMiEW.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/murder)
-[![hello-world scheme](https://i.postimg.cc/CKhsqNPz/hello-world-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/hello-world)
+[![hello-world scheme](https://i.imgur.com/ciF2JZo.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/hello-world)
 [![lofi-city scheme](https://i.postimg.cc/FzLy4nRn/lofi-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-city)
 [![smoke scheme](https://i.postimg.cc/QxcQYPvF/smoke-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/smoke)
 [![ruiner scheme](https://i.postimg.cc/jj3PJrnF/ruiner-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/ruiner)
