@@ -223,7 +223,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![murder scheme](https://i.imgur.com/X4lMiEW.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/murder)
 [![hello-world scheme](https://i.imgur.com/ciF2JZo.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/hello-world)
 [![lofi-city scheme](https://i.postimg.cc/FzLy4nRn/lofi-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-city)
-[![smoke scheme](https://i.postimg.cc/QxcQYPvF/smoke-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/smoke)
+[![smoke scheme](https://i.imgur.com/eXSn5l6.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/smoke)
 [![ruiner scheme](https://i.postimg.cc/jj3PJrnF/ruiner-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/ruiner)
 [![chicago95 scheme](https://i.postimg.cc/SQMCj3Sg/chicago95-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/chicago95)
 [![focus scheme](https://i.postimg.cc/7LRJZMpv/focus-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/focus)
