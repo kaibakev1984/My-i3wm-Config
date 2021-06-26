@@ -255,3 +255,4 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![cyberpunk-astronaut scheme](https://i.imgur.com/ucWoqpp.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyberpunk-astronaut)
 [![reflection scheme](https://i.imgur.com/Xf83ygO.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/reflection)
 [![powershell scheme](https://i.imgur.com/aDpddT1.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/powershell)
+[![snorlax scheme](https://i.imgur.com/yTY5qbv.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/snorlax)
