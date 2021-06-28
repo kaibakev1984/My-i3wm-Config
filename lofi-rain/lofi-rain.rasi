@@ -18,26 +18,26 @@ configuration {
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #1e1b1c;
+    selected-active-background: #bf616a;
     selected-active-foreground: @foreground;
-    selected-normal-background: #BA5D4A;
-    selected-normal-foreground: #e7c7a4;
-    selected-urgent-background: #3D4A4E;
+    selected-normal-background: #5e81ac;
+    selected-normal-foreground: #d8dee9;
+    selected-urgent-background: #839BBC;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background:     #0A1F16;
+    background:     #092c2e;
     foreground:     #e7c7a4;
-    border-color:   #C9A85C;
+    border-color:   #092c2e;
     spacing:        4;
-    font:           "unifont 10";
+    font:           "Iosevka Nerd Font 10";
 }
 
 #window {
     background-color: @background;
-    height: 50%;
-    width: 30%;
-    border: 4;
+    height: 55%;
+    width: 35%;
+    border: 0;
     padding: 2.5ch;
 }
 
