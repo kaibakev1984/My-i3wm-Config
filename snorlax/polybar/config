@@ -133,33 +133,40 @@ accumulate-stats = true
 unknown-as-up = true
 
 format-connected = <label-connected>
-format-connected-prefix = 
 format-disconnected = <label-disconnected>
+
+format-connected-prefix = 
 format-disconnected-prefix = 
+
+format-connected-background = ${colors.color5}
+format-disconnected-background = ${colors.color5}
 format-disconnected-foreground = ${colors.alert}
+
+format-connected-padding = 2
+format-disconnected-padding = 2
 
 label-connected = " %essid%"
 label-disconnected = " No signal"
 
 [module/eth]
 type = internal/network
-interface =  enp0s3
+interface =  enp0s25
 interval = 1.0
 accumulate-stats = true
 unknown-as-up = true
 
 format-connected-padding = 2
-format-disconnected-padding = 2
+;;format-disconnected-padding = 2
 
 format-connected-background = ${colors.color5}
-format-disconnected-background = ${colors.color5}
+;;format-disconnected-background = ${colors.color5}
 
 format-connected-prefix = 
 label-connected = " Online"
 
-format-disconnected-prefix = 
-format-disconnected-foreground = ${colors.alert}
-label-disconnected = " Offline"
+;;format-disconnected-prefix = 
+;;format-disconnected-foreground = ${colors.alert}
+;;label-disconnected = " Offline"
 
 [module/date]
 type = internal/date
@@ -169,7 +176,7 @@ format-background = ${colors.color7}
 format-padding = 2
 
 time =  %I:%M %p
-time-alt =  %Y-%m-%d%
+time-alt =  %A, %d %B %Y
 format = <label>
 label = %time%
 
@@ -199,7 +206,7 @@ ramp-headphones-1 = 
 [module/battery]
 type = internal/battery
 full-at = 99
-battery = BAT0
+battery = BAT1
 adapter = AC
 
 poll-interval = 2
