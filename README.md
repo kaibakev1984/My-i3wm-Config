@@ -207,7 +207,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![lofi-fog scheme](https://i.postimg.cc/mD7ndhSq/lofi-fog-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-fog)
 [![rainatnight scheme](https://i.imgur.com/M9QcUDn.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rainatnight)
 [![office scheme](https://i.imgur.com/GX6NFYR.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/office)
-[![powerlines scheme](https://i.postimg.cc/BQx1LXY5/powerlines-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/powerlines)
+[![powerlines scheme](https://i.imgur.com/dqYQCLq.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/powerlines)
 [![john-wick scheme](https://i.postimg.cc/LXmkpXpG/john-wick-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick)
 [![sad scheme](https://i.postimg.cc/Gm2CDVhc/sad-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sad)
 [![castle scheme](https://i.postimg.cc/G37FWdSS/castle-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/castle)
