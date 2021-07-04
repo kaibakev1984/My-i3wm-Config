@@ -6,9 +6,13 @@
 super + Return
   st	
 
+# start Ranger
+alt + r
+  st -e ranger
+  
 # program launcher
 super + d 
-  rofi -show drun -theme retro-cat
+  rofi -show drun -theme cat
 
 # 
 # Audio Controls
@@ -25,11 +29,6 @@ XF86AudioLowerVolume
 # Mute Volume
 XF86AudioMute
   amixer -q sset Master toggle
-
-
-#	Start ranger
-alt + p 
-	pcmanfm
 
 # make sxhkd reload its configuration files:
 super + Escape

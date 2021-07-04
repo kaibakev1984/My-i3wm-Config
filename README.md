@@ -200,7 +200,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![books scheme](https://i.imgur.com/gTiD7lZ.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
 [![old-computer scheme](https://i.postimg.cc/4dZ9Fv23/old-computer-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
 [![keyboard scheme](https://i.imgur.com/0DJ1PyV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/keyboard)
-[![retro-cat scheme](https://i.postimg.cc/yNF2hBSZ/retro-cat-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/retro-cat)
+[![cat scheme](https://i.imgur.com/OfZN1NV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cat)
 [![sunset scheme](https://i.postimg.cc/qq71YWDt/sunset-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sunset)
 [![umbrellas scheme](https://i.postimg.cc/L8SY3HWr/umbrellas-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/umbrellas)
 [![aesthetic-sea scheme](https://i.postimg.cc/j20Tzjj9/aesthetic-sea-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/aesthetic-sea)

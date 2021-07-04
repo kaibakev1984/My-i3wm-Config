@@ -14,8 +14,8 @@ index 0e01717..fb504d4 100644
 -	"magenta3",
 -	"cyan3",
 -	"gray90",
-+	"#3b4252", /* black   */
-+	"#bf616a", /* red     */
++	"#08243a", /* black   */
++	"#c56451", /* red     */
 +	"#a3be8c", /* green   */
 +	"#ebcb8b", /* yellow  */
 +	"#81a1c1", /* blue    */
@@ -33,21 +33,21 @@ index 0e01717..fb504d4 100644
 -	"cyan",
 -	"white",
 +	"#4c566a", /* black   */
-+	"#bf616a", /* red     */
++	"#c56451", /* red     */
 +	"#a3be8c", /* green   */
 +	"#ebcb8b", /* yellow  */
 +	"#81a1c1", /* blue    */
 +	"#b48ead", /* magenta */
 +	"#8fbcbb", /* cyan    */
-+	"#eceff4", /* white   */
++	"#cdefdc", /* white   */
  
  	[255] = 0,
  
  	/* more colors can be added after 255 to use with DefaultXX */
 -	"#cccccc",
 -	"#555555",
-+	"#2e3440", /* background */
-+	"#d8dee9", /* foreground */
++	"#08243a", /* background */
++	"#cdefdc", /* foreground */
  };
  
  

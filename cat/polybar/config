@@ -1,0 +1,225 @@
+;==========================================================
+;
+;
+;   ██████╗  ██████╗ ██╗  ██╗   ██╗██████╗  █████╗ ██████╗
+;   ██╔══██╗██╔═══██╗██║  ╚██╗ ██╔╝██╔══██╗██╔══██╗██╔══██╗
+;   ██████╔╝██║   ██║██║   ╚████╔╝ ██████╔╝███████║██████╔╝
+;   ██╔═══╝ ██║   ██║██║    ╚██╔╝  ██╔══██╗██╔══██║██╔══██╗
+;   ██║     ╚██████╔╝███████╗██║   ██████╔╝██║  ██║██║  ██║
+;   ╚═╝      ╚═════╝ ╚══════╝╚═╝   ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═╝
+;
+;
+;==========================================================
+
+[colors]
+background     = #08243a
+foreground     = #cdefdc
+alert          = #9C1E38
+primary        = #a3be8c
+
+color1         = #81a1c1
+color2         = #c56451
+color3         = #d08770
+color4         = #ebcb8b
+color5         = #a3be8c
+color6         = #b48ead
+color7         = #5e81ac
+color8         = #dad59c
+
+[bar/main]
+width = 100%
+height = 26
+;;offset-x = 1% 
+;;offset-y = 1% 
+fixed-center = true 
+background = ${colors.background} 
+foreground = ${colors.foreground}
+
+padding-left  = 2
+padding-right = 2
+
+module-margin-left  = 2
+module-margin-right = 2 
+
+font-0 = Feather:size=8;2
+font-1 = Ubuntu Condensed:size=8;2
+
+modules-left    = bspwm xwindow 
+modules-center  = 
+modules-right   = cpu filesystem alsa battery wlan eth xkeyboard date 
+
+wm-restack    = bspwm
+cursor-click  = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type  = internal/xwindow
+label =  %title:0:30:...%
+
+format-foreground = ${colors.color8}
+format-padding = 4
+
+[module/xkeyboard]
+type = internal/xkeyboard
+blacklist-0 = num lock
+
+format-foreground= ${colors.color6}
+format-prefix = 
+label-layout = " %layout%"
+
+label-indicator-padding = 1
+label-indicator-foreground = ${colors.alert}
+
+[module/bspwm]
+type = internal/bspwm
+
+pin-workspaces=true
+ws-icon-0 = I;
+ws-icon-1 = II;
+ws-icon-2 = III;
+ws-icon-3 = IV;
+ws-icon-4 = V;
+ws-icon-default = 
+
+format = <label-state> <label-mode>
+
+label-focused = %icon%
+label-focused-foreground = ${colors.color2}
+label-focused-padding = 2
+
+label-occupied = %icon%
+label-occupied-foreground = ${colors.foreground}
+label-occupied-padding = 2
+
+label-urgent = %icon%
+label-urgent-foreground = ${colors.alert}
+label-urgent-padding = 2
+
+label-empty = %icon%
+label-empty-foreground = ${colors.foreground}
+label-empty-padding = 2
+
+[module/filesystem]
+type = internal/fs
+interval = 25
+
+mount-0 = /
+
+format-mounted = <label-mounted>
+format-unmounted = <label-unmounted>
+
+format-mounted-foreground = ${colors.color2}
+
+format-mounted-prefix = 
+format-unmounted-prefix = 
+
+label-mounted =  " %free%"
+label-unmounted = %mountpoint%: not mounted
+
+[module/cpu]
+type = internal/cpu
+interval = 2
+format-prefix = 
+format-foreground = ${colors.color1}
+label = %percentage:4%%
+
+[module/wlan]
+type = internal/network
+interface = wlan0
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected-foreground = ${colors.color5}
+format-disconnected-foreground = ${colors.alert}
+
+format-connected = <label-connected>
+format-disconnected = <label-disconnected>
+
+format-connected-prefix = 
+format-disconnected-prefix = 
+
+label-connected = " %essid%"
+label-disconnected = " No signal"
+
+[module/eth]
+type = internal/network
+interface =  enp0s3
+interval = 1.0
+accumulate-stats = true
+unknown-as-up = true
+
+format-connected-foreground = ${colors.color5}
+format-disconnected-foreground = ${colors.color5}
+
+format-connected-prefix = 
+label-connected = " Online"
+
+format-disconnected-prefix = 
+label-disconnected = " Offline"
+
+[module/date]
+type = internal/date
+interval = 1.0
+
+format = <label>
+format-foreground= ${colors.color7}
+
+time =  %I:%M %p
+time-alt =  %Y-%m-%d%
+
+label = %time%
+
+[module/alsa]
+type = internal/alsa
+
+format-volume = <ramp-volume> <label-volume>
+format-volume-foreground = ${colors.color3}
+label-volume = %percentage%%
+
+format-muted-prefix = 
+format-muted-foreground = ${colors.alert}
+label-muted = " Muted"
+
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+ramp-volume-3 = 
+ramp-volume-4 = 
+
+ramp-headphones-0 = 
+ramp-headphones-1 = 
+
+[module/battery]
+type = internal/battery
+full-at = 99
+battery = BAT0
+adapter = AC
+
+poll-interval = 2
+time-format = %H:%M
+
+format-charging-foreground = ${colors.color4}
+format-discharging-foreground = ${colors.color4}
+format-full-foreground    = ${colors.alert}
+
+format-charging-prefix    = 
+format-discharging-prefix = 
+format-full-prefix        = 
+
+label-charging    = " %percentage%%"
+label-discharging = " %percentage%%"
+label-full        = " %percentage%%"
+
+[settings]
+screenchange-reload = true
+;compositing-background = xor
+;compositing-background = screen
+;compositing-foreground = source
+;compositing-border = over
+;pseudo-transparency = true
+
+[global/wm]
+margin-top = 5
+margin-bottom = 0
+;vim:ft=dosini
