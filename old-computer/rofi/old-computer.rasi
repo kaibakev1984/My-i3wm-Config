@@ -1,5 +1,5 @@
 configuration {
-    show-icons:     true;
+    show-icons:     false;
     
 }
 
@@ -18,26 +18,26 @@ configuration {
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #1e1b1c;
+    selected-active-background: #bf616a;
     selected-active-foreground: @foreground;
-    selected-normal-background: #94C68C;
-    selected-normal-foreground: #003E68;
-    selected-urgent-background: #3D4A4E;
+    selected-normal-background: #E6AD75;
+    selected-normal-foreground: @background;
+    selected-urgent-background: #839BBC;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
     background:     #003E68;
     foreground:     #f6dfc4;
-    border-color:   #E6AD75;
+    border-color:   #282c35;
     spacing:        4;
-    font:           "unifont 10";
+    font:           "Iosevka Nerd Font 10";
 }
 
 #window {
     background-color: @background;
-    height: 50%;
-    width: 30%;
-    border: 4;
+    height: 55%;
+    width: 35%;
+    border: 0;
     padding: 2.5ch;
 }
 
@@ -69,7 +69,7 @@ configuration {
 
 #listview {
     fixed-height: 0;
-    border: 2px 0px 0px;
+    border: 0px 0px 0px;
     border-color: @border-color;
     spacing: 2px;
     scrollbar: true;

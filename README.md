@@ -196,7 +196,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![girl-glasses scheme](https://i.postimg.cc/x1wCF1YR/girl-glasses-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/girl-glasses)
 [![rem scheme](https://i.imgur.com/IdBNfcl.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
 [![books scheme](https://i.imgur.com/gTiD7lZ.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
-[![old-computer scheme](https://i.postimg.cc/4dZ9Fv23/old-computer-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
+[![old-computer scheme](https://i.imgur.com/IO5tApV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
 [![keyboard scheme](https://i.imgur.com/0DJ1PyV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/keyboard)
 [![cat scheme](https://i.imgur.com/OfZN1NV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cat)
 [![sunset scheme](https://i.postimg.cc/qq71YWDt/sunset-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sunset)
