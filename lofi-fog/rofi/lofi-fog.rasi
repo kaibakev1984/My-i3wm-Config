@@ -1,9 +1,14 @@
+configuration {
+    show-icons:     false;
+    
+}
+
 * {
-    active-background: #4D90B0;
+    active-background: #58344C;
     active-foreground: @foreground;
     normal-background: @background;
     normal-foreground: @foreground;
-    urgent-background: #527299;
+    urgent-background: #1C304B;
     urgent-foreground: @foreground;
 
     alternate-active-background: @background;
@@ -13,24 +18,27 @@
     alternate-urgent-background: @background;
     alternate-urgent-foreground: @foreground;
 
-    selected-active-background: #527299;
+    selected-active-background: #bf616a;
     selected-active-foreground: @foreground;
-    selected-normal-background: #4D90B0;
+    selected-normal-background: #1e4857;
     selected-normal-foreground: @foreground;
-    selected-urgent-background: #6798B5;
+    selected-urgent-background: #839BBC;
     selected-urgent-foreground: @foreground;
 
     background-color: @background;
-    background: #140d11;
-    foreground: #c8d5dc;
-    border-color: @background;
-    spacing: 1;
+    background:     #1a202f;
+    foreground:     #88acc2;
+    border-color:   #282c35;
+    spacing:        4;
+    font:           "Iosevka Nerd Font 10";
 }
 
 #window {
     background-color: @background;
+    height: 55%;
+    width: 35%;
     border: 0;
-    padding: 1.5ch;
+    padding: 2.5ch;
 }
 
 #mainbox {
@@ -61,7 +69,7 @@
 
 #listview {
     fixed-height: 0;
-    border: 2px 0px 0px;
+    border: 0px 0px 0px;
     border-color: @border-color;
     spacing: 2px;
     scrollbar: true;
