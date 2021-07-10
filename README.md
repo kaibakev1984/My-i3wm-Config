@@ -202,7 +202,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![sunset scheme](https://i.postimg.cc/qq71YWDt/sunset-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sunset)
 [![umbrellas scheme](https://i.postimg.cc/L8SY3HWr/umbrellas-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/umbrellas)
 [![aesthetic-sea scheme](https://i.postimg.cc/j20Tzjj9/aesthetic-sea-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/aesthetic-sea)
-[![lofi-fog scheme](https://i.postimg.cc/mD7ndhSq/lofi-fog-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-fog)
+[![lofi-fog scheme](https://i.imgur.com/faR8o5U.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-fog)
 [![rainatnight scheme](https://i.imgur.com/M9QcUDn.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rainatnight)
 [![office scheme](https://i.imgur.com/GX6NFYR.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/office)
 [![powerlines scheme](https://i.imgur.com/dqYQCLq.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/powerlines)
