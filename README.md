@@ -188,13 +188,11 @@ Ingresar por terminal lo siguiente:
 
 Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
-[![night scheme](https://i.postimg.cc/kgf40wZ8/night-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/night)
 [![lofi-rain scheme](https://i.imgur.com/wajd2qK.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
 [![robocity scheme](https://i.postimg.cc/YCyw5GBy/robocity-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
 [![forest scheme](https://i.postimg.cc/90V3dyyz/forest-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/forest)
 [![autumn scheme](https://i.imgur.com/sAUm0hg.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/autumn)
 [![day-city scheme](https://i.postimg.cc/tCWfYN2Q/day-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/day-city)
-[![raining scheme](https://i.postimg.cc/qM5b08gn/raining-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/raining)
 [![girl-glasses scheme](https://i.postimg.cc/x1wCF1YR/girl-glasses-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/girl-glasses)
 [![rem scheme](https://i.imgur.com/IdBNfcl.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rem)
 [![books scheme](https://i.imgur.com/gTiD7lZ.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/books)
