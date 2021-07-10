@@ -2,7 +2,7 @@ set window-title-basename "true"
 set selection-clipboard "clipboard"
 
 #
-# Dracula color theme
+# Color theme
 #
 
 set notification-error-bg       "#bf616a" # Red
