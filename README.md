@@ -219,7 +219,6 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![hello-world scheme](https://i.imgur.com/ciF2JZo.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/hello-world)
 [![smoke scheme](https://i.imgur.com/eXSn5l6.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/smoke)
 [![ruiner scheme](https://i.postimg.cc/jj3PJrnF/ruiner-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/ruiner)
-[![chicago95 scheme](https://i.postimg.cc/SQMCj3Sg/chicago95-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/chicago95)
 [![focus scheme](https://i.postimg.cc/7LRJZMpv/focus-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/focus)
 [![break scheme](https://i.postimg.cc/vTF1W8Y3/break-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/break)
 [![404-error scheme](https://i.postimg.cc/qMGt3d9x/404-error-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/404-error)
