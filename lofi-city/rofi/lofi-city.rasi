@@ -15,7 +15,7 @@
   spacing: 0;
   background-color: transparent;
 
-  font: "Ubuntu Condensed2 Font 10";
+  font: "Ubuntu Condensed 10";
   text-color: @text;
 }
 
