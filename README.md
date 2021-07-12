@@ -214,7 +214,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![futurist scheme](https://i.postimg.cc/4xxvqkWv/futurist-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/futurist)
 [![astronaut scheme](https://i.postimg.cc/wMy1887S/astronaut-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/astronaut)
 [![john wick 2 scheme](https://i.postimg.cc/kMzVN4H9/john-wick2-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick2)
-[![cyber-hunter scheme](blob:https://imgur.com/6e5b5934-f196-43ac-8acf-b0478353e596)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyber-hunter)
+[![cyber-hunter scheme](https://i.imgur.com/6Woy3O7.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyber-hunter)
 [![murder scheme](https://i.imgur.com/X4lMiEW.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/murder)
 [![hello-world scheme](https://i.imgur.com/ciF2JZo.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/hello-world)
 [![smoke scheme](https://i.imgur.com/eXSn5l6.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/smoke)
