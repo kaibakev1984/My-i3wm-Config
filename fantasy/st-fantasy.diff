@@ -34,28 +34,28 @@ index 877afab..6a1699f 100644
 -};
  
 +  /* 8 normal colors */
-+  [0] = "#070204", /* black   */
++  [0] = "#130c16", /* black   */
 +  [1] = "#A22B4E", /* red     */
 +  [2] = "#D63A45", /* green   */
 +  [3] = "#E5525E", /* yellow  */
-+  [4] = "#A5B47D", /* blue    */
++  [4] = "#f1c390", /* blue    */
 +  [5] = "#5E4796", /* magenta */
 +  [6] = "#6E5494", /* cyan    */
-+  [7] = "#e5a4c3", /* white   */
++  [7] = "#dfdedf", /* white   */
 +
 +  /* 8 bright colors */
 +  [8]  = "#a07288", /* black   */
 +  [9]  = "#A22B4E", /* red     */
 +  [10] = "#D63A45", /* green   */
 +  [11] = "#E5525E", /* yellow  */
-+  [12] = "#A5B47D", /* blue    */
++  [12] = "#f1c390", /* blue    */
 +  [13] = "#5E4796", /* magenta */
 +  [14] = "#6E5494", /* cyan    */
-+  [15] = "#e5a4c3", /* white   */
++  [15] = "#dfdedf", /* white   */
 +
 +  /* special colors */
-+  [256] = "#070204", /* background */
-+  [257] = "#e5a4c3", /* foreground */
++  [256] = "#130c16", /* background */
++  [257] = "#dfdedf", /* foreground */
 +};
  
  /*

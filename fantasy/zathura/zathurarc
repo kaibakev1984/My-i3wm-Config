@@ -1,0 +1,53 @@
+set window-title-basename "true"
+set selection-clipboard "clipboard"
+
+#
+# Color theme
+#
+
+set notification-error-bg       "#A22B4E" # Red
+set notification-error-fg       "#dfdedf" # Foreground
+set notification-warning-bg     "#d08770" # Orange
+set notification-warning-fg     "#4c566a" # Selection
+set notification-bg             "#130c16" # Background
+set notification-fg             "#dfdedf" # Foreground
+
+set completion-bg               "#130c16" # Background
+set completion-fg               "#5e81ac" # Comment
+set completion-group-bg         "#130c16" # Background
+set completion-group-fg         "#5e81ac" # Comment
+set completion-highlight-bg     "#4c566a" # Selection
+set completion-highlight-fg     "#dfdedf" # Foreground
+
+set index-bg                    "#130c16" # Background
+set index-fg                    "#dfdedf" # Foreground
+set index-active-bg             "#4c566a" # Current Line
+set index-active-fg             "#dfdedf" # Foreground
+
+set inputbar-bg                 "#130c16" # Background
+set inputbar-fg                 "#dfdedf" # Foreground
+set statusbar-bg                "#130c16" # Background
+set statusbar-fg                "#dfdedf" # Foreground
+
+set highlight-color             "#d08770" # Orange
+set highlight-active-color      "#EA55CF" # Pink
+
+set default-bg                  "#130c16" # Background
+set default-fg                  "#dfdedf" # Foreground
+
+set render-loading              true
+set render-loading-fg           "#130c16" # Background
+set render-loading-bg           "#dfdedf" # Foreground
+
+#
+# Recolor mode settings
+#
+
+set recolor-lightcolor          "#130c16" # Background
+set recolor-darkcolor           "#dfdedf" # Foreground
+
+#
+# Startup options
+#
+set adjust-open width
+set recolor true
