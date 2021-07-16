@@ -1,32 +1,3 @@
-From 3e8f83d40c6fdd89653ef547aa16cffe1f3c1793 Mon Sep 17 00:00:00 2001
-From: aleks <aleks.stier@icloud.com>
-Date: Sun, 4 Aug 2019 13:23:10 +0200
-Subject: [PATCH] Apply nord-theme
-
-*"Inspired by the beauty of the arctic, the colors reflect the cold, yet
-harmonious world of ice and the colorfulness of the Aurora Borealis."* - [Nord
-Theme](https://www.nordtheme.com/)
-
-There are also many [ports](https://www.nordtheme.com/ports) for other programs
-like [vim](https://www.nordtheme.com/ports/vim) and
-[tmux](https://www.nordtheme.com/ports/tmux) to make the overall appearance
-coherent. I would recommend to use it in combination with the arc-theme for gtk
-(fits perfectly).
-
-The default behaviour of st is to reverse the fore- and background colors of
-each selected cell. If you want that the selection-colors are not reveresed but
-instead have fixed fore- and background colors apply on top of this patch the
-[selectioncolors](../selectioncolors/)-patch. Then set the following settings
-in your config.h:
-
-static unsigned int defaultcs = 257;
-static unsigned int defaultrcs = 257;
-unsigned int selectionfg = 257;
-unsigned int selectionbg = 0;
----
- config.def.h | 44 ++++++++++++++++++++++----------------------
- 1 file changed, 22 insertions(+), 22 deletions(-)
-
 diff --git a/config.def.h b/config.def.h
 index 0e01717..fb504d4 100644
 --- a/config.def.h
@@ -43,14 +14,14 @@ index 0e01717..fb504d4 100644
 -	"magenta3",
 -	"cyan3",
 -	"gray90",
-+	"#0C0C17", /* black   */
++	"#0e0c17", /* black   */
 +	"#4F4A6D", /* red     */
 +	"#624E68", /* green   */
 +	"#B1576E", /* yellow  */
 +	"#314BA5", /* blue    */
 +	"#586293", /* magenta */
 +	"#9484AB", /* cyan    */
-+	"#dcccd1", /* white   */
++	"#dcccd2", /* white   */
  
  	/* 8 bright colors */
 -	"gray50",
@@ -68,15 +39,15 @@ index 0e01717..fb504d4 100644
 +	"#314BA5", /* blue    */
 +	"#586293", /* magenta */
 +	"#9484AB", /* cyan    */
-+	"#dcccd1", /* white   */
++	"#dcccd2", /* white   */
  
  	[255] = 0,
  
  	/* more colors can be added after 255 to use with DefaultXX */
 -	"#cccccc",
 -	"#555555",
-+	"#0C0C17", /* background */
-+	"#dcccd1", /* foreground */
++	"#0e0c17", /* background */
++	"#dcccd2", /* foreground */
  };
  
  
