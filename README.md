@@ -230,7 +230,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![diary scheme](https://i.imgur.com/Ko8w2dr.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/diary)
 [![qa scheme](https://i.postimg.cc/k4yrh4Qf/qa-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/qa)
 [![samurai scheme](https://i.imgur.com/UGdpQqi.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/samurai)
-[![cobra kai scheme](https://i.postimg.cc/2Smd75H2/cobra-kai-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cobra-kai)
+[![cobra kai scheme](https://i.imgur.com/JzmNgtP.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cobra-kai)
 [![sentre scheme](https://i.postimg.cc/bvCDx4mH/sentre-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/sentre)
 [![climbing scheme](https://i.postimg.cc/MKnQYznW/climbing-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/climbing)
 [![tower scheme](https://i.imgur.com/Qnvzzud.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/tower)
