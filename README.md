@@ -197,7 +197,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![cyber-hunter scheme](https://i.imgur.com/6Woy3O7.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cyber-hunter)
 [![fantasy scheme](https://i.imgur.com/7gpItzO.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/fantasy)
 [![futurist scheme](https://i.imgur.com/GMDnITh.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/futurist)
-[![robocity scheme](blob:https://imgur.com/b69961cc-f527-4d90-b981-545de1971f24)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
+[![robocity scheme](https://i.imgur.com/bgDZ3qc.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/robocity)
 [![reflection scheme](https://i.imgur.com/Xf83ygO.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/reflection)
 [![climbing scheme](https://i.postimg.cc/MKnQYznW/climbing-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/climbing)
 [![lofi-city scheme](https://i.postimg.cc/FzLy4nRn/lofi-city-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-city)
