@@ -2,24 +2,17 @@
 # wm independent hotkeys
 #
 
-# st -  terminal emulator
+# terminal emulator
 super + Return
   st	
 
-# rxvt - terminal emulator
-alt + Return 
-  rxvt
-
+# start Ranger
+alt + r
+  st -e ranger
+  
 # program launcher
 super + d 
   rofi -show drun -theme sad
-# start pcmanfm
-alt + p
-  pcmanfm
-
-# start ranger
-alt + r 
-  st -e ranger
 
 # 
 # Audio Controls
