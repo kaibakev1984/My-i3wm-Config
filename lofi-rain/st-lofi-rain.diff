@@ -14,7 +14,7 @@ index 0e01717..fb504d4 100644
 -	"magenta3",
 -	"cyan3",
 -	"gray90",
-+	"#092c2e", /* black   */
++	"#0a1814", /* black   */
 +	"#b48ead", /* red     */
 +	"#9B5C31", /* green   */
 +	"#bf616a", /* yellow  */
@@ -32,7 +32,7 @@ index 0e01717..fb504d4 100644
 -	"magenta",
 -	"cyan",
 -	"white",
-+	"#092c2e", /* black   */
++	"#0a1814", /* black   */
 +	"#b48ead", /* red     */
 +	"#9B5C31", /* green   */
 +	"#bf616a", /* yellow  */
@@ -46,7 +46,7 @@ index 0e01717..fb504d4 100644
  	/* more colors can be added after 255 to use with DefaultXX */
 -	"#cccccc",
 -	"#555555",
-+	"#092c2e", /* background */
++	"#0a1814", /* background */
 +	"#e7c7a4", /* foreground */
  };
  

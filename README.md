@@ -188,7 +188,7 @@ Ingresar por terminal lo siguiente:
 
 Para acceder a un tema, hacer click sobre la imagen del tema deseado
 
-[![lofi-rain scheme](https://i.imgur.com/wajd2qK.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
+[![lofi-rain scheme](https://i.imgur.com/63cTVgZ.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/lofi-rain)
 [![day-city scheme](https://i.imgur.com/1GGVW4A.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/day-city)
 [![old-computer scheme](https://i.imgur.com/IO5tApV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/old-computer)
 [![cat scheme](https://i.imgur.com/OfZN1NV.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/cat)
