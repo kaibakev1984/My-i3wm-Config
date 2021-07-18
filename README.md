@@ -214,7 +214,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![rainatnight scheme](https://i.imgur.com/M9QcUDn.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rainatnight)
 [![john-wick scheme](https://i.postimg.cc/LXmkpXpG/john-wick-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick)
 [![castle scheme](https://i.postimg.cc/G37FWdSS/castle-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/castle)
-[![metropolis scheme](https://i.postimg.cc/7YQkwVDf/metropolis-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/metropolis)
+[![metropolis scheme](https://i.imgur.com/OOszgK4.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/metropolis)
 [![astronaut scheme](https://i.postimg.cc/wMy1887S/astronaut-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/astronaut)
 [![john wick 2 scheme](https://i.postimg.cc/kMzVN4H9/john-wick2-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick2)
 [![murder scheme](https://i.imgur.com/X4lMiEW.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/murder)
