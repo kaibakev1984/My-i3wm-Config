@@ -34,28 +34,28 @@ index 877afab..6a1699f 100644
 -};
  
 +  /* 8 normal colors */
-+  [0] = "#203446", /* black   */
++  [0] = "#33446c", /* black   */
 +  [1] = "#4E92CF", /* red     */
 +  [2] = "#64A7E1", /* green   */
 +  [3] = "#78C7ED", /* yellow  */
-+  [4] = "#A494AC", /* blue    */
-+  [5] = "#96AAD2", /* magenta */
-+  [6] = "#CFB6C7", /* cyan    */
-+  [7] = "#c4e2ee", /* white   */
++  [4] = "#9da3c3", /* blue    */
++  [5] = "#507ea3", /* magenta */
++  [6] = "#bd72a2", /* cyan    */
++  [7] = "#dfdde4", /* white   */
 +
 +  /* 8 bright colors */
 +  [8]  = "#899ea6", /* black   */
 +  [9]  = "#4E92CF", /* red     */
 +  [10] = "#64A7E1", /* green   */
 +  [11] = "#78C7ED", /* yellow  */
-+  [12] = "#A494AC", /* blue    */
-+  [13] = "#96AAD2", /* magenta */
-+  [14] = "#CFB6C7", /* cyan    */
-+  [15] = "#c4e2ee", /* white   */
++  [12] = "#9da3c3", /* blue    */
++  [13] = "#507ea3", /* magenta */
++  [14] = "#bd72a2", /* cyan    */
++  [15] = "#dfdde4", /* white   */
 +
 +  /* special colors */
-+  [256] = "#203446", /* background */
-+  [257] = "#c4e2ee", /* foreground */
++  [256] = "#33446c", /* background */
++  [257] = "#dfdde4", /* foreground */
 +};
  
  /*

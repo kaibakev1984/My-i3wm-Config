@@ -213,7 +213,7 @@ Para acceder a un tema, hacer click sobre la imagen del tema deseado
 [![aesthetic-sea scheme](https://i.postimg.cc/j20Tzjj9/aesthetic-sea-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/aesthetic-sea)
 [![rainatnight scheme](https://i.imgur.com/M9QcUDn.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/rainatnight)
 [![john-wick scheme](https://i.postimg.cc/LXmkpXpG/john-wick-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick)
-[![castle scheme](https://i.postimg.cc/G37FWdSS/castle-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/castle)
+[![castle scheme](https://i.imgur.com/XescVpu.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/castle)
 [![metropolis scheme](https://i.imgur.com/OOszgK4.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/metropolis)
 [![astronaut scheme](https://i.postimg.cc/wMy1887S/astronaut-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/astronaut)
 [![john wick 2 scheme](https://i.postimg.cc/kMzVN4H9/john-wick2-scheme.png)](https://github.com/kaibakev1984/Lorblak-Dotfiles/tree/master/john-wick2)
